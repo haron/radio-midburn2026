@@ -9,4 +9,5 @@ dependencies = [
     "psutil",
     "gpiozero; sys_platform == 'linux'",
     "lgpio; sys_platform == 'linux'",
+    "pyserial>=3.5",
 ]

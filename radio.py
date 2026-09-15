@@ -1,5 +1,7 @@
 """Two-knob radio: location × epoch stations, switched through static. Design notes in AGENTS.md."""
 import atexit
+import grp
+import json
 import logging
 import logging.handlers
 import os
@@ -16,6 +18,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 import psutil
+import serial
 from dotenv import load_dotenv
 from mpd import MPDClient
 from mutagen.mp3 import MP3
@@ -23,7 +26,7 @@ from mutagen.mp3 import MP3
 ROOT = Path(__file__).resolve().parent
 MUSIC, STATIC = ROOT / "music", ROOT / "static.flac"  # seamless loop built by `make static.flac`
 SOCK, CONF = "/tmp/radio-mpd.sock", Path("/tmp/radio-mpd.conf")
-EPOCHS, FADE, HOLD, TICK = 3, 0.5, 2.0, 0.02
+EPOCHS, TICK = 3, 0.02
 PI_MODEL = Path("/proc/device-tree/model")
 ON_PI = PI_MODEL.exists() and "Raspberry Pi" in PI_MODEL.read_text()
 KEYS = {"\x1b[D": ("location", -1), "a": ("location", -1), "\x1b[C": ("location", 1), "d": ("location", 1),
@@ -100,17 +103,22 @@ def start_mpd(out: str):
                       for n in ("music", "static"))
     CONF.write_text(f'bind_to_address "{SOCK}"\nlog_file "/tmp/radio-mpd.log"\n'
                     f'connection_timeout "31536000"\n{outputs}')  # our clients may sit idle for hours
-    if mpd_up():
-        log.info("mpd already running on %s", SOCK)
+    # an old mpd may hold a dead audio device (macOS: output switched or slept), so always start a fresh one
+    old = [p for p in psutil.process_iter(["cmdline"]) if str(CONF) in (p.info["cmdline"] or [])]
+    for p in old:
+        p.terminate()
+    if psutil.wait_procs(old, timeout=5)[1]:
+        sys.exit(f"old mpd didn't exit: {[p.pid for p in old]}")
+    if old:
+        log.info("stopped old mpd %s", [p.pid for p in old])
+    subprocess.run(["mpd", str(CONF)], check=True, start_new_session=True)  # survive our Ctrl+C
+    for _ in range(50):  # the daemon returns before its socket is bound
+        if mpd_up():
+            break
+        time.sleep(0.1)
     else:
-        subprocess.run(["mpd", str(CONF)], check=True, start_new_session=True)  # survive our Ctrl+C
-        for _ in range(50):  # the daemon returns before its socket is bound
-            if mpd_up():
-                break
-            time.sleep(0.1)
-        else:
-            sys.exit(f"mpd didn't create {SOCK}, see /tmp/radio-mpd.log")
-        log.info("mpd started with %s", CONF)
+        sys.exit(f"mpd didn't create {SOCK}, see /tmp/radio-mpd.log")
+    log.info("mpd started with %s", CONF)
 
 
 def keep_awake():
@@ -135,9 +143,52 @@ def connect(partition: str | None = None) -> MPDClient:
     return client
 
 
+class Leds:
+    """WLED on USB serial, JSON API. WLED keeps the state, so a frame is sent only when the selection changes."""
+
+    def __init__(self, port: str, locations: int):
+        self.locs, self.epochs = led_ranges("LED_LOCATIONS"), led_ranges("LED_EPOCHS")
+        if (len(self.locs), len(self.epochs)) != (locations, EPOCHS):
+            sys.exit(f"LED_LOCATIONS has {len(self.locs)} ranges for {locations} locations, "
+                     f"LED_EPOCHS has {len(self.epochs)} for {EPOCHS} epochs")
+        self.on, self.off = (os.environ[k] for k in ("LED_ON", "LED_OFF"))
+        if not all(re.fullmatch(r"[0-9A-Fa-f]{6}", c) for c in (self.on, self.off)):
+            sys.exit(f"LED_ON/LED_OFF must be RRGGBB hex, got {self.on}/{self.off}")
+        if not Path(port).exists():
+            sys.exit(f"WLED not found at {port}")
+        if not os.access(port, os.R_OK | os.W_OK):  # checks this process's groups: a fresh usermod needs a re-login
+            group = grp.getgrgid(os.stat(port).st_gid).gr_name
+            sys.exit(f"no read/write access to {port}: run `sudo usermod -aG {group} $USER` and log in again")
+        self.ser = serial.Serial(baudrate=115200, timeout=1, write_timeout=1)
+        self.ser.port, self.ser.dtr, self.ser.rts = port, False, False  # set before open, or the ESP32 auto-resets
+        self.ser.open()
+        for _ in range(5):  # retries cover a board that rebooted on open anyway
+            self.ser.reset_input_buffer()
+            self.ser.write(b'{"v":true}\n')
+            if b'"on":' in self.ser.read_until(b'"on":'):
+                break
+        else:
+            sys.exit(f"no WLED reply on {port}: check Config > Sync Interfaces > Serial baud 115200")
+        log.info("leds on: WLED at %s, locations %s, epochs %s", port, self.locs, self.epochs)
+
+    def show(self, loc: int, epoch: int):
+        (la, lb), (ea, eb) = self.locs[loc], self.epochs[epoch]
+        dim = [x for a, b in self.locs + self.epochs for x in (a, b + 1, self.off)]
+        seg = {"id": 0, "fx": 0, "i": dim + [la, lb + 1, self.on, ea, eb + 1, self.on]}
+        self.ser.write(json.dumps({"on": True, "seg": [seg]}).encode() + b"\n")
+
+
+def led_ranges(key: str) -> list[tuple[int, int]]:
+    """'0-5,6-11' -> [(0, 5), (6, 11)], inclusive."""
+    return [tuple(map(int, r.split("-"))) for r in os.environ[key].split(",")]
+
+
 class Radio:
-    def __init__(self, lib: list[list[Station]]):
-        self.lib, self.loc, self.epoch = lib, 0, 0
+    def __init__(self, lib: list[list[Station]], leds: Leds | None):
+        self.lib, self.leds, self.loc, self.epoch = lib, leds, 0, 0
+        self.fade, self.hold = float(os.environ["STATIC_FADE"]), float(os.environ["STATIC_HOLD"])
+        if not (self.fade > 0 and self.hold > 0):  # hold > 0 keeps the station load inside the silence
+            sys.exit(f"STATIC_FADE and STATIC_HOLD must be > 0, got {self.fade}/{self.hold}")
         self.last_turn = time.monotonic()  # power-on tunes in through static
         self.lock = threading.Lock()
         self.music, self.static = connect(), connect("static")
@@ -172,7 +223,7 @@ class Radio:
 
     def ramp(self, name: str, client: MPDClient, target: int):
         v = self.vol[name]
-        nv = min(target, v + 100 * TICK / FADE) if target > v else max(target, v - 100 * TICK / FADE)
+        nv = min(target, v + 100 * TICK / self.fade) if target > v else max(target, v - 100 * TICK / self.fade)
         if nv == v:
             return
         if name == "static" and v == 0:
@@ -183,12 +234,15 @@ class Radio:
         self.vol[name] = nv
 
     def run(self):
-        loaded, phase = None, None
+        loaded, phase, lit = None, None, None
         while True:
             with self.lock:
-                st, last_turn = self.lib[self.loc][self.epoch], self.last_turn
-            tuning = time.monotonic() < last_turn + FADE + HOLD
-            if not tuning and st is not loaded:  # music is silent by now: FADE < FADE + HOLD
+                st, last_turn, pos = self.lib[self.loc][self.epoch], self.last_turn, (self.loc, self.epoch)
+            if self.leds and pos != lit:  # the scale follows the knob right away, not after the static
+                self.leds.show(*pos)
+                lit = pos
+            tuning = time.monotonic() < last_turn + self.fade + self.hold
+            if not tuning and st is not loaded:  # music is silent by now: fade < fade + hold
                 self.load(st)
                 loaded = st
             self.ramp("music", self.music, 0 if tuning else 100)
@@ -251,9 +305,14 @@ def main():
         keep_awake()
     else:
         log.info("keep-awake off")
+    if port := os.environ["WLED_PORT"]:
+        leds = Leds(port, len(lib))
+    else:
+        leds = None
+        log.info("leds off: WLED_PORT is empty")
     start_mpd(out)
 
-    radio = Radio(lib)
+    radio = Radio(lib, leds)
     if sys.stdin.isatty():
         keyboard(radio)
     encs = encoders(radio) if ON_PI else []  # noqa: F841 keep references alive
