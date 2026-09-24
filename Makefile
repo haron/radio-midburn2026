@@ -17,3 +17,12 @@ static.flac: static.mp3
 		[c]atrim=0:0.3,asetpts=PTS-STARTPTS,afade=t=in:d=0.3:curve=qsin[head];\
 		[tail][head]amix=inputs=2:normalize=0[mix];\
 		[body][mix]concat=n=2:v=0:a=1" $@
+
+clean:
+	ssh pinky.tailab2d8.ts.net rm -rf /opt/radio
+
+provision: upload
+	./provision.sh pinky.tailab2d8.ts.net
+
+upload:
+	rsync -F .rsync-filter  -av . pinky.tailab2d8.ts.net:/opt/radio

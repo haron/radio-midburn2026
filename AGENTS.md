@@ -46,3 +46,6 @@ are in `.env` (see `.env.example`).
   gpiozero callbacks off the wire.
 - **Fail fast:** settings are read with `os.environ[...]`, and there are no
   fallbacks.
+- **Python <3.13:** `lgpio` has prebuilt aarch64 wheels (liblgpio linked in)
+  only up to cp312. On 3.13 it builds from source and needs swig, Python
+  headers and liblgpio, which Debian doesn't package. uv fetches a managed 3.12.
