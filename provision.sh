@@ -15,5 +15,6 @@ for HOST; do
         amixer sset PCM 100% unmute
         alsactl store
         uv --directory /opt/radio sync
+        systemctl enable --now /opt/radio/radio.service
 EOT
 done

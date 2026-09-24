@@ -27,5 +27,12 @@ provision: upload
 upload: static.flac
 	rsync -F .rsync-filter  -av . pinky.tailab2d8.ts.net:/opt/radio
 
+deploy: upload
+	ssh pinky.tailab2d8.ts.net 'uv --directory /opt/radio sync && systemctl daemon-reload && systemctl restart radio'
+
+# runs in the foreground with the keyboard; `make deploy` brings the service back
 remote: upload
-	ssh -t pinky.tailab2d8.ts.net uv --directory /opt/radio run radio.py
+	ssh -t pinky.tailab2d8.ts.net 'systemctl stop radio; uv --directory /opt/radio run radio.py'
+
+log:
+	ssh pinky.tailab2d8.ts.net journalctl -n100 -f -u radio

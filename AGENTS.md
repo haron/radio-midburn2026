@@ -51,3 +51,7 @@ are in `.env` (see `.env.example`).
 - **Python <3.13:** `lgpio` has prebuilt aarch64 wheels (liblgpio linked in)
   only up to cp312. On 3.13 it builds from source and needs swig, Python
   headers and liblgpio, which Debian doesn't package. uv fetches a managed 3.12.
+- **systemd service:** `radio.service` is linked from `/opt/radio` by
+  `provision.sh` and runs with `Restart=always`. mpd shares its cgroup, so a
+  stop kills mpd too. `make deploy` syncs, reloads and restarts it, and
+  `make remote` stops it to run in the foreground.

@@ -1,0 +1,13 @@
+[Unit]
+Description=Two-knob radio
+After=sound.target network.target
+
+[Service]
+User=root
+WorkingDirectory=/opt/radio
+ExecStart=/usr/local/bin/uv run radio.py
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
