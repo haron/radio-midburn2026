@@ -12,6 +12,8 @@ for HOST; do
             || { curl -fsSL https://tailscale.com/install.sh | sh; tailscale up; }
         [[ -f /usr/local/bin/uv ]] \
             || curl -LsSf https://astral.sh/uv/install.sh | UV_INSTALL_DIR=/usr/local/bin UV_NO_MODIFY_PATH=1 sh
+        amixer sset PCM 100% unmute
+        alsactl store
         uv --directory /opt/radio sync
 EOT
 done

@@ -99,7 +99,8 @@ def mpd_up() -> bool:
 
 
 def start_mpd(out: str):
-    outputs = "".join(f'audio_output {{\n\ttype "{out}"\n\tname "{n}"\n\tmixer_type "software"\n}}\n'
+    buf = '\tbuffer_time "100000"\n' if out == "alsa" else ""  # MPD's 500ms default delays every volume change
+    outputs = "".join(f'audio_output {{\n\ttype "{out}"\n\tname "{n}"\n\tmixer_type "software"\n{buf}}}\n'
                       for n in ("music", "static"))
     CONF.write_text(f'bind_to_address "{SOCK}"\nlog_file "/tmp/radio-mpd.log"\n'
                     f'connection_timeout "31536000"\n{outputs}')  # our clients may sit idle for hours
@@ -198,6 +199,7 @@ class Radio:
             c.setvol(0)
         self.music.repeat(1), self.music.single(0), self.music.consume(0), self.music.crossfade(0)
         self.static.add(f"file://{STATIC}"), self.static.repeat(1), self.static.single(1)
+        self.static.play()  # never paused: resuming reopens the ALSA device, which delays the static
         self.vol = {"music": 0.0, "static": 0.0}
 
     def turn(self, knob: str, delta: int):
@@ -226,11 +228,7 @@ class Radio:
         nv = min(target, v + 100 * TICK / self.fade) if target > v else max(target, v - 100 * TICK / self.fade)
         if nv == v:
             return
-        if name == "static" and v == 0:
-            client.play()
         client.setvol(round(nv))
-        if name == "static" and nv == 0:
-            client.pause()
         self.vol[name] = nv
 
     def run(self):

@@ -4,7 +4,7 @@ SHELL := /usr/bin/env -S bash -O globstar # makes work globs like **/*.py
 normalize:
 	mp3gain -r -k **/*.mp3
 
-run: static.flac
+local: static.flac
 	uv run radio.py
 
 # Seamless loop: cut the clip's silent edges (0-0.1s, 4.48s-end), equal-power crossfade its tail into its head.
@@ -24,5 +24,8 @@ clean:
 provision: upload
 	./provision.sh pinky.tailab2d8.ts.net
 
-upload:
+upload: static.flac
 	rsync -F .rsync-filter  -av . pinky.tailab2d8.ts.net:/opt/radio
+
+remote: upload
+	ssh -t pinky.tailab2d8.ts.net uv --directory /opt/radio run radio.py

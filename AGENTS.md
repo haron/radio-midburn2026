@@ -8,7 +8,9 @@ are in `.env` (see `.env.example`).
   (`MIN_TOTAL_TIME`), and its `crossfade` takes whole seconds. Static plays in a
   second MPD partition (`static`) with its own output. Python ramps both
   partitions' software-mixer volumes over 0.5s, and the seek to the new station
-  happens while the static covers it.
+  happens while the static covers it. Static plays nonstop at volume 0 between
+  turns, since unpausing reopens the ALSA device (audible lag), and ALSA
+  `buffer_time` is 100ms, as the 500ms default delays every volume change.
 - **Static loop:** `static.flac` is built from `static.mp3` by
   `make static.flac`. The source clip has \~90ms of silence at its edges, which
   stuttered on every `repeat single` wrap, so the build trims the edges and
