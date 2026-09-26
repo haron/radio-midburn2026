@@ -1,3 +1,11 @@
+# Music download
+
+[Install UV](https://docs.astral.sh/uv/getting-started/installation/). Then:
+
+    uvx --with curl_cffi yt-dlp --cookies-from-browser chrome --js-runtimes node --remote-components ejs:github --no-warnings https://youtu.be/-bWo0ky8xAs
+
+Change `chrome` to your browser of choice.
+
 # Radio
 
 A two-knob radio. One knob picks the location, the other picks the epoch, and
