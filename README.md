@@ -1,3 +1,6 @@
+# Cities
+London, Paris, Berlin, Rome, Moscow, New York, Los Angeles, Tokyo, Tel Aviv, Buenos Aires, Havana, Deli
+
 # Music download
 
 [Install UV](https://docs.astral.sh/uv/getting-started/installation/). Then:
