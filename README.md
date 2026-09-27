@@ -9,9 +9,6 @@ London, Paris, Berlin, Rome, Kraków, Moscow, New York, Los Angeles, Tokyo, Tel 
 
 Change `chrome` to your browser of choice.
 
-# Downloaded songs
-[archive](https://drive.google.com/file/d/1AcYtEuLTQwYhTQlg3ZpNMd7gsZxThM4N/view?usp=drive_link)
-
 # Radio
 
 A two-knob radio. One knob picks the location, the other picks the epoch, and
@@ -98,3 +95,8 @@ involved.
 - mpd’s own log: `/tmp/radio-mpd.log`.
 
 Design decisions: `AGENTS.md`.
+
+
+## Downloaded songs:
+Full catalog defined in ./songs.json and organized by city, then era (such as "1950s" or "1980s"). Each era contains an array of song records.
+[archive](https://drive.google.com/file/d/1AcYtEuLTQwYhTQlg3ZpNMd7gsZxThM4N/view?usp=drive_link)
