@@ -1,5 +1,5 @@
 # Cities
-London, Paris, Berlin, Rome, Moscow, New York, Los Angeles, Tokyo, Tel Aviv, Buenos Aires, Havana, Deli
+London, Paris, Berlin, Rome, Kraków, Moscow, New York, Los Angeles, Tokyo, Tel Aviv, Buenos Aires, Havana, Deli
 
 # Music download
 
