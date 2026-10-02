@@ -18,13 +18,19 @@ static.flac: static.mp3
 		[tail][head]amix=inputs=2:normalize=0[mix];\
 		[body][mix]concat=n=2:v=0:a=1" $@
 
+SONGS.md: songs.json
+	jq -r '"# Songs\n", (to_entries[] | "## \(.key)\n", (.value | to_entries[]\
+		| (.key | sub("^[0-9]+_"; "")) as $$e | "* \($$e[:1] | ascii_upcase)\($$e[1:])",\
+		(.value[] | "  - \(.artist) — \(.title) (\(.year))")), "")' $< > $@
+	format-md -i $@
+
 clean:
 	ssh pinky.tailab2d8.ts.net rm -rf /opt/radio
 
 provision:
 	./provision.sh pinky.tailab2d8.ts.net
 
-upload: static.flac
+upload: static.flac SONGS.md
 	rsync -F .rsync-filter --delete -av . pinky.tailab2d8.ts.net:/opt/radio
 
 deploy: upload
