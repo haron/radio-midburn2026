@@ -1,5 +1,5 @@
 SHELL := /usr/bin/env -S bash -O globstar # makes work globs like **/*.py
-.DEFAULT_GOAL := dummy
+.DEFAULT_GOAL := deploy
 
 normalize:
 	mp3gain -r -k **/*.mp3
@@ -21,18 +21,17 @@ static.flac: static.mp3
 clean:
 	ssh pinky.tailab2d8.ts.net rm -rf /opt/radio
 
-provision: upload
+provision:
 	./provision.sh pinky.tailab2d8.ts.net
 
-upload: static.flac
+deploy: static.flac
 	rsync -F .rsync-filter  -av . pinky.tailab2d8.ts.net:/opt/radio
-
-deploy: upload
 	ssh pinky.tailab2d8.ts.net 'uv --directory /opt/radio sync && systemctl daemon-reload && systemctl restart radio'
+	ssh pinky.tailab2d8.ts.net systemctl restart radio
 
 # runs in the foreground with the keyboard; `make deploy` brings the service back
 remote: upload
 	ssh -t pinky.tailab2d8.ts.net 'systemctl stop radio; uv --directory /opt/radio run radio.py'
 
-log:
+logs:
 	ssh pinky.tailab2d8.ts.net journalctl -n100 -f -u radio

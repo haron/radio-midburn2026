@@ -39,7 +39,8 @@ cp .env.example .env
     static.mp3
 
 - Locations and epochs are ordered by folder name, so use numeric prefixes.
-- Every location needs exactly 3 epoch folders, and each needs at least one MP3.
+- The epoch knob spans every epoch folder with MP3s in any location; a location
+  missing one plays static there. Folders without MP3s are ignored.
   Startup fails otherwise.
 - `make normalize` evens out loudness (needs `mp3gain`).
 

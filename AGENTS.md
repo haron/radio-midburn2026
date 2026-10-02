@@ -21,8 +21,9 @@ are in `.env` (see `.env.example`).
   resumes "live". Each turn restarts the 2s static hold, so the new station
   loads only once the knob stops.
 - **Library:** `music/<location>/<epoch>/*.mp3`, all sorted by name (use
-  `01_Paris`-style prefixes). Exactly 3 epochs per location, checked before
-  start, and startup fails on any mismatch. The knobs don't wrap: a turn past
+  `01_Paris`-style prefixes). Only folders with MP3s count. The epoch knob
+  spans the union of all locations' epoch folders, so the LED scale is the same for every location. A
+  missing location × epoch plays static only. The knobs don't wrap: a turn past
   the first or last position is ignored, with no static.
 - **MPD without a database:** unix socket only (`/tmp/radio-mpd.sock`), so
   tracks can be added as `file://` URIs. No music_directory, no `update`.

@@ -26,7 +26,7 @@ from mutagen.mp3 import MP3
 ROOT = Path(__file__).resolve().parent
 MUSIC, STATIC = ROOT / "music", ROOT / "static.flac"  # seamless loop built by `make static.flac`
 SOCK, CONF = "/tmp/radio-mpd.sock", Path("/tmp/radio-mpd.conf")
-EPOCHS, TICK = 3, 0.02
+TICK = 0.02
 PI_MODEL = Path("/proc/device-tree/model")
 ON_PI = PI_MODEL.exists() and "Raspberry Pi" in PI_MODEL.read_text()
 KEYS = {"\x1b[D": ("location", -1), "a": ("location", -1), "\x1b[C": ("location", 1), "d": ("location", 1),
@@ -69,22 +69,19 @@ class Station:
             pos -= d
 
 
-def scan() -> list[list[Station]]:
+def scan() -> tuple[list[str], list[str], list[list[Station | None]]]:
+    """Locations, epochs (union over all locations) and lib[loc][epoch]; None where a location lacks the epoch.
+    Only folders with mp3 files count."""
     if not STATIC.is_file():
         sys.exit(f"missing {STATIC}, run `make static.flac`")
-    lib = []
-    for loc in sorted(p for p in MUSIC.iterdir() if p.is_dir()):
-        epochs = sorted(p for p in loc.iterdir() if p.is_dir())
-        if len(epochs) != EPOCHS:
-            sys.exit(f"{loc.name}: expected {EPOCHS} epochs, found {[e.name for e in epochs]}")
-        lib.append([Station(f"{loc.name}/{ep.name}", [(t, MP3(t).info.length) for t in sorted(ep.glob("*.mp3"))])
-                    for ep in epochs])
-        for st in lib[-1]:
-            if not st.tracks:
-                sys.exit(f"{st.name}: no mp3 files")
-    if not lib:
-        sys.exit(f"no locations in {MUSIC}")
-    return lib
+    dirs = {d: sorted(d.glob("*.mp3")) for d in MUSIC.glob("*/*") if d.is_dir()}
+    dirs = {d: ts for d, ts in dirs.items() if ts}
+    if not dirs:
+        sys.exit(f"no mp3 files in {MUSIC}/<location>/<epoch>/")
+    locs, epochs = (sorted({d.parts[i] for d in dirs}) for i in (-2, -1))
+    lib = [[Station(f"{loc}/{ep}", [(t, MP3(t).info.length) for t in dirs[d]]) if (d := MUSIC / loc / ep) in dirs
+            else None for ep in epochs] for loc in locs]
+    return locs, epochs, lib
 
 
 def output_type() -> str:
@@ -147,11 +144,11 @@ def connect(partition: str | None = None) -> MPDClient:
 class Leds:
     """WLED on USB serial, JSON API. WLED keeps the state, so a frame is sent only when the selection changes."""
 
-    def __init__(self, port: str, locations: int):
+    def __init__(self, port: str, locations: int, epochs: int):
         self.locs, self.epochs = led_ranges("LED_LOCATIONS"), led_ranges("LED_EPOCHS")
-        if (len(self.locs), len(self.epochs)) != (locations, EPOCHS):
+        if (len(self.locs), len(self.epochs)) != (locations, epochs):
             sys.exit(f"LED_LOCATIONS has {len(self.locs)} ranges for {locations} locations, "
-                     f"LED_EPOCHS has {len(self.epochs)} for {EPOCHS} epochs")
+                     f"LED_EPOCHS has {len(self.epochs)} for {epochs} epochs")
         self.on, self.off = (os.environ[k] for k in ("LED_ON", "LED_OFF"))
         if not all(re.fullmatch(r"[0-9A-Fa-f]{6}", c) for c in (self.on, self.off)):
             sys.exit(f"LED_ON/LED_OFF must be RRGGBB hex, got {self.on}/{self.off}")
@@ -185,8 +182,8 @@ def led_ranges(key: str) -> list[tuple[int, int]]:
 
 
 class Radio:
-    def __init__(self, lib: list[list[Station]], leds: Leds | None):
-        self.lib, self.leds, self.loc, self.epoch = lib, leds, 0, 0
+    def __init__(self, locs: list[str], epochs: list[str], lib: list[list[Station | None]], leds: Leds | None):
+        self.locs, self.epochs, self.lib, self.leds, self.loc, self.epoch = locs, epochs, lib, leds, 0, 0
         self.fade, self.hold = float(os.environ["STATIC_FADE"]), float(os.environ["STATIC_HOLD"])
         if not (self.fade > 0 and self.hold > 0):  # hold > 0 keeps the station load inside the silence
             sys.exit(f"STATIC_FADE and STATIC_HOLD must be > 0, got {self.fade}/{self.hold}")
@@ -204,15 +201,18 @@ class Radio:
 
     def turn(self, knob: str, delta: int):
         with self.lock:
-            attr, count = ("loc", len(self.lib)) if knob == "location" else ("epoch", EPOCHS)
+            attr, count = ("loc", len(self.locs)) if knob == "location" else ("epoch", len(self.epochs))
             new = getattr(self, attr) + delta
             if not 0 <= new < count:  # no wrapping: turning past an end does nothing, not even static
-                log.info("%s %+d ignored, already at %s", knob, delta, self.lib[self.loc][self.epoch].name)
+                log.info("%s %+d ignored, already at %s", knob, delta, self.name())
                 return
             setattr(self, attr, new)
             self.last_turn = time.monotonic()
-            name = self.lib[self.loc][self.epoch].name
-        log.info("%s %+d -> %s", knob, delta, name)
+            name = self.name()
+        log.info("%s %+d -> %s%s", knob, delta, name, "" if self.lib[self.loc][self.epoch] else " (no station)")
+
+    def name(self) -> str:
+        return f"{self.locs[self.loc]}/{self.epochs[self.epoch]}"
 
     def load(self, st: Station):
         i, offset = st.live()
@@ -239,7 +239,8 @@ class Radio:
             if self.leds and pos != lit:  # the scale follows the knob right away, not after the static
                 self.leds.show(*pos)
                 lit = pos
-            tuning = time.monotonic() < last_turn + self.fade + self.hold
+            # no station at this location and epoch: static only
+            tuning = st is None or time.monotonic() < last_turn + self.fade + self.hold
             if not tuning and st is not loaded:  # music is silent by now: fade < fade + hold
                 self.load(st)
                 loaded = st
@@ -294,9 +295,10 @@ def main():
     syslog.setFormatter(logging.Formatter("%(levelname)s %(name)s: %(message)s"))
     logging.basicConfig(level=os.environ["LOG_LEVEL"], handlers=[console, syslog])
 
-    lib = scan()
-    for stations in lib:
-        log.info("library %s", ", ".join(f"{st.name} ({len(st.tracks)} tracks)" for st in stations))
+    locs, epochs, lib = scan()
+    for loc, stations in zip(locs, lib):
+        log.info("library %s: %s", loc, ", ".join(f"{ep} ({len(st.tracks) if st else 0} tracks)"
+                                                   for ep, st in zip(epochs, stations)))
     out = output_type()
     log.info("platform %s, raspberry pi: %s, mpd output: %s", sys.platform, ON_PI, out)
     if os.environ["PREVENT_SLEEP"] == "1":
@@ -304,13 +306,13 @@ def main():
     else:
         log.info("keep-awake off")
     if port := os.environ["WLED_PORT"]:
-        leds = Leds(port, len(lib))
+        leds = Leds(port, len(locs), len(epochs))
     else:
         leds = None
         log.info("leds off: WLED_PORT is empty")
     start_mpd(out)
 
-    radio = Radio(lib, leds)
+    radio = Radio(locs, epochs, lib, leds)
     if sys.stdin.isatty():
         keyboard(radio)
     encs = encoders(radio) if ON_PI else []  # noqa: F841 keep references alive
