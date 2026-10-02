@@ -20,6 +20,10 @@ are in `.env` (see `.env.example`).
   `(time.time() + crc32(name)) % total`. No per-station state, so switching back
   resumes "live". Each turn restarts the 2s static hold, so the new station
   loads only once the knob stops.
+- **Random walk:** after `WALK_IDLE` seconds without activity, or on T, the
+  radio hops between random stations (5–10s on each, 2–5s of static). It runs
+  in `run()`, so serial and MPD stay on one thread. Any knob or key returns
+  to normal mode, continuing from the station the walk stopped on.
 - **Library:** `music/<location>/<epoch>/*.mp3`, all sorted by name (use
   `01_Paris`-style prefixes). Only folders with MP3s count. The epoch knob
   spans the union of all locations' epoch folders, so the LED scale is the same for every location. A

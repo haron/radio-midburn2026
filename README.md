@@ -50,7 +50,7 @@ cp .env.example .env
 make run
 ```
 
-- Keyboard (in a terminal): ←/→ or A/D switch location, ↑/↓ or W/S switch epoch.
+- Keyboard (in a terminal): ←/→ or A/D switch location, ↑/↓ or W/S switch epoch, T starts the random walk.
   The knobs stop at the first and last position.
 - On the Pi, the KY-040 encoders work as well. Wire CLK/DT to the BCM pins in
   `.env`, `+` to 3.3V, and GND to GND.
@@ -80,6 +80,7 @@ involved.
 |:---|:---|
 | `PREVENT_SLEEP` | `1` keeps the machine awake while the radio runs |
 | `LOG_LEVEL` | `INFO`, or `DEBUG` to also log every MPD command |
+| `WALK_IDLE` | seconds of no activity before the random walk: a random station for 5–10s, then 2–5s of static, until a knob or key is touched |
 | `STATIC_FADE` | seconds of crossfade between music and static |
 | `STATIC_HOLD` | seconds of pure static after the last turn, must be \> 0; the new station starts `STATIC_FADE + STATIC_HOLD` after it |
 | `ENC_LOC_A/B`, `ENC_EPOCH_A/B` | encoder CLK/DT pins (Pi only) |

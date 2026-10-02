@@ -5,6 +5,7 @@ import json
 import logging
 import logging.handlers
 import os
+import random
 import re
 import socket
 import subprocess
@@ -27,6 +28,7 @@ ROOT = Path(__file__).resolve().parent
 MUSIC, STATIC = ROOT / "music", ROOT / "static.flac"  # seamless loop built by `make static.flac`
 SOCK, CONF = "/tmp/radio-mpd.sock", Path("/tmp/radio-mpd.conf")
 TICK = 0.02
+WALK_PLAY, WALK_STATIC = (5, 10), (2, 5)  # random walk: seconds on a station, then of static
 PI_MODEL = Path("/proc/device-tree/model")
 ON_PI = PI_MODEL.exists() and "Raspberry Pi" in PI_MODEL.read_text()
 KEYS = {"\x1b[D": ("location", -1), "a": ("location", -1), "\x1b[C": ("location", 1), "d": ("location", 1),
@@ -187,7 +189,10 @@ class Radio:
         self.fade, self.hold = float(os.environ["STATIC_FADE"]), float(os.environ["STATIC_HOLD"])
         if not (self.fade > 0 and self.hold > 0):  # hold > 0 keeps the station load inside the silence
             sys.exit(f"STATIC_FADE and STATIC_HOLD must be > 0, got {self.fade}/{self.hold}")
-        self.last_turn = time.monotonic()  # power-on tunes in through static
+        self.walk_idle = float(os.environ["WALK_IDLE"])
+        now = time.monotonic()
+        self.tune_until = now + self.fade + self.hold  # power-on tunes in through static
+        self.last_activity, self.walking, self.walk_next = now, False, 0.0
         self.lock = threading.Lock()
         self.music, self.static = connect(), connect("static")
         for c in (self.music, self.static):
@@ -199,7 +204,30 @@ class Radio:
         self.static.play()  # never paused: resuming reopens the ALSA device, which delays the static
         self.vol = {"music": 0.0, "static": 0.0}
 
+    def activity(self):
+        """Any knob or key: back to normal mode."""
+        with self.lock:
+            self.last_activity = time.monotonic()
+            if self.walking:
+                self.walking = False
+                log.info("random walk off")
+
+    def start_walk(self):
+        with self.lock:
+            if not self.walking:
+                self.walking, self.walk_next = True, time.monotonic()
+                log.info("random walk on")
+
+    def walk_step(self, now: float):
+        """Under the lock: jump to a random other station, through WALK_STATIC seconds of static."""
+        self.loc, self.epoch = random.choice([(li, ei) for li, row in enumerate(self.lib) for ei, st in enumerate(row)
+                                              if st and (li, ei) != (self.loc, self.epoch)])
+        self.tune_until = now + self.fade + random.uniform(*WALK_STATIC)
+        self.walk_next = self.tune_until + random.uniform(*WALK_PLAY)
+        log.info("random walk -> %s", self.name())
+
     def turn(self, knob: str, delta: int):
+        self.activity()
         with self.lock:
             attr, count = ("loc", len(self.locs)) if knob == "location" else ("epoch", len(self.epochs))
             new = getattr(self, attr) + delta
@@ -207,7 +235,7 @@ class Radio:
                 log.info("%s %+d ignored, already at %s", knob, delta, self.name())
                 return
             setattr(self, attr, new)
-            self.last_turn = time.monotonic()
+            self.tune_until = time.monotonic() + self.fade + self.hold
             name = self.name()
         log.info("%s %+d -> %s%s", knob, delta, name, "" if self.lib[self.loc][self.epoch] else " (no station)")
 
@@ -234,13 +262,18 @@ class Radio:
     def run(self):
         loaded, phase, lit = None, None, None
         while True:
+            now = time.monotonic()
+            if not self.walking and now > self.last_activity + self.walk_idle:
+                self.start_walk()
             with self.lock:
-                st, last_turn, pos = self.lib[self.loc][self.epoch], self.last_turn, (self.loc, self.epoch)
+                if self.walking and now >= self.walk_next:
+                    self.walk_step(now)
+                st, tune_until, pos = self.lib[self.loc][self.epoch], self.tune_until, (self.loc, self.epoch)
             if self.leds and pos != lit:  # the scale follows the knob right away, not after the static
                 self.leds.show(*pos)
                 lit = pos
             # no station at this location and epoch: static only
-            tuning = st is None or time.monotonic() < last_turn + self.fade + self.hold
+            tuning = st is None or now < tune_until
             if not tuning and st is not loaded:  # music is silent by now: fade < fade + hold
                 self.load(st)
                 loaded = st
@@ -266,11 +299,15 @@ def keyboard(radio: Radio):
     def read():
         while True:
             for key in re.findall(r"\x1b\[[A-D]|[^\x1b]", os.read(fd, 64).decode(errors="ignore")):
-                if (k := key if len(key) > 1 else key.lower()) in KEYS:
+                if (k := key if len(key) > 1 else key.lower()) == "t":
+                    radio.start_walk()
+                elif k in KEYS:
                     radio.turn(*KEYS[k])
+                else:
+                    radio.activity()
 
     threading.Thread(target=read, daemon=True).start()
-    log.info("keyboard on: <-/-> or A/D location, up/down or W/S epoch")
+    log.info("keyboard on: <-/-> or A/D location, up/down or W/S epoch, T random walk")
 
 
 def encoders(radio: Radio) -> list:
