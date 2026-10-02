@@ -98,6 +98,9 @@ involved.
 Design decisions: `AGENTS.md`.
 
 
-## Downloaded songs:
-Full catalog defined in ./songs.json and organized by city, then era (such as "1950s" or "1980s"). Each era contains an array of song records.
+## Songs
+
+`songs.json`: location → epoch (`1_early`, `2_middle`, `3_modern`) → 3 songs.
+`uv run download.py` fetches the missing ones into `music/` (first YouTube
+search hit, needs ffmpeg).
 [archive](https://drive.google.com/file/d/1AcYtEuLTQwYhTQlg3ZpNMd7gsZxThM4N/view?usp=drive_link)

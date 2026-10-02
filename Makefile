@@ -25,7 +25,7 @@ provision:
 	./provision.sh pinky.tailab2d8.ts.net
 
 deploy: static.flac
-	rsync -F .rsync-filter  -av . pinky.tailab2d8.ts.net:/opt/radio
+	rsync -F .rsync-filter --delete -av . pinky.tailab2d8.ts.net:/opt/radio
 	ssh pinky.tailab2d8.ts.net 'uv --directory /opt/radio sync && systemctl daemon-reload && systemctl restart radio'
 	ssh pinky.tailab2d8.ts.net systemctl restart radio
 
@@ -35,3 +35,7 @@ remote: upload
 
 logs:
 	ssh pinky.tailab2d8.ts.net journalctl -n100 -f -u radio
+
+stop:
+	ssh pinky.tailab2d8.ts.net systemctl stop radio
+

@@ -6,7 +6,7 @@ IFS=$'\n\t'
 
 for HOST; do
     ssh $HOST <<EOT
-        apt install -y mpd ffmpeg vim
+        apt install -y mpd ffmpeg vim dstat
         systemctl disable --now mpd mpd.socket
         [[ -f /usr/bin/tailscale ]] \
             || { curl -fsSL https://tailscale.com/install.sh | sh; tailscale up; }

@@ -1,2393 +1,690 @@
 {
   "London": {
-    "1950s": [
-      {
-        "artist": "Lonnie Donegan",
-        "title": "Rock Island Line",
-        "year": 1955,
-        "original_album": "—",
-        "artist_title_year": "Lonnie Donegan — Rock Island Line (1955)",
-        "youtube_direct": "https://www.youtube.com/watch?v=wI4nRD-DRpk"
-      },
-      {
-        "artist": "Cliff Richard",
-        "title": "Move It",
-        "year": 1958,
-        "original_album": "—",
-        "artist_title_year": "Cliff Richard — Move It (1958)",
-        "youtube_direct": "https://www.youtube.com/watch?v=DwbJto2yx-0"
-      },
-      {
-        "artist": "Tommy Steele",
-        "title": "Singing the Blues",
-        "year": 1957,
-        "original_album": "—",
-        "artist_title_year": "Tommy Steele — Singing the Blues (1957)",
-        "youtube_direct": "https://www.youtube.com/watch?v=vshFkkxXITo"
-      }
-    ],
-    "1960s": [
-      {
-        "artist": "The Beatles",
-        "title": "Hey Jude",
-        "year": 1968,
-        "original_album": "—",
-        "artist_title_year": "The Beatles — Hey Jude (1968)",
-        "youtube_direct": "https://www.youtube.com/watch?v=oLVywY5EwoA"
-      },
+    "1_early": [
       {
         "artist": "The Rolling Stones",
         "title": "(I Can't Get No) Satisfaction",
-        "year": 1965,
-        "original_album": "Out of Our Heads (US издание)",
-        "artist_title_year": "The Rolling Stones — (I Can't Get No) Satisfaction (1965)",
-        "youtube_direct": "https://www.youtube.com/watch?v=nrIPxlFzDi0"
+        "year": 1965
       },
       {
-        "artist": "The Who",
-        "title": "My Generation",
-        "year": 1965,
-        "original_album": "My Generation",
-        "artist_title_year": "The Who — My Generation (1965)",
-        "youtube_direct": "https://www.youtube.com/watch?v=YRccl9vaais"
+        "artist": "The Kinks",
+        "title": "Waterloo Sunset",
+        "year": 1967
+      },
+      {
+        "artist": "The Beatles",
+        "title": "Hey Jude",
+        "year": 1968
       }
     ],
-    "1970s": [
+    "2_middle": [
       {
         "artist": "Queen",
         "title": "Bohemian Rhapsody",
-        "year": 1975,
-        "original_album": "A Night at the Opera",
-        "artist_title_year": "Queen — Bohemian Rhapsody (1975)",
-        "youtube_direct": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ"
+        "year": 1975
       },
       {
-        "artist": "Led Zeppelin",
-        "title": "Stairway to Heaven",
-        "year": 1971,
-        "original_album": "Led Zeppelin IV",
-        "artist_title_year": "Led Zeppelin — Stairway to Heaven (1971)",
-        "youtube_direct": "https://www.youtube.com/watch?v=QkF3oxziUI4"
-      },
-      {
-        "artist": "Sex Pistols",
-        "title": "Anarchy in the UK",
-        "year": 1976,
-        "original_album": "—",
-        "artist_title_year": "Sex Pistols — Anarchy in the UK (1976)",
-        "youtube_direct": "https://www.youtube.com/watch?v=q31WY0Aobro"
-      }
-    ],
-    "1980s": [
-      {
-        "artist": "Duran Duran",
-        "title": "Hungry Like the Wolf",
-        "year": 1982,
-        "original_album": "Rio",
-        "artist_title_year": "Duran Duran — Hungry Like the Wolf (1982)",
-        "youtube_direct": "https://www.youtube.com/watch?v=oJL-lCzEXgI"
-      },
-      {
-        "artist": "The Cure",
-        "title": "Just Like Heaven",
-        "year": 1987,
-        "original_album": "Kiss Me, Kiss Me, Kiss Me",
-        "artist_title_year": "The Cure — Just Like Heaven (1987)",
-        "youtube_direct": "https://www.youtube.com/watch?v=n3nPiBai66M"
+        "artist": "The Clash",
+        "title": "London Calling",
+        "year": 1979
       },
       {
         "artist": "Wham!",
-        "title": "Last Christmas",
-        "year": 1984,
-        "original_album": "—",
-        "artist_title_year": "Wham! — Last Christmas (1984)",
-        "youtube_direct": "https://www.youtube.com/watch?v=E8gmARGvPlI"
+        "title": "Wake Me Up Before You Go-Go",
+        "year": 1984
       }
     ],
-    "1990s": [
-      {
-        "artist": "Oasis",
-        "title": "Wonderwall",
-        "year": 1995,
-        "original_album": "(What's the Story) Morning Glory?",
-        "artist_title_year": "Oasis — Wonderwall (1995)",
-        "youtube_direct": "https://www.youtube.com/watch?v=6hzrDeceEKc"
-      },
-      {
-        "artist": "Blur",
-        "title": "Song 2",
-        "year": 1997,
-        "original_album": "Blur",
-        "artist_title_year": "Blur — Song 2 (1997)",
-        "youtube_direct": "https://www.youtube.com/watch?v=SSbBvKaM6sk"
-      },
-      {
-        "artist": "Spice Girls",
-        "title": "Wannabe",
-        "year": 1996,
-        "original_album": "Spice",
-        "artist_title_year": "Spice Girls — Wannabe (1996)",
-        "youtube_direct": "https://www.youtube.com/watch?v=gJLIiF15wjQ"
-      }
-    ],
-    "2000s": [
-      {
-        "artist": "Coldplay",
-        "title": "Clocks",
-        "year": 2002,
-        "original_album": "A Rush of Blood to the Head",
-        "artist_title_year": "Coldplay — Clocks (2002)",
-        "youtube_direct": "https://www.youtube.com/watch?v=d020hcWA_Wg"
-      },
+    "3_modern": [
       {
         "artist": "Amy Winehouse",
         "title": "Rehab",
-        "year": 2006,
-        "original_album": "Back to Black",
-        "artist_title_year": "Amy Winehouse — Rehab (2006)",
-        "youtube_direct": "https://www.youtube.com/watch?v=KUmZp8pR1uc"
+        "year": 2006
       },
-      {
-        "artist": "Arctic Monkeys",
-        "title": "I Bet You Look Good on the Dancefloor",
-        "year": 2005,
-        "original_album": "Whatever People Say I Am, That's What I'm Not",
-        "artist_title_year": "Arctic Monkeys — I Bet You Look Good on the Dancefloor (2005)",
-        "youtube_direct": "https://www.youtube.com/watch?v=CYpn8yUnX_c"
-      }
-    ],
-    "2010s-2020s": [
       {
         "artist": "Adele",
         "title": "Rolling in the Deep",
-        "year": 2010,
-        "original_album": "21 (2011)",
-        "artist_title_year": "Adele — Rolling in the Deep (2010)",
-        "youtube_direct": "https://www.youtube.com/watch?v=rYEDA3JcQqw"
+        "year": 2010
       },
       {
         "artist": "Dua Lipa",
         "title": "Don't Start Now",
-        "year": 2019,
-        "original_album": "Future Nostalgia (2020)",
-        "artist_title_year": "Dua Lipa — Don't Start Now (2019)",
-        "youtube_direct": "https://www.youtube.com/watch?v=oygrmJFKYZY"
-      },
-      {
-        "artist": "Ed Sheeran",
-        "title": "Shape of You",
-        "year": 2017,
-        "original_album": "÷ (Divide)",
-        "artist_title_year": "Ed Sheeran — Shape of You (2017)",
-        "youtube_direct": "https://www.youtube.com/watch?v=JGwWNGJdvx8"
+        "year": 2019
       }
     ]
   },
   "Paris": {
-    "1950s": [
+    "1_early": [
       {
         "artist": "Édith Piaf",
-        "title": "La Foule",
-        "year": 1957,
-        "original_album": "—",
-        "artist_title_year": "Édith Piaf — La Foule (1957)",
-        "youtube_direct": "https://www.youtube.com/watch?v=Fgn8gZHJZzA"
+        "title": "Non, je ne regrette rien",
+        "year": 1960
       },
       {
-        "artist": "Georges Brassens",
-        "title": "Le Gorille",
-        "year": 1952,
-        "original_album": "Georges Brassens",
-        "artist_title_year": "Georges Brassens — Le Gorille (1952)",
-        "youtube_direct": "https://www.youtube.com/watch?v=y5Hb5I67Qpc"
+        "artist": "Charles Aznavour",
+        "title": "La Bohème",
+        "year": 1965
       },
       {
-        "artist": "Charles Trenet",
-        "title": "La Mer",
-        "year": 1946,
-        "original_album": "—",
-        "artist_title_year": "Charles Trenet — La Mer (1946)",
-        "youtube_direct": "https://www.youtube.com/watch?v=fztkUuunI7g"
+        "artist": "Joe Dassin",
+        "title": "Les Champs-Élysées",
+        "year": 1969
       }
     ],
-    "1960s": [
-      {
-        "artist": "Jacques Brel",
-        "title": "Amsterdam",
-        "year": 1964,
-        "original_album": "—",
-        "artist_title_year": "Jacques Brel — Amsterdam (1964)",
-        "youtube_direct": "https://www.youtube.com/watch?v=V3BSj1cHX-M"
-      },
-      {
-        "artist": "Françoise Hardy",
-        "title": "Tous les garçons et les filles",
-        "year": 1962,
-        "original_album": "Tous les garçons et les filles",
-        "artist_title_year": "Françoise Hardy — Tous les garçons et les filles (1962)",
-        "youtube_direct": "https://www.youtube.com/watch?v=m94_C8Z7wLk"
-      },
-      {
-        "artist": "Serge Gainsbourg & Jane Birkin",
-        "title": "Je t'aime... moi non plus",
-        "year": 1969,
-        "original_album": "Jane Birkin/Serge Gainsbourg",
-        "artist_title_year": "Serge Gainsbourg & Jane Birkin — Je t'aime... moi non plus (1969)",
-        "youtube_direct": "https://www.youtube.com/watch?v=GlpDf6XX_j0"
-      }
-    ],
-    "1970s": [
-      {
-        "artist": "Claude François",
-        "title": "Alexandrie Alexandra",
-        "year": 1978,
-        "original_album": "—",
-        "artist_title_year": "Claude François — Alexandrie Alexandra (1978)",
-        "youtube_direct": "https://www.youtube.com/watch?v=ZRaOzXS1slI"
-      },
+    "2_middle": [
       {
         "artist": "Dalida & Alain Delon",
         "title": "Paroles, paroles",
-        "year": 1973,
-        "original_album": "Paroles, paroles",
-        "artist_title_year": "Dalida & Alain Delon — Paroles, paroles (1973)",
-        "youtube_direct": "https://www.youtube.com/watch?v=LYAvhujK4nA"
+        "year": 1973
       },
       {
-        "artist": "Jean-Michel Jarre",
-        "title": "Oxygène (Part IV)",
-        "year": 1976,
-        "original_album": "Oxygène",
-        "artist_title_year": "Jean-Michel Jarre — Oxygène (Part IV) (1976)",
-        "youtube_direct": "https://www.youtube.com/watch?v=kSIMVnPA994"
+        "artist": "Claude François",
+        "title": "Alexandrie Alexandra",
+        "year": 1977
+      },
+      {
+        "artist": "Vanessa Paradis",
+        "title": "Joe le taxi",
+        "year": 1987
       }
     ],
-    "1980s": [
-      {
-        "artist": "Mylène Farmer",
-        "title": "Libertine",
-        "year": 1986,
-        "original_album": "Cendres de Lune",
-        "artist_title_year": "Mylène Farmer — Libertine (1986)",
-        "youtube_direct": "https://www.youtube.com/watch?v=oGFr_NcKyfo"
-      },
-      {
-        "artist": "Indochine",
-        "title": "L'Aventurier",
-        "year": 1982,
-        "original_album": "Le Péril Jaune",
-        "artist_title_year": "Indochine — L'Aventurier (1982)",
-        "youtube_direct": "https://www.youtube.com/watch?v=M7X6oYg6iro"
-      },
-      {
-        "artist": "Jean-Michel Jarre",
-        "title": "Zoolook",
-        "year": 1984,
-        "original_album": "Zoolook",
-        "artist_title_year": "Jean-Michel Jarre — Zoolook (1984)",
-        "youtube_direct": "https://www.youtube.com/watch?v=-F36bJ57TmM"
-      }
-    ],
-    "1990s": [
-      {
-        "artist": "Daft Punk",
-        "title": "Around the World",
-        "year": 1997,
-        "original_album": "Homework",
-        "artist_title_year": "Daft Punk — Around the World (1997)",
-        "youtube_direct": "https://www.youtube.com/watch?v=K0HSD_i2DvA"
-      },
-      {
-        "artist": "MC Solaar",
-        "title": "Caroline",
-        "year": 1994,
-        "original_album": "Prose Combat",
-        "artist_title_year": "MC Solaar — Caroline (1994)",
-        "youtube_direct": "https://www.youtube.com/watch?v=5_OZuEwqpbo"
-      },
-      {
-        "artist": "Air",
-        "title": "Sexy Boy",
-        "year": 1998,
-        "original_album": "Moon Safari",
-        "artist_title_year": "Air — Sexy Boy (1998)",
-        "youtube_direct": "https://www.youtube.com/watch?v=wouKI_myXxk"
-      }
-    ],
-    "2000s": [
+    "3_modern": [
       {
         "artist": "Daft Punk",
         "title": "One More Time",
-        "year": 2001,
-        "original_album": "Discovery",
-        "artist_title_year": "Daft Punk — One More Time (2001)",
-        "youtube_direct": "https://www.youtube.com/watch?v=FGBhQbmPwH8"
+        "year": 2000
       },
       {
-        "artist": "Phoenix",
-        "title": "1901",
-        "year": 2009,
-        "original_album": "Wolfgang Amadeus Phoenix",
-        "artist_title_year": "Phoenix — 1901 (2009)",
-        "youtube_direct": "https://www.youtube.com/watch?v=36_4xjLFjM0"
+        "artist": "Indila",
+        "title": "Dernière danse",
+        "year": 2013
       },
       {
-        "artist": "David Guetta",
-        "title": "When Love Takes Over",
-        "year": 2009,
-        "original_album": "One Love",
-        "artist_title_year": "David Guetta — When Love Takes Over (2009)",
-        "youtube_direct": "https://www.youtube.com/watch?v=zudbz4hOcbc"
-      }
-    ],
-    "2010s-2020s": [
-      {
-        "artist": "Stromae",
-        "title": "Papaoutai",
-        "year": 2013,
-        "original_album": "Racine carrée",
-        "artist_title_year": "Stromae — Papaoutai (2013)",
-        "youtube_direct": "https://www.youtube.com/watch?v=oiKj0Z_Xnjc"
-      },
-      {
-        "artist": "Christine and the Queens",
-        "title": "Tilted (Christine)",
-        "year": 2016,
-        "original_album": "Chaleur Humaine (2014 FR / 2016 межд.)",
-        "artist_title_year": "Christine and the Queens — Tilted (Christine) (2016)",
-        "youtube_direct": "https://www.youtube.com/watch?v=9RBzsjga73s"
-      },
-      {
-        "artist": "Angèle",
-        "title": "Balance ton quoi",
-        "year": 2019,
-        "original_album": "Brol (2018)",
-        "artist_title_year": "Angèle — Balance ton quoi (2019)",
-        "youtube_direct": "http://youtube.com/watch?v=Hi7Rx3En7-k"
+        "artist": "Aya Nakamura",
+        "title": "Djadja",
+        "year": 2018
       }
     ]
   },
   "Berlin": {
-    "1950s": [
+    "1_early": [
       {
-        "artist": "Caterina Valente",
-        "title": "Ganz Paris träumt von der Liebe",
-        "year": 1954,
-        "original_album": "—",
-        "artist_title_year": "Caterina Valente — Ganz Paris träumt von der Liebe (1954)",
-        "youtube_direct": "https://www.youtube.com/watch?v=kjRV7bcL0MU"
+        "artist": "Marlene Dietrich",
+        "title": "Ich hab noch einen Koffer in Berlin",
+        "year": 1957
       },
-      {
-        "artist": "Freddy Quinn",
-        "title": "Junge, komm bald wieder",
-        "year": 1958,
-        "original_album": "—",
-        "artist_title_year": "Freddy Quinn — Junge, komm bald wieder (1958)",
-        "youtube_direct": "https://www.youtube.com/watch?v=6Ag3QNdomuQ"
-      },
-      {
-        "artist": "Peter Kraus",
-        "title": "Sugar Baby",
-        "year": 1958,
-        "original_album": "—",
-        "artist_title_year": "Peter Kraus — Sugar Baby (1958)",
-        "youtube_direct": "https://www.youtube.com/watch?v=-9R3_53qe08"
-      }
-    ],
-    "1960s": [
       {
         "artist": "Drafi Deutscher",
         "title": "Marmor, Stein und Eisen bricht",
-        "year": 1965,
-        "original_album": "—",
-        "artist_title_year": "Drafi Deutscher — Marmor, Stein und Eisen bricht (1965)",
-        "youtube_direct": "https://www.youtube.com/watch?v=_74YzFnQbzg"
+        "year": 1965
       },
       {
-        "artist": "Manuela",
-        "title": "Schuld war nur der Bossa Nova",
-        "year": 1963,
-        "original_album": "—",
-        "artist_title_year": "Manuela — Schuld war nur der Bossa Nova (1963)",
-        "youtube_direct": "https://www.youtube.com/watch?v=jo0z_mFITTg"
-      },
-      {
-        "artist": "Roy Black",
-        "title": "Ganz in Weiß",
-        "year": 1966,
-        "original_album": "—",
-        "artist_title_year": "Roy Black — Ganz in Weiß (1966)",
-        "youtube_direct": "https://www.youtube.com/watch?v=e1czXeGFgxM"
+        "artist": "Hildegard Knef",
+        "title": "Für mich soll's rote Rosen regnen",
+        "year": 1968
       }
     ],
-    "1970s": [
+    "2_middle": [
       {
-        "artist": "Tangerine Dream",
-        "title": "Phaedra",
-        "year": 1974,
-        "original_album": "Phaedra",
-        "artist_title_year": "Tangerine Dream — Phaedra (1974)",
-        "youtube_direct": "https://www.youtube.com/watch?v=_zB0AiYiN80"
-      },
-      {
-        "artist": "Nina Hagen (как «Automobil»)",
-        "title": "Du hast den Farbfilm vergessen",
-        "year": 1974,
-        "original_album": "—",
-        "artist_title_year": "Nina Hagen (как «Automobil») — Du hast den Farbfilm vergessen (1974)",
-        "youtube_direct": "https://www.youtube.com/watch?v=uznGMXBqK_c"
-      },
-      {
-        "artist": "Ton Steine Scherben",
-        "title": "Keine Macht für Niemand",
-        "year": 1972,
-        "original_album": "Keine Macht für Niemand",
-        "artist_title_year": "Ton Steine Scherben — Keine Macht für Niemand (1972)",
-        "youtube_direct": "https://www.youtube.com/watch?v=If86BGq46TE"
-      }
-    ],
-    "1980s": [
-      {
-        "artist": "Einstürzende Neubauten",
-        "title": "Kollaps",
-        "year": 1981,
-        "original_album": "Kollaps",
-        "artist_title_year": "Einstürzende Neubauten — Kollaps (1981)",
-        "youtube_direct": "https://www.youtube.com/watch?v=D386m-oWGQQ"
+        "artist": "David Bowie",
+        "title": "Heroes",
+        "year": 1977
       },
       {
         "artist": "Ideal",
-        "title": "Blaue Augen",
-        "year": 1980,
-        "original_album": "Ideal",
-        "artist_title_year": "Ideal — Blaue Augen (1980)",
-        "youtube_direct": "https://www.youtube.com/watch?v=zbaTJDnDRuY"
+        "title": "Berlin",
+        "year": 1980
       },
       {
         "artist": "Nena",
         "title": "99 Luftballons",
-        "year": 1983,
-        "original_album": "99 Luftballons",
-        "artist_title_year": "Nena — 99 Luftballons (1983)",
-        "youtube_direct": "https://www.youtube.com/watch?v=Fpu5a0Bl8eY"
+        "year": 1983
       }
     ],
-    "1990s": [
-      {
-        "artist": "Rammstein",
-        "title": "Du hast",
-        "year": 1997,
-        "original_album": "Sehnsucht",
-        "artist_title_year": "Rammstein — Du hast (1997)",
-        "youtube_direct": "https://www.youtube.com/watch?v=W3q8Od5qJio"
-      },
-      {
-        "artist": "Paul van Dyk",
-        "title": "For An Angel",
-        "year": 1998,
-        "original_album": "—",
-        "artist_title_year": "Paul van Dyk — For An Angel (1998)",
-        "youtube_direct": "https://www.youtube.com/watch?v=--3eIRSg2RY"
-      },
-      {
-        "artist": "Dr. Motte & WestBam",
-        "title": "Sunshine (Love Parade 1997)",
-        "year": 1997,
-        "original_album": "—",
-        "artist_title_year": "Dr. Motte & WestBam — Sunshine (Love Parade 1997) (1997)",
-        "youtube_direct": "https://www.youtube.com/watch?v=csdw2dcKdlo"
-      }
-    ],
-    "2000s": [
-      {
-        "artist": "Peaches",
-        "title": "Fuck the Pain Away",
-        "year": 2000,
-        "original_album": "The Teaches of Peaches",
-        "artist_title_year": "Peaches — Fuck the Pain Away (2000)",
-        "youtube_direct": "https://www.youtube.com/watch?v=ZAEf10843_A"
-      },
+    "3_modern": [
       {
         "artist": "Seeed",
         "title": "Dickes B",
-        "year": 2001,
-        "original_album": "New Dubby Conquerors",
-        "artist_title_year": "Seeed — Dickes B (2001)",
-        "youtube_direct": "https://www.youtube.com/watch?v=GYK-NfOo7b4"
-      },
-      {
-        "artist": "Paul Kalkbrenner",
-        "title": "Torted",
-        "year": 2008,
-        "original_album": "Icke Wieder",
-        "artist_title_year": "Paul Kalkbrenner — Torted (2008)",
-        "youtube_direct": "https://www.youtube.com/watch?v=gNfCf-Os2zs"
-      }
-    ],
-    "2010s-2020s": [
-      {
-        "artist": "Bonez MC & RAF Camora",
-        "title": "Palmen aus Plastik",
-        "year": 2016,
-        "original_album": "Palmen aus Plastik",
-        "artist_title_year": "Bonez MC & RAF Camora — Palmen aus Plastik (2016)",
-        "youtube_direct": "https://www.youtube.com/watch?v=7_tWN9Iei7Y"
+        "year": 2001
       },
       {
         "artist": "Peter Fox",
-        "title": "Zukunft Pink",
-        "year": 2021,
-        "original_album": "Love Songs",
-        "artist_title_year": "Peter Fox — Zukunft Pink (2021)",
-        "youtube_direct": "https://www.youtube.com/watch?v=kNT87WiK1dg"
+        "title": "Schwarz zu blau",
+        "year": 2008
       },
       {
-        "artist": "Rammstein",
-        "title": "Deutschland",
-        "year": 2019,
-        "original_album": "Rammstein",
-        "artist_title_year": "Rammstein — Deutschland (2019)",
-        "youtube_direct": "https://www.youtube.com/watch?v=NeQM1c-XCDc"
+        "artist": "Paul Kalkbrenner",
+        "title": "Sky and Sand",
+        "year": 2008
       }
     ]
   },
   "Rome": {
-    "1950s": [
+    "1_early": [
+      {
+        "artist": "Renato Rascel",
+        "title": "Arrivederci Roma",
+        "year": 1955
+      },
       {
         "artist": "Domenico Modugno",
-        "title": "Nel blu dipinto di blu (Volare)",
-        "year": 1958,
-        "original_album": "—",
-        "artist_title_year": "Domenico Modugno — Nel blu dipinto di blu (Volare) (1958)",
-        "youtube_direct": "https://www.youtube.com/watch?v=-UkhT0N1aiI"
-      },
-      {
-        "artist": "Renato Carosone",
-        "title": "Tu Vuo' Fa' L'Americano",
-        "year": 1956,
-        "original_album": "—",
-        "artist_title_year": "Renato Carosone — Tu Vuo' Fa' L'Americano (1956)",
-        "youtube_direct": "https://www.youtube.com/watch?v=ziiqEDjzrsY"
-      },
-      {
-        "artist": "Claudio Villa",
-        "title": "Buongiorno tristezza (Sanremo 1955)",
-        "year": 1955,
-        "original_album": "—",
-        "artist_title_year": "Claudio Villa — Buongiorno tristezza (Sanremo 1955) (1955)",
-        "youtube_direct": "https://www.youtube.com/watch?v=Z-gTJuVaKY0"
-      }
-    ],
-    "1960s": [
-      {
-        "artist": "Mina",
-        "title": "Il cielo in una stanza",
-        "year": 1960,
-        "original_album": "—",
-        "artist_title_year": "Mina — Il cielo in una stanza (1960)",
-        "youtube_direct": "https://www.youtube.com/watch?v=VkLxROfo2AA"
+        "title": "Nel blu dipinto di blu",
+        "year": 1958
       },
       {
         "artist": "Adriano Celentano",
-        "title": "Il ragazzo della via Gluck",
-        "year": 1966,
-        "original_album": "—",
-        "artist_title_year": "Adriano Celentano — Il ragazzo della via Gluck (1966)",
-        "youtube_direct": "https://www.youtube.com/watch?v=PAwjmpxXEh4"
-      },
-      {
-        "artist": "Gianni Morandi",
-        "title": "In ginocchio da te",
-        "year": 1964,
-        "original_album": "In ginocchio da te",
-        "artist_title_year": "Gianni Morandi — In ginocchio da te (1964)",
-        "youtube_direct": "https://www.youtube.com/watch?v=aPJAtfS0O6k"
+        "title": "Azzurro",
+        "year": 1968
       }
     ],
-    "1970s": [
+    "2_middle": [
       {
-        "artist": "Lucio Battisti",
-        "title": "Il mio canto libero",
-        "year": 1972,
-        "original_album": "Il mio canto libero",
-        "artist_title_year": "Lucio Battisti — Il mio canto libero (1972)",
-        "youtube_direct": "https://www.youtube.com/watch?v=UtUHEsPfjjE"
+        "artist": "Antonello Venditti",
+        "title": "Roma capoccia",
+        "year": 1972
       },
       {
-        "artist": "Rino Gaetano",
-        "title": "Ma il cielo è sempre più blu",
-        "year": 1975,
-        "original_album": "Mà il cielo è sempre più blu",
-        "artist_title_year": "Rino Gaetano — Ma il cielo è sempre più blu (1975)",
-        "youtube_direct": "https://www.youtube.com/watch?v=rfaihaFlcSg"
+        "artist": "Ricchi e Poveri",
+        "title": "Sarà perché ti amo",
+        "year": 1981
       },
       {
-        "artist": "Premiata Forneria Marconi (PFM)",
-        "title": "Impressioni di Settembre",
-        "year": 1972,
-        "original_album": "Storia di un minuto",
-        "artist_title_year": "Premiata Forneria Marconi (PFM) — Impressioni di Settembre (1972)",
-        "youtube_direct": "https://www.youtube.com/watch?v=hgJQHvWGpRI"
+        "artist": "Toto Cutugno",
+        "title": "L'italiano",
+        "year": 1983
       }
     ],
-    "1980s": [
+    "3_modern": [
       {
-        "artist": "Vasco Rossi",
-        "title": "Vita spericolata",
-        "year": 1983,
-        "original_album": "Bollicine",
-        "artist_title_year": "Vasco Rossi — Vita spericolata (1983)",
-        "youtube_direct": "https://www.youtube.com/watch?v=6uFH8ibZh0Q"
-      },
-      {
-        "artist": "Zucchero",
-        "title": "Donne",
-        "year": 1985,
-        "original_album": "Zucchero & The Randy Jackson Band",
-        "artist_title_year": "Zucchero — Donne (1985)",
-        "youtube_direct": "https://www.youtube.com/watch?v=2u77HPQo00s"
-      },
-      {
-        "artist": "Eros Ramazzotti",
-        "title": "Terra Promessa",
-        "year": 1984,
-        "original_album": "Cuori agitati",
-        "artist_title_year": "Eros Ramazzotti — Terra Promessa (1984)",
-        "youtube_direct": "https://www.youtube.com/watch?v=IKtEwPcImVc"
-      }
-    ],
-    "1990s": [
-      {
-        "artist": "Laura Pausini",
-        "title": "La solitudine",
-        "year": 1993,
-        "original_album": "Laura Pausini",
-        "artist_title_year": "Laura Pausini — La solitudine (1993)",
-        "youtube_direct": "https://www.youtube.com/watch?v=FpOEN93LX-E"
-      },
-      {
-        "artist": "Eros Ramazzotti",
-        "title": "Più Bella Cosa",
-        "year": 1996,
-        "original_album": "Dove c'è musica",
-        "artist_title_year": "Eros Ramazzotti — Più Bella Cosa (1996)",
-        "youtube_direct": "https://www.youtube.com/watch?v=eTOKcxIujgE"
-      },
-      {
-        "artist": "Andrea Bocelli & Sarah Brightman",
-        "title": "Time to Say Goodbye",
-        "year": 1996,
-        "original_album": "—",
-        "artist_title_year": "Andrea Bocelli & Sarah Brightman — Time to Say Goodbye (1996)",
-        "youtube_direct": "https://www.youtube.com/watch?v=qjzJYa7tHLs"
-      }
-    ],
-    "2000s": [
-      {
-        "artist": "Tiziano Ferro",
-        "title": "Perdono",
-        "year": 2001,
-        "original_album": "Rosso relativo",
-        "artist_title_year": "Tiziano Ferro — Perdono (2001)",
-        "youtube_direct": "https://www.youtube.com/watch?v=7ddclyw9F-8"
-      },
-      {
-        "artist": "Negramaro",
-        "title": "Mentre tutto scorre",
-        "year": 2005,
-        "original_album": "Mentre tutto scorre",
-        "artist_title_year": "Negramaro — Mentre tutto scorre (2005)",
-        "youtube_direct": "https://www.youtube.com/watch?v=QJGjZdjXaq8"
-      },
-      {
-        "artist": "Jovanotti",
-        "title": "A te",
-        "year": 2008,
-        "original_album": "Safari",
-        "artist_title_year": "Jovanotti — A te (2008)",
-        "youtube_direct": "https://www.youtube.com/watch?v=63np8o8otMg"
-      }
-    ],
-    "2010s-2020s": [
-      {
-        "artist": "Måneskin",
-        "title": "Zitti e Buoni",
-        "year": 2021,
-        "original_album": "Teatro d'ira - Vol. I",
-        "artist_title_year": "Måneskin — Zitti e Buoni (2021)",
-        "youtube_direct": "https://www.youtube.com/watch?v=QN1odfjtMoo"
-      },
-      {
-        "artist": "Sfera Ebbasta",
-        "title": "Rockstar",
-        "year": 2018,
-        "original_album": "Rockstar",
-        "artist_title_year": "Sfera Ebbasta — Rockstar (2018)",
-        "youtube_direct": "https://www.youtube.com/watch?v=x8fDlAunwAE"
+        "artist": "Francesco Gabbani",
+        "title": "Occidentali's Karma",
+        "year": 2017
       },
       {
         "artist": "Mahmood",
         "title": "Soldi",
-        "year": 2019,
-        "original_album": "—",
-        "artist_title_year": "Mahmood — Soldi (2019)",
-        "youtube_direct": "https://www.youtube.com/watch?v=22lISUXgSUw"
+        "year": 2019
+      },
+      {
+        "artist": "Måneskin",
+        "title": "Zitti e buoni",
+        "year": 2021
       }
     ]
   },
   "Moscow": {
-    "1950s": [
+    "1_early": [
       {
-        "artist": "Владимир Трошин",
-        "title": "Подмосковные вечера",
-        "year": 1956,
-        "original_album": "—",
-        "artist_title_year": "Владимир Трошин — Подмосковные вечера (1956)",
-        "youtube_direct": "https://www.youtube.com/watch?v=h8unRDS7LGg"
+        "artist": "Vladimir Troshin",
+        "title": "Podmoskovnye vechera",
+        "year": 1956
       },
       {
-        "artist": "Марк Бернес",
-        "title": "Я люблю тебя, жизнь",
-        "year": 1956,
-        "original_album": "—",
-        "artist_title_year": "Марк Бернес — Я люблю тебя, жизнь (1956)",
-        "youtube_direct": "https://www.youtube.com/watch?v=qpboo_0YJQw"
+        "artist": "Nikita Mikhalkov",
+        "title": "Ya shagayu po Moskve",
+        "year": 1963
       },
       {
-        "artist": "Клавдия Шульженко",
-        "title": "Три вальса",
-        "year": 1956,
-        "original_album": "—",
-        "artist_title_year": "Клавдия Шульженко — Три вальса (1956)",
-        "youtube_direct": "https://www.youtube.com/watch?v=d8JpWW2Vi1Y"
+        "artist": "Muslim Magomaev",
+        "title": "Luchshiy gorod Zemli",
+        "year": 1964
       }
     ],
-    "1960s": [
+    "2_middle": [
       {
-        "artist": "Муслим Магомаев",
-        "title": "Свадьба",
-        "year": 1968,
-        "original_album": "—",
-        "artist_title_year": "Муслим Магомаев — Свадьба (1968)",
-        "youtube_direct": "https://www.youtube.com/watch?v=2cCkwzBuC00"
+        "artist": "Mashina Vremeni",
+        "title": "Povorot",
+        "year": 1979
       },
       {
-        "artist": "Эдита Пьеха",
-        "title": "Огромное небо",
-        "year": 1968,
-        "original_album": "—",
-        "artist_title_year": "Эдита Пьеха — Огромное небо (1968)",
-        "youtube_direct": "https://www.youtube.com/watch?v=H1hbjsqPAIc"
+        "artist": "Alla Pugacheva",
+        "title": "Million alykh roz",
+        "year": 1982
       },
       {
-        "artist": "ВИА «Поющие гитары»",
-        "title": "Синий иней",
-        "year": 1966,
-        "original_album": "—",
-        "artist_title_year": "ВИА «Поющие гитары» — Синий иней (1966)",
-        "youtube_direct": "https://www.youtube.com/watch?v=_inyc2yfs3I"
+        "artist": "Kino",
+        "title": "Gruppa krovi",
+        "year": 1988
       }
     ],
-    "1970s": [
+    "3_modern": [
       {
-        "artist": "Алла Пугачёва",
-        "title": "Арлекино",
-        "year": 1975,
-        "original_album": "—",
-        "artist_title_year": "Алла Пугачёва — Арлекино (1975)",
-        "youtube_direct": "https://www.youtube.com/watch?v=yxR0XBdkBX4"
-      },
-      {
-        "artist": "Песняры",
-        "title": "Вологда",
-        "year": 1976,
-        "original_album": "—",
-        "artist_title_year": "Песняры — Вологда (1976)",
-        "youtube_direct": "https://www.youtube.com/watch?v=t9vo7h8dlMs"
-      },
-      {
-        "artist": "Владимир Высоцкий",
-        "title": "Кони привередливые",
-        "year": 1972,
-        "original_album": "—",
-        "artist_title_year": "Владимир Высоцкий — Кони привередливые (1972)",
-        "youtube_direct": "https://www.youtube.com/watch?v=IH3nUk81OlA"
-      }
-    ],
-    "1980s": [
-      {
-        "artist": "Кино",
-        "title": "Группа крови",
-        "year": 1988,
-        "original_album": "Группа крови",
-        "artist_title_year": "Кино — Группа крови (1988)",
-        "youtube_direct": "https://www.youtube.com/watch?v=ACAvBBMb6BM"
-      },
-      {
-        "artist": "Наутилус Помпилиус",
-        "title": "Гудбай, Америка!",
-        "year": 1985,
-        "original_album": "Разлука",
-        "artist_title_year": "Наутилус Помпилиус — Гудбай, Америка! (1985)",
-        "youtube_direct": "https://www.youtube.com/watch?v=20MeiEazZvQ"
-      },
-      {
-        "artist": "Алла Пугачёва",
-        "title": "Миллион алых роз",
-        "year": 1982,
-        "original_album": "—",
-        "artist_title_year": "Алла Пугачёва — Миллион алых роз (1982)",
-        "youtube_direct": "https://www.youtube.com/watch?v=At3Qo9n4_Uc"
-      }
-    ],
-    "1990s": [
-      {
-        "artist": "Мумий Тролль",
-        "title": "Владивосток 2000",
-        "year": 1997,
-        "original_album": "Морская",
-        "artist_title_year": "Мумий Тролль — Владивосток 2000 (1997)",
-        "youtube_direct": "https://www.youtube.com/watch?v=nj5nuYYrZvg"
-      },
-      {
-        "artist": "Земфира",
-        "title": "Ариведерчи",
-        "year": 1999,
-        "original_album": "Земфира",
-        "artist_title_year": "Земфира — Ариведерчи (1999)",
-        "youtube_direct": "https://www.youtube.com/watch?v=llja-5fmVJk"
-      },
-      {
-        "artist": "Егор Летов (Гражданская оборона)",
-        "title": "Вечная весна",
-        "year": 1993,
-        "original_album": "Сто лет одиночества",
-        "artist_title_year": "Егор Летов (Гражданская оборона) — Вечная весна (1993)",
-        "youtube_direct": "https://www.youtube.com/watch?v=VLhQqm8gShU"
-      }
-    ],
-    "2000s": [
-      {
-        "artist": "Земфира",
-        "title": "Хочешь?",
-        "year": 2000,
-        "original_album": "Прости меня моя любовь",
-        "artist_title_year": "Земфира — Хочешь? (2000)",
-        "youtube_direct": "https://www.youtube.com/watch?v=xpJ_fYyAeYk"
-      },
-      {
-        "artist": "Би-2",
-        "title": "Полковнику никто не пишет",
-        "year": 2000,
-        "original_album": "Би-2",
-        "artist_title_year": "Би-2 — Полковнику никто не пишет (2000)",
-        "youtube_direct": "https://www.youtube.com/watch?v=1u7WN2zBEDc"
+        "artist": "Zemfira",
+        "title": "Khochesh?",
+        "year": 2000
       },
       {
         "artist": "t.A.T.u.",
-        "title": "Нас не догонят",
-        "year": 2001,
-        "original_album": "200 по встречной",
-        "artist_title_year": "t.A.T.u. — Нас не догонят (2001)",
-        "youtube_direct": "https://www.youtube.com/watch?v=ZoucOazbmGc"
-      }
-    ],
-    "2010s-2020s": [
-      {
-        "artist": "Молчат Дома",
-        "title": "Судно (Борис Рыжий)",
-        "year": 2018,
-        "original_album": "Этажи",
-        "artist_title_year": "Молчат Дома — Судно (Борис Рыжий) (2018)",
-        "youtube_direct": "https://www.youtube.com/watch?v=s1ATTIQrmIQ"
+        "title": "Nas ne dogonyat",
+        "year": 2001
       },
       {
-        "artist": "Монеточка",
-        "title": "Каждый раз",
-        "year": 2017,
-        "original_album": "—",
-        "artist_title_year": "Монеточка — Каждый раз (2017)",
-        "youtube_direct": "https://www.youtube.com/watch?v=oVUBdmsG-pM"
-      },
-      {
-        "artist": "Face",
-        "title": "Мокрые кроссы",
-        "year": 2018,
-        "original_album": "—",
-        "artist_title_year": "Face — Мокрые кроссы (2018)",
-        "youtube_direct": "https://www.youtube.com/watch?v=48Heq9b3UNU"
+        "artist": "Zivert",
+        "title": "Life",
+        "year": 2018
       }
     ]
   },
   "New York": {
-    "1950s": [
-      {
-        "artist": "The Chords",
-        "title": "Sh-Boom",
-        "year": 1954,
-        "original_album": "—",
-        "artist_title_year": "The Chords — Sh-Boom (1954)",
-        "youtube_direct": "https://www.youtube.com/watch?v=04UwkV-Ig08"
-      },
-      {
-        "artist": "Frankie Lymon & The Teenagers",
-        "title": "Why Do Fools Fall in Love",
-        "year": 1956,
-        "original_album": "—",
-        "artist_title_year": "Frankie Lymon & The Teenagers — Why Do Fools Fall in Love (1956)",
-        "youtube_direct": "https://www.youtube.com/watch?v=U-nndkZ92EI"
-      },
+    "1_early": [
       {
         "artist": "The Drifters",
-        "title": "There Goes My Baby",
-        "year": 1959,
-        "original_album": "—",
-        "artist_title_year": "The Drifters — There Goes My Baby (1959)",
-        "youtube_direct": "https://www.youtube.com/watch?v=xU21gzEtmuw"
+        "title": "On Broadway",
+        "year": 1963
+      },
+      {
+        "artist": "The Ronettes",
+        "title": "Be My Baby",
+        "year": 1963
+      },
+      {
+        "artist": "The Lovin' Spoonful",
+        "title": "Summer in the City",
+        "year": 1966
       }
     ],
-    "1960s": [
-      {
-        "artist": "Bob Dylan",
-        "title": "Like a Rolling Stone",
-        "year": 1965,
-        "original_album": "Highway 61 Revisited",
-        "artist_title_year": "Bob Dylan — Like a Rolling Stone (1965)",
-        "youtube_direct": "https://www.youtube.com/watch?v=IwOfCgkyEj0"
-      },
-      {
-        "artist": "Simon & Garfunkel",
-        "title": "The Sound of Silence",
-        "year": 1965,
-        "original_album": "Sounds of Silence",
-        "artist_title_year": "Simon & Garfunkel — The Sound of Silence (1965)",
-        "youtube_direct": "https://www.youtube.com/watch?v=l0q7MLPo-u8"
-      },
-      {
-        "artist": "The Velvet Underground & Nico",
-        "title": "I'm Waiting for the Man",
-        "year": 1967,
-        "original_album": "The Velvet Underground & Nico",
-        "artist_title_year": "The Velvet Underground & Nico — I'm Waiting for the Man (1967)",
-        "youtube_direct": "https://www.youtube.com/watch?v=rzVELfFxcKw"
-      }
-    ],
-    "1970s": [
-      {
-        "artist": "Ramones",
-        "title": "Blitzkrieg Bop",
-        "year": 1976,
-        "original_album": "Ramones",
-        "artist_title_year": "Ramones — Blitzkrieg Bop (1976)",
-        "youtube_direct": "https://www.youtube.com/watch?v=268C3N2dDYk"
-      },
-      {
-        "artist": "Chic",
-        "title": "Le Freak",
-        "year": 1978,
-        "original_album": "C'est Chic",
-        "artist_title_year": "Chic — Le Freak (1978)",
-        "youtube_direct": "https://www.youtube.com/watch?v=aXgSHL7efKg"
-      },
-      {
-        "artist": "The Sugarhill Gang",
-        "title": "Rapper's Delight",
-        "year": 1979,
-        "original_album": "—",
-        "artist_title_year": "The Sugarhill Gang — Rapper's Delight (1979)",
-        "youtube_direct": "https://www.youtube.com/watch?v=mcCK99wHrk0"
-      }
-    ],
-    "1980s": [
-      {
-        "artist": "Run-D.M.C.",
-        "title": "It's Like That",
-        "year": 1983,
-        "original_album": "—",
-        "artist_title_year": "Run-D.M.C. — It's Like That (1983)",
-        "youtube_direct": "https://www.youtube.com/watch?v=X0Dd4PvaGhU"
-      },
+    "2_middle": [
       {
         "artist": "Blondie",
-        "title": "Rapture",
-        "year": 1980,
-        "original_album": "Autoamerican",
-        "artist_title_year": "Blondie — Rapture (1980)",
-        "youtube_direct": "https://www.youtube.com/watch?v=pHCdS7O248g"
+        "title": "Heart of Glass",
+        "year": 1979
       },
       {
-        "artist": "Madonna",
-        "title": "Everybody",
-        "year": 1982,
-        "original_album": "—",
-        "artist_title_year": "Madonna — Everybody (1982)",
-        "youtube_direct": "https://www.youtube.com/watch?v=cOqr_x_9fMc"
+        "artist": "Frank Sinatra",
+        "title": "Theme from New York, New York",
+        "year": 1980
+      },
+      {
+        "artist": "Grandmaster Flash and the Furious Five",
+        "title": "The Message",
+        "year": 1982
       }
     ],
-    "1990s": [
-      {
-        "artist": "Wu-Tang Clan",
-        "title": "C.R.E.A.M.",
-        "year": 1993,
-        "original_album": "Enter the Wu-Tang (36 Chambers)",
-        "artist_title_year": "Wu-Tang Clan — C.R.E.A.M. (1993)",
-        "youtube_direct": "https://www.youtube.com/watch?v=PBwAxmrE194"
-      },
-      {
-        "artist": "The Notorious B.I.G.",
-        "title": "Juicy",
-        "year": 1994,
-        "original_album": "Ready to Die",
-        "artist_title_year": "The Notorious B.I.G. — Juicy (1994)",
-        "youtube_direct": "https://www.youtube.com/watch?v=_JZom_gVfuw"
-      },
-      {
-        "artist": "Nas",
-        "title": "N.Y. State of Mind",
-        "year": 1994,
-        "original_album": "Illmatic",
-        "artist_title_year": "Nas — N.Y. State of Mind (1994)",
-        "youtube_direct": "https://www.youtube.com/watch?v=hI8A14Qcv68"
-      }
-    ],
-    "2000s": [
+    "3_modern": [
       {
         "artist": "The Strokes",
         "title": "Last Nite",
-        "year": 2001,
-        "original_album": "Is This It",
-        "artist_title_year": "The Strokes — Last Nite (2001)",
-        "youtube_direct": "https://www.youtube.com/watch?v=TOypSnKFHrE"
+        "year": 2001
       },
       {
-        "artist": "Jay-Z",
-        "title": "99 Problems",
-        "year": 2003,
-        "original_album": "The Black Album",
-        "artist_title_year": "Jay-Z — 99 Problems (2003)",
-        "youtube_direct": "https://www.youtube.com/watch?v=MzTLMp-vh9s"
-      },
-      {
-        "artist": "LCD Soundsystem",
-        "title": "Losing My Edge",
-        "year": 2002,
-        "original_album": "—",
-        "artist_title_year": "LCD Soundsystem — Losing My Edge (2002)",
-        "youtube_direct": "https://www.youtube.com/watch?v=6xG4oFny2Pk"
-      }
-    ],
-    "2010s-2020s": [
-      {
-        "artist": "Jay-Z feat. Alicia Keys",
+        "artist": "Jay-Z & Alicia Keys",
         "title": "Empire State of Mind",
-        "year": 2009,
-        "original_album": "The Blueprint 3",
-        "artist_title_year": "Jay-Z feat. Alicia Keys — Empire State of Mind (2009)",
-        "youtube_direct": "https://www.youtube.com/watch?v=vk6014HuxcE"
-      },
-      {
-        "artist": "A$AP Rocky",
-        "title": "Fuckin' Problems",
-        "year": 2012,
-        "original_album": "Long.Live.A$AP",
-        "artist_title_year": "A$AP Rocky — Fuckin' Problems (2012)",
-        "youtube_direct": "https://www.youtube.com/watch?v=liZm1im2erU"
+        "year": 2009
       },
       {
         "artist": "Cardi B",
         "title": "Bodak Yellow",
-        "year": 2017,
-        "original_album": "—",
-        "artist_title_year": "Cardi B — Bodak Yellow (2017)",
-        "youtube_direct": "https://www.youtube.com/watch?v=PEGccV-NOm8"
+        "year": 2017
       }
     ]
   },
   "Los Angeles": {
-    "1950s": [
-      {
-        "artist": "The Penguins",
-        "title": "Earth Angel",
-        "year": 1954,
-        "original_album": "—",
-        "artist_title_year": "The Penguins — Earth Angel (1954)",
-        "youtube_direct": "https://www.youtube.com/watch?v=zrX8RNgawUk"
-      },
-      {
-        "artist": "Ritchie Valens",
-        "title": "La Bamba",
-        "year": 1958,
-        "original_album": "Ritchie Valens",
-        "artist_title_year": "Ritchie Valens — La Bamba (1958)",
-        "youtube_direct": "https://www.youtube.com/watch?v=mm4TYKuJD_4"
-      },
-      {
-        "artist": "Chet Baker",
-        "title": "My Funny Valentine",
-        "year": 1954,
-        "original_album": "Chet Baker Sings",
-        "artist_title_year": "Chet Baker — My Funny Valentine (1954)",
-        "youtube_direct": "https://www.youtube.com/watch?v=EGPRCu2kupE"
-      }
-    ],
-    "1960s": [
+    "1_early": [
       {
         "artist": "The Beach Boys",
-        "title": "Good Vibrations",
-        "year": 1966,
-        "original_album": "—",
-        "artist_title_year": "The Beach Boys — Good Vibrations (1966)",
-        "youtube_direct": "https://www.youtube.com/watch?v=apBWI6xrbLY"
-      },
-      {
-        "artist": "The Doors",
-        "title": "Light My Fire",
-        "year": 1967,
-        "original_album": "The Doors",
-        "artist_title_year": "The Doors — Light My Fire (1967)",
-        "youtube_direct": "https://www.youtube.com/watch?v=_g_tuOS-iZ4"
+        "title": "California Girls",
+        "year": 1965
       },
       {
         "artist": "The Mamas & the Papas",
         "title": "California Dreamin'",
-        "year": 1966,
-        "original_album": "If You Can Believe Your Eyes and Ears",
-        "artist_title_year": "The Mamas & the Papas — California Dreamin' (1966)",
-        "youtube_direct": "https://www.youtube.com/watch?v=o7PvgurTjn8"
+        "year": 1965
+      },
+      {
+        "artist": "The Doors",
+        "title": "Light My Fire",
+        "year": 1967
       }
     ],
-    "1970s": [
+    "2_middle": [
       {
         "artist": "Eagles",
         "title": "Hotel California",
-        "year": 1976,
-        "original_album": "Hotel California",
-        "artist_title_year": "Eagles — Hotel California (1976)",
-        "youtube_direct": "https://www.youtube.com/watch?v=dLl4PZtxia8"
+        "year": 1976
       },
       {
-        "artist": "Fleetwood Mac",
-        "title": "Dreams",
-        "year": 1977,
-        "original_album": "Rumours",
-        "artist_title_year": "Fleetwood Mac — Dreams (1977)",
-        "youtube_direct": "https://www.youtube.com/watch?v=PgagPdVM7bk"
-      },
-      {
-        "artist": "War",
-        "title": "Low Rider",
-        "year": 1975,
-        "original_album": "Why Can't We Be Friends?",
-        "artist_title_year": "War — Low Rider (1975)",
-        "youtube_direct": "https://www.youtube.com/watch?v=BsrqKE1iqqo"
-      }
-    ],
-    "1980s": [
-      {
-        "artist": "Michael Jackson",
-        "title": "Billie Jean",
-        "year": 1983,
-        "original_album": "Thriller",
-        "artist_title_year": "Michael Jackson — Billie Jean (1983)",
-        "youtube_direct": "https://www.youtube.com/watch?v=Zi_XLOBDo_Y"
-      },
-      {
-        "artist": "N.W.A",
-        "title": "Straight Outta Compton",
-        "year": 1988,
-        "original_album": "Straight Outta Compton",
-        "artist_title_year": "N.W.A — Straight Outta Compton (1988)",
-        "youtube_direct": "https://www.youtube.com/watch?v=TMZi25Pq3T8"
+        "artist": "Randy Newman",
+        "title": "I Love L.A.",
+        "year": 1983
       },
       {
         "artist": "Guns N' Roses",
         "title": "Sweet Child o' Mine",
-        "year": 1987,
-        "original_album": "Appetite for Destruction",
-        "artist_title_year": "Guns N' Roses — Sweet Child o' Mine (1987)",
-        "youtube_direct": "https://www.youtube.com/watch?v=1w7OgIMMRc4"
+        "year": 1987
       }
     ],
-    "1990s": [
-      {
-        "artist": "Dr. Dre",
-        "title": "Nuthin' but a 'G' Thang",
-        "year": 1992,
-        "original_album": "The Chronic",
-        "artist_title_year": "Dr. Dre — Nuthin' but a 'G' Thang (1992)",
-        "youtube_direct": "https://www.youtube.com/watch?v=8GliyDgAGQI"
-      },
-      {
-        "artist": "2Pac",
-        "title": "California Love",
-        "year": 1995,
-        "original_album": "All Eyez on Me (1996)",
-        "artist_title_year": "2Pac — California Love (1995)",
-        "youtube_direct": "https://www.youtube.com/watch?v=N0VdRLdg2ng"
-      },
-      {
-        "artist": "Snoop Dogg",
-        "title": "Gin and Juice",
-        "year": 1994,
-        "original_album": "Doggystyle",
-        "artist_title_year": "Snoop Dogg — Gin and Juice (1994)",
-        "youtube_direct": "https://www.youtube.com/watch?v=fWCZse1iwE0"
-      }
-    ],
-    "2000s": [
+    "3_modern": [
       {
         "artist": "Red Hot Chili Peppers",
-        "title": "Can't Stop",
-        "year": 2002,
-        "original_album": "By the Way",
-        "artist_title_year": "Red Hot Chili Peppers — Can't Stop (2002)",
-        "youtube_direct": "https://www.youtube.com/watch?v=8DyziWtkfBw"
+        "title": "Dani California",
+        "year": 2006
       },
-      {
-        "artist": "The Game",
-        "title": "Hate It or Love It",
-        "year": 2005,
-        "original_album": "The Documentary",
-        "artist_title_year": "The Game — Hate It or Love It (2005)",
-        "youtube_direct": "https://www.youtube.com/watch?v=BuMBmK5uksg"
-      },
-      {
-        "artist": "No Doubt",
-        "title": "Hey Baby",
-        "year": 2001,
-        "original_album": "Rock Steady",
-        "artist_title_year": "No Doubt — Hey Baby (2001)",
-        "youtube_direct": "https://www.youtube.com/watch?v=wt1YkGO2Ieo"
-      }
-    ],
-    "2010s-2020s": [
       {
         "artist": "Kendrick Lamar",
         "title": "HUMBLE.",
-        "year": 2017,
-        "original_album": "DAMN.",
-        "artist_title_year": "Kendrick Lamar — HUMBLE. (2017)",
-        "youtube_direct": "https://www.youtube.com/watch?v=tvTRZJ-4EyI"
+        "year": 2017
       },
       {
         "artist": "Billie Eilish",
         "title": "bad guy",
-        "year": 2019,
-        "original_album": "When We All Fall Asleep, Where Do We Go?",
-        "artist_title_year": "Billie Eilish — bad guy (2019)",
-        "youtube_direct": "https://www.youtube.com/watch?v=ZD6rXLXZOEI"
-      },
-      {
-        "artist": "Anderson .Paak",
-        "title": "Tints",
-        "year": 2019,
-        "original_album": "Ventura",
-        "artist_title_year": "Anderson .Paak — Tints (2019)",
-        "youtube_direct": "https://www.youtube.com/watch?v=u749Hi0gDVM"
+        "year": 2019
       }
     ]
   },
   "Tokyo": {
-    "1950s": [
+    "1_early": [
       {
-        "artist": "Hibari Misora",
-        "title": "Tokyo Kid",
-        "year": 1950,
-        "original_album": "—",
-        "artist_title_year": "Hibari Misora — Tokyo Kid (1950)",
-        "youtube_direct": "https://www.youtube.com/watch?v=htf8PCww_RA"
+        "artist": "Shizuko Kasagi",
+        "title": "Tokyo Boogie-Woogie",
+        "year": 1947
       },
       {
-        "artist": "Hibari Misora",
-        "title": "Ringo Oiwake",
-        "year": 1952,
-        "original_album": "—",
-        "artist_title_year": "Hibari Misora — Ringo Oiwake (1952)",
-        "youtube_direct": "https://www.youtube.com/watch?v=QPES4p568nQ"
+        "artist": "Frank Nagai",
+        "title": "Yurakucho de Aimasho",
+        "year": 1957
       },
-      {
-        "artist": "Chiemi Eri",
-        "title": "Tennessee Waltz (яп. кавер)",
-        "year": 1952,
-        "original_album": "—",
-        "artist_title_year": "Chiemi Eri — Tennessee Waltz (яп. кавер) (1952)",
-        "youtube_direct": "https://www.youtube.com/watch?v=0nq-992HLYg"
-      }
-    ],
-    "1960s": [
       {
         "artist": "Kyu Sakamoto",
-        "title": "Ue wo Muite Arukou (Sukiyaki)",
-        "year": 1961,
-        "original_album": "—",
-        "artist_title_year": "Kyu Sakamoto — Ue wo Muite Arukou (Sukiyaki) (1961)",
-        "youtube_direct": "https://www.youtube.com/watch?v=66E3iTP9g04"
-      },
-      {
-        "artist": "The Tigers",
-        "title": "Mona Lisa no Hohoemi",
-        "year": 1968,
-        "original_album": "—",
-        "artist_title_year": "The Tigers — Mona Lisa no Hohoemi (1968)",
-        "youtube_direct": "https://www.youtube.com/watch?v=iQJz1Vaf9Ug"
-      },
-      {
-        "artist": "The Spiders",
-        "title": "Furi Furi",
-        "year": 1966,
-        "original_album": "—",
-        "artist_title_year": "The Spiders — Furi Furi (1966)",
-        "youtube_direct": "https://www.youtube.com/watch?v=fOD5vC_7xKE"
+        "title": "Ue o Muite Aruko",
+        "year": 1961
       }
     ],
-    "1970s": [
+    "2_middle": [
       {
-        "artist": "Happy End",
-        "title": "Kaze wo Atsumete",
-        "year": 1971,
-        "original_album": "Kazemachi Roman",
-        "artist_title_year": "Happy End — Kaze wo Atsumete (1971)",
-        "youtube_direct": "https://www.youtube.com/watch?v=1rqx9qt7rcs"
+        "artist": "Miki Matsubara",
+        "title": "Mayonaka no Door (Stay with Me)",
+        "year": 1979
       },
       {
-        "artist": "Yumi Arai (Matsutoya)",
-        "title": "Hikōkigumo",
-        "year": 1973,
-        "original_album": "Hikōkigumo",
-        "artist_title_year": "Yumi Arai (Matsutoya) — Hikōkigumo (1973)",
-        "youtube_direct": "https://www.youtube.com/watch?v=Z2x9O1aNaoE"
+        "artist": "Yellow Magic Orchestra",
+        "title": "Rydeen",
+        "year": 1980
       },
-      {
-        "artist": "Momoe Yamaguchi",
-        "title": "Playback Part 2",
-        "year": 1978,
-        "original_album": "—",
-        "artist_title_year": "Momoe Yamaguchi — Playback Part 2 (1978)",
-        "youtube_direct": "https://www.youtube.com/watch?v=NmZk8E9_y7Y"
-      }
-    ],
-    "1980s": [
       {
         "artist": "Mariya Takeuchi",
         "title": "Plastic Love",
-        "year": 1984,
-        "original_album": "Variety",
-        "artist_title_year": "Mariya Takeuchi — Plastic Love (1984)",
-        "youtube_direct": "https://www.youtube.com/watch?v=T_lC2O1oIew"
-      },
-      {
-        "artist": "Tatsuro Yamashita",
-        "title": "Ride on Time",
-        "year": 1980,
-        "original_album": "Ride on Time",
-        "artist_title_year": "Tatsuro Yamashita — Ride on Time (1980)",
-        "youtube_direct": "https://www.youtube.com/watch?v=Vfnwbn69zN0"
-      },
-      {
-        "artist": "Anri",
-        "title": "Cat's Eye",
-        "year": 1983,
-        "original_album": "—",
-        "artist_title_year": "Anri — Cat's Eye (1983)",
-        "youtube_direct": "https://www.youtube.com/watch?v=qhCMCFD34qY"
+        "year": 1984
       }
     ],
-    "1990s": [
-      {
-        "artist": "Mr. Children",
-        "title": "Innocent World",
-        "year": 1994,
-        "original_album": "Atomic Heart",
-        "artist_title_year": "Mr. Children — Innocent World (1994)",
-        "youtube_direct": "https://www.youtube.com/watch?v=rfVhsgCqG0I"
-      },
-      {
-        "artist": "Dreams Come True",
-        "title": "Love Love Love",
-        "year": 1995,
-        "original_album": "The Swinging Star",
-        "artist_title_year": "Dreams Come True — Love Love Love (1995)",
-        "youtube_direct": "https://www.youtube.com/watch?v=Vj6OAlDgv9M"
-      },
-      {
-        "artist": "Hikaru Utada",
-        "title": "Automatic",
-        "year": 1998,
-        "original_album": "First Love",
-        "artist_title_year": "Hikaru Utada — Automatic (1998)",
-        "youtube_direct": "https://www.youtube.com/watch?v=-9DxpPiE458"
-      }
-    ],
-    "2000s": [
-      {
-        "artist": "Ayumi Hamasaki",
-        "title": "M",
-        "year": 2000,
-        "original_album": "—",
-        "artist_title_year": "Ayumi Hamasaki — M (2000)",
-        "youtube_direct": "https://www.youtube.com/watch?v=03y-KyezDS4"
-      },
-      {
-        "artist": "Orange Range",
-        "title": "Asterisk",
-        "year": 2004,
-        "original_album": "musiQ",
-        "artist_title_year": "Orange Range — Asterisk (2004)",
-        "youtube_direct": "https://www.youtube.com/watch?v=ZGIupJzaE2w"
-      },
+    "3_modern": [
       {
         "artist": "Perfume",
         "title": "Polyrhythm",
-        "year": 2007,
-        "original_album": "Game",
-        "artist_title_year": "Perfume — Polyrhythm (2007)",
-        "youtube_direct": "https://www.youtube.com/watch?v=KbiSxunJatM"
-      }
-    ],
-    "2010s-2020s": [
-      {
-        "artist": "Kyary Pamyu Pamyu",
-        "title": "PonPonPon",
-        "year": 2011,
-        "original_album": "—",
-        "artist_title_year": "Kyary Pamyu Pamyu — PonPonPon (2011)",
-        "youtube_direct": "https://www.youtube.com/watch?v=yzC4hFK5P3g"
+        "year": 2007
       },
       {
-        "artist": "Babymetal",
-        "title": "Gimme Chocolate!!",
-        "year": 2014,
-        "original_album": "Babymetal",
-        "artist_title_year": "Babymetal — Gimme Chocolate!! (2014)",
-        "youtube_direct": "https://www.youtube.com/watch?v=WIKqgE4BwAY"
+        "artist": "Kenshi Yonezu",
+        "title": "Lemon",
+        "year": 2018
       },
       {
-        "artist": "Yoasobi",
+        "artist": "YOASOBI",
         "title": "Yoru ni Kakeru",
-        "year": 2019,
-        "original_album": "—",
-        "artist_title_year": "Yoasobi — Yoru ni Kakeru (2019)",
-        "youtube_direct": "https://www.youtube.com/watch?v=x8VYWazR5mE"
+        "year": 2019
       }
     ]
   },
   "Tel Aviv": {
-    "1950s": [
+    "1_early": [
       {
-        "artist": "Шошана Дамари",
-        "title": "Каланийот",
-        "year": null,
-        "original_album": "—",
-        "artist_title_year": "Шошана Дамари — Каланийот (н/д)",
-        "youtube_direct": "https://www.youtube.com/watch?v=CXqxiCYCgKg"
+        "artist": "HaDudaim",
+        "title": "Erev Shel Shoshanim",
+        "year": 1957
       },
       {
-        "artist": "Яффа Яркони",
-        "title": "Баб эль-Вад (Bab el Wad)",
-        "year": 1948,
-        "original_album": "—",
-        "artist_title_year": "Яффа Яркони — Баб эль-Вад (Bab el Wad) (1948)",
-        "youtube_direct": "https://www.youtube.com/watch?v=QBlQ20s3FBk"
+        "artist": "Shuli Natan",
+        "title": "Yerushalayim Shel Zahav",
+        "year": 1967
       },
       {
-        "artist": "Традиционная",
-        "title": "Хава Нагила",
-        "year": null,
-        "original_album": "народная песня",
-        "artist_title_year": "Традиционная — Хава Нагила (н/д)",
-        "youtube_direct": "https://www.youtube.com/watch?v=3gMPNzx1yNc"
+        "artist": "Lehakat HaNahal",
+        "title": "Shir LaShalom",
+        "year": 1969
       }
     ],
-    "1960s": [
+    "2_middle": [
       {
-        "artist": "Наоми Шемер",
-        "title": "Йерушалаим Шель Захав (Jerusalem of Gold)",
-        "year": 1967,
-        "original_album": "—",
-        "artist_title_year": "Наоми Шемер — Йерушалаим Шель Захав (Jerusalem of Gold) (1967)",
-        "youtube_direct": "https://www.youtube.com/watch?v=IUxt7faTExY"
+        "artist": "Arik Einstein",
+        "title": "Atur Mitzchech",
+        "year": 1977
       },
       {
-        "artist": "Лехакат ХаНахаль",
-        "title": "Шир ЛаШалом (Shir LaShalom)",
-        "year": 1969,
-        "original_album": "—",
-        "artist_title_year": "Лехакат ХаНахаль — Шир ЛаШалом (Shir LaShalom) (1969)",
-        "youtube_direct": "https://www.youtube.com/watch?v=N8gDVr8AseM"
+        "artist": "Gali Atari & Milk and Honey",
+        "title": "Hallelujah",
+        "year": 1979
       },
       {
-        "artist": "Арик Эйнштейн",
-        "title": "Кэхе кэхе (Kehe Kehe)",
-        "year": 1968,
-        "original_album": "—",
-        "artist_title_year": "Арик Эйнштейн — Кэхе кэхе (Kehe Kehe) (1968)",
-        "youtube_direct": "https://www.youtube.com/watch?v=BfDWcE627Co"
+        "artist": "Ofra Haza",
+        "title": "Im Nin'alu",
+        "year": 1984
       }
     ],
-    "1970s": [
-      {
-        "artist": "Арик Эйнштейн",
-        "title": "Ани ВеАта",
-        "year": 1971,
-        "original_album": "—",
-        "artist_title_year": "Арик Эйнштейн — Ани ВеАта (1971)",
-        "youtube_direct": "https://www.youtube.com/watch?v=gP6PS-poyMg"
-      },
-      {
-        "artist": "Каверет",
-        "title": "Йо Йа",
-        "year": 1974,
-        "original_album": "Sipurey Poogy",
-        "artist_title_year": "Каверет — Йо Йа (1974)",
-        "youtube_direct": "https://www.youtube.com/watch?v=EortMu-_gQ0"
-      },
-      {
-        "artist": "Хава Альберштейн",
-        "title": "Башана Хабаа",
-        "year": 1970,
-        "original_album": "—",
-        "artist_title_year": "Хава Альберштейн — Башана Хабаа (1970)",
-        "youtube_direct": "https://www.youtube.com/watch?v=Zz2I5i03DBk"
-      }
-    ],
-    "1980s": [
-      {
-        "artist": "Офра Хаза",
-        "title": "Им Нин'алу",
-        "year": 1984,
-        "original_album": "Yemenite Songs (Shirei Teiman)",
-        "artist_title_year": "Офра Хаза — Им Нин'алу (1984)",
-        "youtube_direct": "https://www.youtube.com/watch?v=894pvuAZ57U"
-      },
-      {
-        "artist": "Зохар Аргов",
-        "title": "ХаПерах БеГани",
-        "year": 1982,
-        "original_album": "—",
-        "artist_title_year": "Зохар Аргов — ХаПерах БеГани (1982)",
-        "youtube_direct": "https://www.youtube.com/watch?v=FOaq2HKxvuM"
-      },
-      {
-        "artist": "Машина",
-        "title": "Ракевет Лайла ЛеКаир",
-        "year": 1986,
-        "original_album": "—",
-        "artist_title_year": "Машина — Ракевет Лайла ЛеКаир (1986)",
-        "youtube_direct": "https://www.youtube.com/watch?v=IOSmBOsGRMc"
-      }
-    ],
-    "1990s": [
-      {
-        "artist": "Авив Гефен",
-        "title": "Ахшав меунан (Akhshav Me'unan)",
-        "year": 1993,
-        "original_album": "—",
-        "artist_title_year": "Авив Гефен — Ахшав меунан (Akhshav Me'unan) (1993)",
-        "youtube_direct": "https://www.youtube.com/watch?v=EJ60iieMQAY"
-      },
-      {
-        "artist": "Бери Сахароф",
-        "title": "Бо",
-        "year": 1996,
-        "original_album": "—",
-        "artist_title_year": "Бери Сахароф — Бо (1996)",
-        "youtube_direct": "https://www.youtube.com/watch?v=LxoNhu1nkZU"
-      },
-      {
-        "artist": "Этникс",
-        "title": "Джессика (Jessica)",
-        "year": 1993,
-        "original_album": "—",
-        "artist_title_year": "Этникс — Джессика (Jessica) (1993)",
-        "youtube_direct": "https://www.youtube.com/watch?v=4xkBrGeRkQE"
-      }
-    ],
-    "2000s": [
-      {
-        "artist": "Идан Райхель Проект",
-        "title": "Боэ",
-        "year": 2003,
-        "original_album": "Мареву (הרוח נושבת)",
-        "artist_title_year": "Идан Райхель Проект — Боэ (2003)",
-        "youtube_direct": "https://www.youtube.com/watch?v=_uJLsc05ZE4"
-      },
-      {
-        "artist": "Сарит Хадад",
-        "title": "Бои",
-        "year": 2003,
-        "original_album": "—",
-        "artist_title_year": "Сарит Хадад — Бои (2003)",
-        "youtube_direct": "https://www.youtube.com/watch?v=9jCYSBRHCPQ"
-      },
-      {
-        "artist": "Эяль Голан",
-        "title": "Цлиль мейтар (Tzlil Meitar)",
-        "year": 2001,
-        "original_album": "—",
-        "artist_title_year": "Эяль Голан — Цлиль мейтар (Tzlil Meitar) (2001)",
-        "youtube_direct": "https://www.youtube.com/watch?v=oKLLyDOczbY"
-      }
-    ],
-    "2010s-2020s": [
-      {
-        "artist": "Netta Barzilai",
-        "title": "Toy",
-        "year": 2018,
-        "original_album": "—",
-        "artist_title_year": "Netta Barzilai — Toy (2018)",
-        "youtube_direct": "https://www.youtube.com/watch?v=CziHrYYSyPc"
-      },
-      {
-        "artist": "Statix & Ben El Tavori",
-        "title": "Тудо Бом (Tudo Bom)",
-        "year": 2017,
-        "original_album": "—",
-        "artist_title_year": "Statix & Ben El Tavori — Тудо Бом (Tudo Bom) (2017)",
-        "youtube_direct": "https://www.youtube.com/watch?v=cxzqTStp9Hc"
-      },
+    "3_modern": [
       {
         "artist": "Omer Adam",
-        "title": "Тель-Авив",
-        "year": 2014,
-        "original_album": "—",
-        "artist_title_year": "Omer Adam — Тель-Авив (2014)",
-        "youtube_direct": "https://www.youtube.com/watch?v=gVeDIpYJEpw"
+        "title": "Tel Aviv",
+        "year": 2014
+      },
+      {
+        "artist": "Static & Ben El",
+        "title": "Tudo Bom",
+        "year": 2017
+      },
+      {
+        "artist": "Netta",
+        "title": "Toy",
+        "year": 2018
       }
     ]
   },
   "Buenos Aires": {
-    "1950s": [
+    "1_early": [
       {
-        "artist": "Aníbal Troilo",
-        "title": "Sur",
-        "year": 1948,
-        "original_album": "—",
-        "artist_title_year": "Aníbal Troilo — Sur (1948)",
-        "youtube_direct": "https://www.youtube.com/watch?v=kRtUsZbpGIo"
+        "artist": "Carlos Gardel",
+        "title": "Por una cabeza",
+        "year": 1935
       },
       {
-        "artist": "Osvaldo Pugliese",
-        "title": "La Yumba",
-        "year": 1946,
-        "original_album": "—",
-        "artist_title_year": "Osvaldo Pugliese — La Yumba (1946)",
-        "youtube_direct": "https://www.youtube.com/watch?v=qXVEuFLVlJA"
+        "artist": "Juan D'Arienzo",
+        "title": "La Cumparsita",
+        "year": 1951
       },
-      {
-        "artist": "Astor Piazzolla y su Octeto Buenos Aires",
-        "title": "Marrón y azul",
-        "year": 1955,
-        "original_album": "—",
-        "artist_title_year": "Astor Piazzolla y su Octeto Buenos Aires — Marrón y azul (1955)",
-        "youtube_direct": "https://www.youtube.com/watch?v=EVPY2uijn50"
-      }
-    ],
-    "1960s": [
       {
         "artist": "Astor Piazzolla",
         "title": "Adiós Nonino",
-        "year": 1959,
-        "original_album": "—",
-        "artist_title_year": "Astor Piazzolla — Adiós Nonino (1959)",
-        "youtube_direct": "https://www.youtube.com/watch?v=lrz6h7_JUQA"
-      },
-      {
-        "artist": "Los Gatos",
-        "title": "La Balsa",
-        "year": 1967,
-        "original_album": "Los Gatos",
-        "artist_title_year": "Los Gatos — La Balsa (1967)",
-        "youtube_direct": "https://www.youtube.com/watch?v=gLOzJ0SSGSA"
-      },
-      {
-        "artist": "Mercedes Sosa",
-        "title": "Duerme Negrito",
-        "year": 1966,
-        "original_album": "Yo No Canto Por Cantar",
-        "artist_title_year": "Mercedes Sosa — Duerme Negrito (1966)",
-        "youtube_direct": "https://www.youtube.com/watch?v=FLF_4Fw7aPE"
+        "year": 1959
       }
     ],
-    "1970s": [
-      {
-        "artist": "Sui Generis",
-        "title": "Rasguña las Piedras",
-        "year": 1972,
-        "original_album": "Vida",
-        "artist_title_year": "Sui Generis — Rasguña las Piedras (1972)",
-        "youtube_direct": "https://www.youtube.com/watch?v=DrKRNJGAyHw"
-      },
-      {
-        "artist": "Mercedes Sosa",
-        "title": "Gracias a la Vida",
-        "year": 1971,
-        "original_album": "Homenaje a Violeta Parra",
-        "artist_title_year": "Mercedes Sosa — Gracias a la Vida (1971)",
-        "youtube_direct": "https://www.youtube.com/watch?v=C-WgW_4ilv0"
-      },
+    "2_middle": [
       {
         "artist": "Astor Piazzolla",
         "title": "Libertango",
-        "year": 1974,
-        "original_album": "Libertango",
-        "artist_title_year": "Astor Piazzolla — Libertango (1974)",
-        "youtube_direct": "https://www.youtube.com/watch?v=8UNtQpMMSEM"
-      }
-    ],
-    "1980s": [
-      {
-        "artist": "Soda Stereo",
-        "title": "Cuando Pase el Temblor",
-        "year": 1985,
-        "original_album": "Nada Personal",
-        "artist_title_year": "Soda Stereo — Cuando Pase el Temblor (1985)",
-        "youtube_direct": "https://www.youtube.com/watch?v=ZNzYr4U7Zs8"
+        "year": 1974
       },
       {
-        "artist": "Charly García",
-        "title": "Los Dinosaurios",
-        "year": 1983,
-        "original_album": "Clics Modernos",
-        "artist_title_year": "Charly García — Los Dinosaurios (1983)",
-        "youtube_direct": "https://www.youtube.com/watch?v=BAuqozi64WQ"
-      },
-      {
-        "artist": "Virus",
-        "title": "Wadu Wadu",
-        "year": 1981,
-        "original_album": "Wadu Wadu",
-        "artist_title_year": "Virus — Wadu Wadu (1981)",
-        "youtube_direct": "https://www.youtube.com/watch?v=iBCD4tsbHeE"
-      }
-    ],
-    "1990s": [
-      {
         "artist": "Soda Stereo",
-        "title": "De Música Ligera",
-        "year": 1990,
-        "original_album": "Canción Animal",
-        "artist_title_year": "Soda Stereo — De Música Ligera (1990)",
-        "youtube_direct": "https://www.youtube.com/watch?v=T_FkEw27XJ0"
+        "title": "De música ligera",
+        "year": 1990
       },
       {
         "artist": "Los Fabulosos Cadillacs",
         "title": "Matador",
-        "year": 1992,
-        "original_album": "El León",
-        "artist_title_year": "Los Fabulosos Cadillacs — Matador (1992)",
-        "youtube_direct": "https://www.youtube.com/watch?v=pjPA7CXutDw"
-      },
-      {
-        "artist": "Fito Páez",
-        "title": "Mariposa Tecknicolor",
-        "year": 1992,
-        "original_album": "El Amor Después del Amor",
-        "artist_title_year": "Fito Páez — Mariposa Tecknicolor (1992)",
-        "youtube_direct": "https://www.youtube.com/watch?v=CRBincBc_8k"
+        "year": 1993
       }
     ],
-    "2000s": [
-      {
-        "artist": "Bersuit Vergarabat",
-        "title": "Se Viene",
-        "year": 2000,
-        "original_album": "Hijos del Culo",
-        "artist_title_year": "Bersuit Vergarabat — Se Viene (2000)",
-        "youtube_direct": "https://www.youtube.com/watch?v=ACRVZzKu5h0"
-      },
-      {
-        "artist": "Babasónicos",
-        "title": "Irresponsables",
-        "year": 2001,
-        "original_album": "Jessico",
-        "artist_title_year": "Babasónicos — Irresponsables (2001)",
-        "youtube_direct": "https://www.youtube.com/watch?v=gZV2Q9zH2eg"
-      },
+    "3_modern": [
       {
         "artist": "Miranda!",
         "title": "Don",
-        "year": 2004,
-        "original_album": "Sin Restricciones",
-        "artist_title_year": "Miranda! — Don (2004)",
-        "youtube_direct": "https://www.youtube.com/watch?v=eap0G9ldKc0"
-      }
-    ],
-    "2010s-2020s": [
+        "year": 2004
+      },
       {
         "artist": "Bizarrap & Nathy Peluso",
         "title": "Bzrp Music Sessions, Vol. 36",
-        "year": 2020,
-        "original_album": "—",
-        "artist_title_year": "Bizarrap & Nathy Peluso — Bzrp Music Sessions, Vol. 36 (2020)",
-        "youtube_direct": "https://www.youtube.com/watch?v=0OkiUUU3Odw"
+        "year": 2020
       },
       {
-        "artist": "Duki",
-        "title": "Goteo",
-        "year": 2018,
-        "original_album": "—",
-        "artist_title_year": "Duki — Goteo (2018)",
-        "youtube_direct": "https://www.youtube.com/watch?v=FRthkpJ_NFo"
-      },
-      {
-        "artist": "Trueno",
-        "title": "Tierra Zanta",
-        "year": 2020,
-        "original_album": "Atrevido (EP)",
-        "artist_title_year": "Trueno — Tierra Zanta (2020)",
-        "youtube_direct": "https://www.youtube.com/watch?v=POAdMW-4yfw"
+        "artist": "Tini & María Becerra",
+        "title": "Miénteme",
+        "year": 2022
       }
     ]
   },
   "Havana": {
-    "1950s": [
+    "1_early": [
       {
-        "artist": "Benny Moré",
-        "title": "Bonito y Sabroso",
-        "year": 1953,
-        "original_album": "—",
-        "artist_title_year": "Benny Moré — Bonito y Sabroso (1953)",
-        "youtube_direct": "https://www.youtube.com/watch?v=RP2Q4Rc8nVw"
+        "artist": "Joseíto Fernández",
+        "title": "Guantanamera",
+        "year": 1940
       },
       {
         "artist": "Pérez Prado",
         "title": "Mambo No. 5",
-        "year": 1949,
-        "original_album": "—",
-        "artist_title_year": "Pérez Prado — Mambo No. 5 (1949)",
-        "youtube_direct": "https://www.youtube.com/watch?v=_95-hZwjJM0"
+        "year": 1949
       },
       {
-        "artist": "Celia Cruz & La Sonora Matancera",
-        "title": "Burundanga",
-        "year": 1957,
-        "original_album": "—",
-        "artist_title_year": "Celia Cruz & La Sonora Matancera — Burundanga (1957)",
-        "youtube_direct": "https://www.youtube.com/watch?v=X_38mx4Q7RI"
+        "artist": "Benny Moré",
+        "title": "Bonito y sabroso",
+        "year": 1953
       }
     ],
-    "1960s": [
-      {
-        "artist": "Los Van Van",
-        "title": "Marilú",
-        "year": 1969,
-        "original_album": "—",
-        "artist_title_year": "Los Van Van — Marilú (1969)",
-        "youtube_direct": "https://www.youtube.com/watch?v=am-iv1xkHv8"
-      },
-      {
-        "artist": "Pacho Alonso",
-        "title": "El Guararey de Pastora",
-        "year": 1966,
-        "original_album": "—",
-        "artist_title_year": "Pacho Alonso — El Guararey de Pastora (1966)",
-        "youtube_direct": "https://www.youtube.com/watch?v=aG1FtR5I1rc"
-      },
-      {
-        "artist": "Pello el Afrokán",
-        "title": "María Caracoles (ритм мозамбик)",
-        "year": 1964,
-        "original_album": "—",
-        "artist_title_year": "Pello el Afrokán — María Caracoles (ритм мозамбик) (1964)",
-        "youtube_direct": "https://www.youtube.com/watch?v=9UiZjmJ0bMQ"
-      }
-    ],
-    "1970s": [
-      {
-        "artist": "Irakere",
-        "title": "Bacalao con Pan",
-        "year": 1976,
-        "original_album": "Irakere",
-        "artist_title_year": "Irakere — Bacalao con Pan (1976)",
-        "youtube_direct": "https://www.youtube.com/watch?v=IsjRmUZp6rQ"
-      },
+    "2_middle": [
       {
         "artist": "Silvio Rodríguez",
         "title": "Ojalá",
-        "year": 1978,
-        "original_album": "—",
-        "artist_title_year": "Silvio Rodríguez — Ojalá (1978)",
-        "youtube_direct": "https://www.youtube.com/watch?v=zsg3Fdy7Kh0"
-      },
-      {
-        "artist": "Los Van Van",
-        "title": "Llegué, llegué",
-        "year": 1974,
-        "original_album": "—",
-        "artist_title_year": "Los Van Van — Llegué, llegué (1974)",
-        "youtube_direct": "https://www.youtube.com/watch?v=eE7o_5U2tcE"
-      }
-    ],
-    "1980s": [
-      {
-        "artist": "Silvio Rodríguez",
-        "title": "Unicornio",
-        "year": 1982,
-        "original_album": "—",
-        "artist_title_year": "Silvio Rodríguez — Unicornio (1982)",
-        "youtube_direct": "https://www.youtube.com/watch?v=Ip2uERvEIPE"
-      },
-      {
-        "artist": "NG La Banda",
-        "title": "En la calle (альбом целиком)",
-        "year": 1989,
-        "original_album": "—",
-        "artist_title_year": "NG La Banda — En la calle (альбом целиком) (1989)",
-        "youtube_direct": "https://www.youtube.com/watch?v=2NVjgaE12yo"
+        "year": 1978
       },
       {
         "artist": "Los Van Van",
         "title": "Sandunguera",
-        "year": 1982,
-        "original_album": "—",
-        "artist_title_year": "Los Van Van — Sandunguera (1982)",
-        "youtube_direct": "https://www.youtube.com/watch?v=R3EMWMQmrjQ"
-      }
-    ],
-    "1990s": [
+        "year": 1982
+      },
       {
-        "artist": "Buena Vista Social Club (Compay Segundo)",
+        "artist": "Buena Vista Social Club",
         "title": "Chan Chan",
-        "year": 1997,
-        "original_album": "Buena Vista Social Club",
-        "artist_title_year": "Buena Vista Social Club (Compay Segundo) — Chan Chan (1997)",
-        "youtube_direct": "https://www.youtube.com/watch?v=o5cELP06Mik"
-      },
-      {
-        "artist": "NG La Banda",
-        "title": "La Expresiva",
-        "year": 1990,
-        "original_album": "—",
-        "artist_title_year": "NG La Banda — La Expresiva (1990)",
-        "youtube_direct": "https://www.youtube.com/watch?v=xYLhFwJX20o"
-      },
-      {
-        "artist": "Los Van Van",
-        "title": "Somos cubanos",
-        "year": 1999,
-        "original_album": "—",
-        "artist_title_year": "Los Van Van — Somos cubanos (1999)",
-        "youtube_direct": "https://www.youtube.com/watch?v=hDmIQJzZJI8"
+        "year": 1997
       }
     ],
-    "2000s": [
+    "3_modern": [
       {
-        "artist": "Ibrahim Ferrer",
-        "title": "Mil congojas",
-        "year": 2003,
-        "original_album": "—",
-        "artist_title_year": "Ibrahim Ferrer — Mil congojas (2003)",
-        "youtube_direct": "https://www.youtube.com/watch?v=xUFx_4nAfUc"
-      },
-      {
-        "artist": "Interactivo",
-        "title": "Cubanos por el mundo",
-        "year": 2010,
-        "original_album": "—",
-        "artist_title_year": "Interactivo — Cubanos por el mundo (2010)",
-        "youtube_direct": "https://www.youtube.com/watch?v=tjR8bQDaIvc"
-      },
-      {
-        "artist": "Charanga Habanera",
-        "title": "Gozando en La Habana",
-        "year": 2009,
-        "original_album": "—",
-        "artist_title_year": "Charanga Habanera — Gozando en La Habana (2009)",
-        "youtube_direct": "https://www.youtube.com/watch?v=6-Ixi3-MtoI"
-      }
-    ],
-    "2010s-2020s": [
-      {
-        "artist": "Gente de Zona",
-        "title": "La Gozadera",
-        "year": 2015,
-        "original_album": "Visualízate",
-        "artist_title_year": "Gente de Zona — La Gozadera (2015)",
-        "youtube_direct": "https://www.youtube.com/watch?v=VMp55KH_3wo"
-      },
-      {
-        "artist": "Cimafunk",
-        "title": "Me Voy",
-        "year": 2017,
-        "original_album": "—",
-        "artist_title_year": "Cimafunk — Me Voy (2017)",
-        "youtube_direct": "https://www.youtube.com/watch?v=o1YBngPfU-o"
-      },
-      {
-        "artist": "Enrique Iglesias feat. Descemer Bueno & Gente de Zona",
+        "artist": "Enrique Iglesias, Descemer Bueno & Gente de Zona",
         "title": "Bailando",
-        "year": 2014,
-        "original_album": "—",
-        "artist_title_year": "Enrique Iglesias feat. Descemer Bueno & Gente de Zona — Bailando (2014)",
-        "youtube_direct": "https://www.youtube.com/watch?v=NUsoVlDFqZg"
+        "year": 2014
+      },
+      {
+        "artist": "Gente de Zona & Marc Anthony",
+        "title": "La Gozadera",
+        "year": 2015
+      },
+      {
+        "artist": "Camila Cabello",
+        "title": "Havana",
+        "year": 2017
       }
     ]
   },
   "Delhi": {
-    "1950s": [
+    "1_early": [
       {
-        "artist": "Begum Akhtar",
-        "title": "Ae Mohabbat Tere Anjaam Pe Rona Aaya (газель)",
-        "year": null,
-        "original_album": "—",
-        "artist_title_year": "Begum Akhtar — Ae Mohabbat Tere Anjaam Pe Rona Aaya (газель) (None)",
-        "youtube_direct": "https://www.youtube.com/watch?v=h_RuBP1_-Uc"
+        "artist": "Mukesh",
+        "title": "Mera Joota Hai Japani",
+        "year": 1955
       },
       {
-        "artist": "Ustad Bade Ghulam Ali Khan",
-        "title": "Yaad Piya Ki Aaye (тхумри)",
-        "year": null,
-        "original_album": "—",
-        "artist_title_year": "Ustad Bade Ghulam Ali Khan — Yaad Piya Ki Aaye (тхумри) (None)",
-        "youtube_direct": "https://www.youtube.com/watch?v=o_qDzOje1LA"
+        "artist": "Mohammed Rafi",
+        "title": "Chaudhvin Ka Chand",
+        "year": 1960
       },
       {
-        "artist": "Всеиндийское радио (Дели)",
-        "title": "классические трансляции периода",
-        "year": null,
-        "original_album": "—",
-        "artist_title_year": "Всеиндийское радио (Дели) — классические трансляции периода (н/д)",
-        "youtube_direct": null
+        "artist": "Lata Mangeshkar",
+        "title": "Ae Mere Watan Ke Logon",
+        "year": 1963
       }
     ],
-    "1960s": [
+    "2_middle": [
       {
-        "artist": "Дели — суфийская/каввали традиция (дарга Низамуддина)",
-        "title": "традиционный репертуар каввали",
-        "year": null,
-        "original_album": "—",
-        "artist_title_year": "Дели — суфийская/каввали традиция (дарга Низамуддина) — традиционный репертуар каввали (н/д)",
-        "youtube_direct": null
+        "artist": "Asha Bhosle & R.D. Burman",
+        "title": "Dum Maro Dum",
+        "year": 1971
       },
       {
-        "artist": "Всеиндийское радио (Дели)",
-        "title": "газельные трансляции периода",
-        "year": null,
-        "original_album": "—",
-        "artist_title_year": "Всеиндийское радио (Дели) — газельные трансляции периода (н/д)",
-        "youtube_direct": null
+        "artist": "Kishore Kumar & Manna Dey",
+        "title": "Yeh Dosti",
+        "year": 1975
       },
       {
-        "artist": "Хиндустани-классическая сцена Дели",
-        "title": "общие показатели жанра",
-        "year": null,
-        "original_album": "—",
-        "artist_title_year": "Хиндустани-классическая сцена Дели — общие показатели жанра (н/д)",
-        "youtube_direct": null
+        "artist": "Vijay Benedict",
+        "title": "I Am a Disco Dancer",
+        "year": 1982
       }
     ],
-    "1970s": [
+    "3_modern": [
       {
-        "artist": "Низами Бандху",
-        "title": "Aaj Rang Hai (Амир Хусро)",
-        "year": null,
-        "original_album": "—",
-        "artist_title_year": "Низами Бандху — Aaj Rang Hai (Амир Хусро) (None)",
-        "youtube_direct": "https://www.youtube.com/watch?v=0RUNyo1U5ec"
+        "artist": "Mohit Chauhan & A.R. Rahman",
+        "title": "Masakali",
+        "year": 2009
       },
       {
-        "artist": "Дели — газельная сцена 1970-х",
-        "title": "общие показатели жанра",
-        "year": null,
-        "original_album": "—",
-        "artist_title_year": "Дели — газельная сцена 1970-х — общие показатели жанра (н/д)",
-        "youtube_direct": null
+        "artist": "Arijit Singh",
+        "title": "Tum Hi Ho",
+        "year": 2013
       },
       {
-        "artist": "Дели — классическая сцена 1970-х",
-        "title": "общие показатели жанра",
-        "year": null,
-        "original_album": "—",
-        "artist_title_year": "Дели — классическая сцена 1970-х — общие показатели жанра (н/д)",
-        "youtube_direct": null
-      }
-    ],
-    "1980s": [
-      {
-        "artist": "Дели — газельная сцена 1980-х",
-        "title": "общие показатели жанра",
-        "year": null,
-        "original_album": "—",
-        "artist_title_year": "Дели — газельная сцена 1980-х — общие показатели жанра (н/д)",
-        "youtube_direct": null
-      },
-      {
-        "artist": "Дели — суфийская/каввали сцена 1980-х",
-        "title": "общие показатели жанра",
-        "year": null,
-        "original_album": "—",
-        "artist_title_year": "Дели — суфийская/каввали сцена 1980-х — общие показатели жанра (н/д)",
-        "youtube_direct": null
-      },
-      {
-        "artist": "Дели — классическая сцена 1980-х",
-        "title": "общие показатели жанра",
-        "year": null,
-        "original_album": "—",
-        "artist_title_year": "Дели — классическая сцена 1980-х — общие показатели жанра (н/д)",
-        "youtube_direct": null
-      }
-    ],
-    "1990s": [
-      {
-        "artist": "Indian Ocean",
-        "title": "Desert Rain (концерт в Mandi House, Дели)",
-        "year": 1997,
-        "original_album": "—",
-        "artist_title_year": "Indian Ocean — Desert Rain (концерт в Mandi House, Дели) (1997)",
-        "youtube_direct": "https://www.youtube.com/watch?v=G8-vfzUsTos"
-      },
-      {
-        "artist": "Parikrama",
-        "title": "But It Rained",
-        "year": 2001,
-        "original_album": "—",
-        "artist_title_year": "Parikrama — But It Rained (2001)",
-        "youtube_direct": "https://www.youtube.com/watch?v=5kQ-fEilgSc"
-      },
-      {
-        "artist": "Jagjit Singh",
-        "title": "Hoshwalon Ko Khabar Kya",
-        "year": 1999,
-        "original_album": "—",
-        "artist_title_year": "Jagjit Singh — Hoshwalon Ko Khabar Kya (1999)",
-        "youtube_direct": "https://www.youtube.com/watch?v=hZuwe72Rtcc"
-      }
-    ],
-    "2000s": [
-      {
-        "artist": "Indian Ocean",
-        "title": "Kandisa",
-        "year": 2000,
-        "original_album": "Kandisa",
-        "artist_title_year": "Indian Ocean — Kandisa (2000)",
-        "youtube_direct": "https://www.youtube.com/watch?v=bKWKDOiHVDw"
-      },
-      {
-        "artist": "Euphoria (Palash Sen, Дели)",
-        "title": "Dhoom Pichak Dhoom",
-        "year": 2001,
-        "original_album": "Phir Dhoom",
-        "artist_title_year": "Euphoria (Palash Sen, Дели) — Dhoom Pichak Dhoom (2001)",
-        "youtube_direct": "https://www.youtube.com/watch?v=jnejhW2QyFU"
-      },
-      {
-        "artist": "Indian Ocean",
-        "title": "Bandeh",
-        "year": 2005,
-        "original_album": "Black Friday (саундтрек)",
-        "artist_title_year": "Indian Ocean — Bandeh (2005)",
-        "youtube_direct": "https://www.youtube.com/watch?v=81cvPRUlppg"
-      }
-    ],
-    "2010s-2020s": [
-      {
-        "artist": "Prabh Deep",
-        "title": "Suno",
-        "year": 2017,
-        "original_album": "Class-Sikh",
-        "artist_title_year": "Prabh Deep — Suno (2017)",
-        "youtube_direct": "https://www.youtube.com/watch?v=kWQz7HaQs6A"
-      },
-      {
-        "artist": "Seedhe Maut",
-        "title": "Namastute",
-        "year": 2019,
-        "original_album": "—",
-        "artist_title_year": "Seedhe Maut — Namastute (2019)",
-        "youtube_direct": "https://www.youtube.com/watch?v=YuWUJg3Kdks"
-      },
-      {
-        "artist": "KR$NA",
-        "title": "No Cap",
-        "year": 2021,
-        "original_album": "альбом/EP уточнить",
-        "artist_title_year": "KR$NA — No Cap (2021)",
-        "youtube_direct": "https://www.youtube.com/watch?v=PejQbGZraqg"
+        "artist": "Badshah, Neha Kakkar & Indeep Bakshi",
+        "title": "Kala Chashma",
+        "year": 2016
       }
     ]
   },
   "Kraków": {
-    "1950s": [
-      {
-        "artist": "Melomani",
-        "title": "Golden Era of the „Melomani” Group (сторона A)",
-        "year": 1956,
-        "original_album": "Polish Jazz vol. 2",
-        "artist_title_year": "Melomani — Golden Era of the „Melomani” Group (сторона A) (1956)",
-        "youtube_direct": "https://www.youtube.com/watch?v=zVBWASnQpD4"
-      },
-      {
-        "artist": "Hot Club Melomani & Komeda Sextet",
-        "title": "Rozmowy jazzowe (фильм-концерт)",
-        "year": 1957,
-        "original_album": "—",
-        "artist_title_year": "Hot Club Melomani & Komeda Sextet — Rozmowy jazzowe (фильм-концерт) (1957)",
-        "youtube_direct": "https://www.youtube.com/watch?v=epo2Ed6Vm1o"
-      },
-      {
-        "artist": "Wanda Warska & Andrzej Kurylewicz Trio",
-        "title": "Somnambulicy",
-        "year": 1959,
-        "original_album": "—",
-        "artist_title_year": "Wanda Warska & Andrzej Kurylewicz Trio — Somnambulicy (1959)",
-        "youtube_direct": "https://www.youtube.com/watch?v=1t46XW0r1u4"
-      }
-    ],
-    "1960s": [
+    "1_early": [
       {
         "artist": "Ewa Demarczyk",
         "title": "Karuzela z madonnami",
-        "year": 1962,
-        "original_album": "—",
-        "artist_title_year": "Ewa Demarczyk — Karuzela z madonnami (1962)",
-        "youtube_direct": "https://www.youtube.com/watch?v=PveuEKYeIJk"
+        "year": 1962
       },
       {
-        "artist": "Krzysztof Komeda Quintet",
-        "title": "Astigmatic",
-        "year": 1965,
-        "original_album": "Astigmatic",
-        "artist_title_year": "Krzysztof Komeda Quintet — Astigmatic (1965)",
-        "youtube_direct": "https://www.youtube.com/watch?v=2Q4CZVmTqOE"
-      },
-      {
-        "artist": "Czesław Niemen & Akwarele",
+        "artist": "Czesław Niemen",
         "title": "Dziwny jest ten świat",
-        "year": 1967,
-        "original_album": "Dziwny jest ten świat",
-        "artist_title_year": "Czesław Niemen & Akwarele — Dziwny jest ten świat (1967)",
-        "youtube_direct": "https://www.youtube.com/watch?v=kVp0BB6J-HI"
-      }
-    ],
-    "1970s": [
+        "year": 1967
+      },
       {
         "artist": "Marek Grechuta & Anawa",
-        "title": "Dni, których nie znamy",
-        "year": 1971,
-        "original_album": "Korowód",
-        "artist_title_year": "Marek Grechuta & Anawa — Dni, których nie znamy (1971)",
-        "youtube_direct": "https://www.youtube.com/watch?v=tNnzUZSDNf0"
-      },
-      {
-        "artist": "SBB",
-        "title": "Z których krwi krew moja",
-        "year": 1975,
-        "original_album": "Pamięć",
-        "artist_title_year": "SBB — Z których krwi krew moja (1975)",
-        "youtube_direct": "https://www.youtube.com/watch?v=CLyb7GTq55I"
-      },
-      {
-        "artist": "Tomasz Stańko Quartet",
-        "title": "Balladyna",
-        "year": 1976,
-        "original_album": "Balladyna",
-        "artist_title_year": "Tomasz Stańko Quartet — Balladyna (1976)",
-        "youtube_direct": "https://www.youtube.com/watch?v=bopV5a33Elc"
+        "title": "Niepewność",
+        "year": 1969
       }
     ],
-    "1980s": [
+    "2_middle": [
+      {
+        "artist": "Perfect",
+        "title": "Autobiografia",
+        "year": 1981
+      },
+      {
+        "artist": "Lady Pank",
+        "title": "Mniej niż zero",
+        "year": 1983
+      },
       {
         "artist": "Maanam",
-        "title": "Cykady na Cykladach",
-        "year": 1981,
-        "original_album": "—",
-        "artist_title_year": "Maanam — Cykady na Cykladach (1981)",
-        "youtube_direct": "https://www.youtube.com/watch?v=mh8ZqQS1EPM"
-      },
-      {
-        "artist": "Brygada Kryzys",
-        "title": "Centrala",
-        "year": 1982,
-        "original_album": "Brygada Kryzys",
-        "artist_title_year": "Brygada Kryzys — Centrala (1982)",
-        "youtube_direct": "https://www.youtube.com/watch?v=5u5548AMXTI"
-      },
-      {
-        "artist": "Siekiera",
-        "title": "Ludzie wschodu",
-        "year": 1986,
-        "original_album": "Nowa Aleksandria",
-        "artist_title_year": "Siekiera — Ludzie wschodu (1986)",
-        "youtube_direct": "https://www.youtube.com/watch?v=xKYHXHJ51hI"
+        "title": "Kocham cię, kochanie moje",
+        "year": 1984
       }
     ],
-    "1990s": [
-      {
-        "artist": "Hey",
-        "title": "Teksański",
-        "year": 1993,
-        "original_album": "Fire",
-        "artist_title_year": "Hey — Teksański (1993)",
-        "youtube_direct": "https://www.youtube.com/watch?v=Kko_TpW5rrQ"
-      },
-      {
-        "artist": "Grzegorz Turnau",
-        "title": "Bracka",
-        "year": 1995,
-        "original_album": "To tu, to tam",
-        "artist_title_year": "Grzegorz Turnau — Bracka (1995)",
-        "youtube_direct": "https://www.youtube.com/watch?v=vhuW6Pvwj4I"
-      },
-      {
-        "artist": "Kazik",
-        "title": "12 groszy",
-        "year": 1997,
-        "original_album": "12 groszy",
-        "artist_title_year": "Kazik — 12 groszy (1997)",
-        "youtube_direct": "https://www.youtube.com/watch?v=UAaW1BUSPP8"
-      }
-    ],
-    "2000s": [
-      {
-        "artist": "Paktofonika",
-        "title": "Jestem Bogiem",
-        "year": 2000,
-        "original_album": "Kinematografia",
-        "artist_title_year": "Paktofonika — Jestem Bogiem (2000)",
-        "youtube_direct": "https://www.youtube.com/watch?v=u3HeJFr01T0"
-      },
+    "3_modern": [
       {
         "artist": "Myslovitz & Marek Grechuta",
         "title": "Kraków",
-        "year": 2003,
-        "original_album": "The Best Of",
-        "artist_title_year": "Myslovitz & Marek Grechuta — Kraków (2003)",
-        "youtube_direct": "https://www.youtube.com/watch?v=zEGDEGeEjuY"
+        "year": 2003
       },
       {
-        "artist": "Nigel Kennedy & Kroke",
-        "title": "Kazimierz",
-        "year": 2003,
-        "original_album": "East Meets East",
-        "artist_title_year": "Nigel Kennedy & Kroke — Kazimierz (2003)",
-        "youtube_direct": "https://www.youtube.com/watch?v=LnHeOob5IW8"
-      }
-    ],
-    "2010s-2020s": [
-      {
-        "artist": "Brodka",
-        "title": "Granda",
-        "year": 2010,
-        "original_album": "Granda",
-        "artist_title_year": "Brodka — Granda (2010)",
-        "youtube_direct": "https://www.youtube.com/watch?v=weBAnP8LutA"
+        "artist": "Dawid Podsiadło",
+        "title": "Małomiasteczkowy",
+        "year": 2018
       },
       {
-        "artist": "Hańba!",
-        "title": "Cukier krzepi",
-        "year": 2015,
-        "original_album": "—",
-        "artist_title_year": "Hańba! — Cukier krzepi (2015)",
-        "youtube_direct": "https://www.youtube.com/watch?v=Xdx-73Uhyao"
-      },
-      {
-        "artist": "Trupa Trupa",
-        "title": "Twitch",
-        "year": 2021,
-        "original_album": "B FLAT A",
-        "artist_title_year": "Trupa Trupa — Twitch (2021)",
-        "youtube_direct": "https://www.youtube.com/watch?v=VSn-T9A-6qg"
+        "artist": "sanah",
+        "title": "Szampan",
+        "year": 2020
       }
     ]
   }
