@@ -1,4 +1,10 @@
 - /.venv
 - /.git
+- /*.bak
+- /*.flac
+- /*.stl
+- /*.svg
+- /.rsync-filter
+- /songs.json
 - /.ruff_cache
 - __pycache__

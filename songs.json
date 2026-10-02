@@ -2,6 +2,38 @@
   "London": {
     "1_early": [
       {
+        "artist": "John McCormack",
+        "title": "It's a Long Way to Tipperary",
+        "year": 1914
+      },
+      {
+        "artist": "Vera Lynn",
+        "title": "We'll Meet Again",
+        "year": 1939
+      },
+      {
+        "artist": "Vera Lynn",
+        "title": "The White Cliffs of Dover",
+        "year": 1942
+      },
+      {
+        "artist": "Lonnie Donegan",
+        "title": "Rock Island Line",
+        "year": 1955
+      },
+      {
+        "artist": "Cliff Richard",
+        "title": "Move It",
+        "year": 1958
+      },
+      {
+        "artist": "Monty Norman",
+        "title": "James Bond Theme",
+        "year": 1962
+      }
+    ],
+    "2_middle": [
+      {
         "artist": "The Rolling Stones",
         "title": "(I Can't Get No) Satisfaction",
         "year": 1965
@@ -15,45 +47,100 @@
         "artist": "The Beatles",
         "title": "Hey Jude",
         "year": 1968
-      }
-    ],
-    "2_middle": [
+      },
+      {
+        "artist": "David Bowie",
+        "title": "Space Oddity",
+        "year": 1969
+      },
       {
         "artist": "Queen",
         "title": "Bohemian Rhapsody",
         "year": 1975
       },
       {
+        "artist": "Sex Pistols",
+        "title": "God Save the Queen",
+        "year": 1977
+      },
+      {
         "artist": "The Clash",
         "title": "London Calling",
         "year": 1979
-      },
-      {
-        "artist": "Wham!",
-        "title": "Wake Me Up Before You Go-Go",
-        "year": 1984
       }
     ],
     "3_modern": [
       {
+        "artist": "Blur",
+        "title": "Parklife",
+        "year": 1994
+      },
+      {
+        "artist": "Oasis",
+        "title": "Wonderwall",
+        "year": 1995
+      },
+      {
+        "artist": "The Prodigy",
+        "title": "Firestarter",
+        "year": 1996
+      },
+      {
+        "artist": "Radiohead",
+        "title": "Karma Police",
+        "year": 1997
+      },
+      {
+        "artist": "Massive Attack",
+        "title": "Teardrop",
+        "year": 1998
+      },
+      {
+        "artist": "Arctic Monkeys",
+        "title": "I Bet You Look Good on the Dancefloor",
+        "year": 2005
+      },
+      {
         "artist": "Amy Winehouse",
         "title": "Rehab",
         "year": 2006
-      },
-      {
-        "artist": "Adele",
-        "title": "Rolling in the Deep",
-        "year": 2010
-      },
-      {
-        "artist": "Dua Lipa",
-        "title": "Don't Start Now",
-        "year": 2019
       }
     ]
   },
   "Paris": {
     "1_early": [
+      {
+        "artist": "Lucienne Boyer",
+        "title": "Parlez-moi d'amour",
+        "year": 1930
+      },
+      {
+        "artist": "Joséphine Baker",
+        "title": "J'ai deux amours",
+        "year": 1930
+      },
+      {
+        "artist": "Charles Trenet",
+        "title": "La Mer",
+        "year": 1946
+      },
+      {
+        "artist": "Édith Piaf",
+        "title": "La Vie en rose",
+        "year": 1947
+      },
+      {
+        "artist": "Yves Montand",
+        "title": "Les feuilles mortes",
+        "year": 1949
+      }
+    ],
+    "2_middle": [
+      {
+        "artist": "Jacques Brel",
+        "title": "Ne me quitte pas",
+        "year": 1959
+      },
       {
         "artist": "Édith Piaf",
         "title": "Non, je ne regrette rien",
@@ -65,53 +152,93 @@
         "year": 1965
       },
       {
+        "artist": "Francis Lai",
+        "title": "Un homme et une femme",
+        "year": 1966
+      },
+      {
+        "artist": "Serge Gainsbourg & Jane Birkin",
+        "title": "Je t'aime... moi non plus",
+        "year": 1969
+      },
+      {
         "artist": "Joe Dassin",
         "title": "Les Champs-Élysées",
         "year": 1969
-      }
-    ],
-    "2_middle": [
+      },
       {
         "artist": "Dalida & Alain Delon",
         "title": "Paroles, paroles",
         "year": 1973
-      },
-      {
-        "artist": "Claude François",
-        "title": "Alexandrie Alexandra",
-        "year": 1977
-      },
-      {
-        "artist": "Vanessa Paradis",
-        "title": "Joe le taxi",
-        "year": 1987
       }
     ],
     "3_modern": [
       {
+        "artist": "MC Solaar",
+        "title": "Bouge de là",
+        "year": 1991
+      },
+      {
+        "artist": "IAM",
+        "title": "Je danse le Mia",
+        "year": 1993
+      },
+      {
         "artist": "Daft Punk",
-        "title": "One More Time",
-        "year": 2000
+        "title": "Around the World",
+        "year": 1997
       },
       {
-        "artist": "Indila",
-        "title": "Dernière danse",
-        "year": 2013
+        "artist": "Air",
+        "title": "Sexy Boy",
+        "year": 1998
       },
       {
-        "artist": "Aya Nakamura",
-        "title": "Djadja",
-        "year": 2018
+        "artist": "Manu Chao",
+        "title": "Me gustas tú",
+        "year": 2001
+      },
+      {
+        "artist": "Yann Tiersen",
+        "title": "Comptine d'un autre été, l'après-midi",
+        "year": 2001
+      },
+      {
+        "artist": "Christine and the Queens",
+        "title": "Christine",
+        "year": 2014
       }
     ]
   },
   "Berlin": {
     "1_early": [
       {
-        "artist": "Marlene Dietrich",
-        "title": "Ich hab noch einen Koffer in Berlin",
-        "year": 1957
+        "artist": "Kurt Gerron",
+        "title": "Die Moritat von Mackie Messer",
+        "year": 1928
       },
+      {
+        "artist": "Marlene Dietrich",
+        "title": "Ich bin von Kopf bis Fuß auf Liebe eingestellt",
+        "year": 1930
+      },
+      {
+        "artist": "Comedian Harmonists",
+        "title": "Mein kleiner grüner Kaktus",
+        "year": 1934
+      },
+      {
+        "artist": "Marlene Dietrich",
+        "title": "Lili Marleen",
+        "year": 1944
+      },
+      {
+        "artist": "Bully Buhlan",
+        "title": "Ich hab noch einen Koffer in Berlin",
+        "year": 1951
+      }
+    ],
+    "2_middle": [
       {
         "artist": "Drafi Deutscher",
         "title": "Marmor, Stein und Eisen bricht",
@@ -121,39 +248,67 @@
         "artist": "Hildegard Knef",
         "title": "Für mich soll's rote Rosen regnen",
         "year": 1968
-      }
-    ],
-    "2_middle": [
-      {
-        "artist": "David Bowie",
-        "title": "Heroes",
-        "year": 1977
       },
       {
-        "artist": "Ideal",
-        "title": "Berlin",
-        "year": 1980
+        "artist": "Kraftwerk",
+        "title": "Das Model",
+        "year": 1978
+      },
+      {
+        "artist": "Klaus Doldinger",
+        "title": "Das Boot",
+        "year": 1981
+      },
+      {
+        "artist": "Trio",
+        "title": "Da Da Da",
+        "year": 1982
       },
       {
         "artist": "Nena",
         "title": "99 Luftballons",
         "year": 1983
+      },
+      {
+        "artist": "Scorpions",
+        "title": "Wind of Change",
+        "year": 1990
       }
     ],
     "3_modern": [
+      {
+        "artist": "Die Fantastischen Vier",
+        "title": "Die da!?!",
+        "year": 1992
+      },
+      {
+        "artist": "Die Ärzte",
+        "title": "Schrei nach Liebe",
+        "year": 1993
+      },
+      {
+        "artist": "Paul van Dyk",
+        "title": "For an Angel",
+        "year": 1994
+      },
+      {
+        "artist": "Rammstein",
+        "title": "Du hast",
+        "year": 1997
+      },
       {
         "artist": "Seeed",
         "title": "Dickes B",
         "year": 2001
       },
       {
-        "artist": "Peter Fox",
-        "title": "Schwarz zu blau",
-        "year": 2008
+        "artist": "Wir sind Helden",
+        "title": "Guten Tag",
+        "year": 2003
       },
       {
-        "artist": "Paul Kalkbrenner",
-        "title": "Sky and Sand",
+        "artist": "Peter Fox",
+        "title": "Schwarz zu blau",
         "year": 2008
       }
     ]
@@ -161,39 +316,84 @@
   "Rome": {
     "1_early": [
       {
-        "artist": "Renato Rascel",
-        "title": "Arrivederci Roma",
-        "year": 1955
+        "artist": "Enrico Caruso",
+        "title": "'O sole mio",
+        "year": 1916
+      },
+      {
+        "artist": "Beniamino Gigli",
+        "title": "Mamma",
+        "year": 1940
+      },
+      {
+        "artist": "Renato Carosone",
+        "title": "Tu vuò fà l'americano",
+        "year": 1956
       },
       {
         "artist": "Domenico Modugno",
         "title": "Nel blu dipinto di blu",
         "year": 1958
+      }
+    ],
+    "2_middle": [
+      {
+        "artist": "Mina",
+        "title": "Il cielo in una stanza",
+        "year": 1960
+      },
+      {
+        "artist": "Ennio Morricone",
+        "title": "Il buono, il brutto, il cattivo",
+        "year": 1966
       },
       {
         "artist": "Adriano Celentano",
         "title": "Azzurro",
         "year": 1968
-      }
-    ],
-    "2_middle": [
-      {
-        "artist": "Antonello Venditti",
-        "title": "Roma capoccia",
-        "year": 1972
       },
       {
-        "artist": "Ricchi e Poveri",
-        "title": "Sarà perché ti amo",
-        "year": 1981
+        "artist": "Lucio Battisti",
+        "title": "Emozioni",
+        "year": 1970
+      },
+      {
+        "artist": "Nino Rota",
+        "title": "Speak Softly Love (The Godfather Love Theme)",
+        "year": 1972
       },
       {
         "artist": "Toto Cutugno",
         "title": "L'italiano",
         "year": 1983
+      },
+      {
+        "artist": "Lucio Dalla",
+        "title": "Caruso",
+        "year": 1986
       }
     ],
     "3_modern": [
+      {
+        "artist": "883",
+        "title": "Hanno ucciso l'Uomo Ragno",
+        "year": 1992
+      },
+      {
+        "artist": "Jovanotti",
+        "title": "L'ombelico del mondo",
+        "year": 1995
+      },
+      {
+        "artist": "Eiffel 65",
+        "title": "Blue (Da Ba Dee)",
+        "year": 1998
+      },
+      {
+        "artist": "Caparezza",
+        "title": "Fuori dal tunnel",
+        "year": 2003
+      },
       {
         "artist": "Francesco Gabbani",
         "title": "Occidentali's Karma",
@@ -214,31 +414,71 @@
   "Moscow": {
     "1_early": [
       {
+        "artist": "Fyodor Chaliapin",
+        "title": "Ey, ukhnem",
+        "year": 1902
+      },
+      {
+        "artist": "Tamara Tsereteli",
+        "title": "Dorogoy dlinnoyu",
+        "year": 1925
+      },
+      {
+        "artist": "Leonid Utesov",
+        "title": "Bublichki",
+        "year": 1930
+      },
+      {
+        "artist": "Lidiya Ruslanova",
+        "title": "Katyusha",
+        "year": 1938
+      },
+      {
+        "artist": "Alexandrov Ensemble",
+        "title": "Svyashchennaya voyna",
+        "year": 1941
+      },
+      {
+        "artist": "Mark Bernes",
+        "title": "Tyomnaya noch",
+        "year": 1943
+      },
+      {
+        "artist": "Alexandrov Ensemble",
+        "title": "Kalinka",
+        "year": 1946
+      }
+    ],
+    "2_middle": [
+      {
         "artist": "Vladimir Troshin",
         "title": "Podmoskovnye vechera",
         "year": 1956
       },
       {
-        "artist": "Nikita Mikhalkov",
-        "title": "Ya shagayu po Moskve",
-        "year": 1963
+        "artist": "Aida Vedishcheva",
+        "title": "Pesenka o medvedyakh",
+        "year": 1967
+      },
+      {
+        "artist": "Vladimir Vysotsky",
+        "title": "Pesnya o druge",
+        "year": 1967
       },
       {
         "artist": "Muslim Magomaev",
-        "title": "Luchshiy gorod Zemli",
-        "year": 1964
-      }
-    ],
-    "2_middle": [
-      {
-        "artist": "Mashina Vremeni",
-        "title": "Povorot",
-        "year": 1979
+        "title": "Luch solntsa zolotogo",
+        "year": 1973
       },
       {
         "artist": "Alla Pugacheva",
         "title": "Million alykh roz",
         "year": 1982
+      },
+      {
+        "artist": "Alyans",
+        "title": "Na zare",
+        "year": 1987
       },
       {
         "artist": "Kino",
@@ -248,50 +488,105 @@
     ],
     "3_modern": [
       {
-        "artist": "Zemfira",
-        "title": "Khochesh?",
+        "artist": "Kino",
+        "title": "Kukushka",
+        "year": 1990
+      },
+      {
+        "artist": "DDT",
+        "title": "Chto takoe osen",
+        "year": 1991
+      },
+      {
+        "artist": "Agata Kristi",
+        "title": "Kak na voyne",
+        "year": 1993
+      },
+      {
+        "artist": "Mumiy Troll",
+        "title": "Utekay",
+        "year": 1997
+      },
+      {
+        "artist": "Bi-2",
+        "title": "Polkovniku nikto ne pishet",
         "year": 2000
       },
       {
-        "artist": "t.A.T.u.",
-        "title": "Nas ne dogonyat",
-        "year": 2001
+        "artist": "Zemfira",
+        "title": "Iskala",
+        "year": 2000
       },
       {
-        "artist": "Zivert",
-        "title": "Life",
-        "year": 2018
+        "artist": "Splean",
+        "title": "Vykhoda net",
+        "year": 2001
       }
     ]
   },
   "New York": {
     "1_early": [
       {
-        "artist": "The Drifters",
-        "title": "On Broadway",
-        "year": 1963
+        "artist": "Benny Goodman",
+        "title": "Sing, Sing, Sing",
+        "year": 1937
       },
       {
-        "artist": "The Ronettes",
-        "title": "Be My Baby",
-        "year": 1963
+        "artist": "The Andrews Sisters",
+        "title": "Bei Mir Bist Du Schön",
+        "year": 1937
       },
       {
-        "artist": "The Lovin' Spoonful",
-        "title": "Summer in the City",
-        "year": 1966
+        "artist": "Louis Armstrong",
+        "title": "When the Saints Go Marching In",
+        "year": 1938
+      },
+      {
+        "artist": "Billie Holiday",
+        "title": "Strange Fruit",
+        "year": 1939
+      },
+      {
+        "artist": "Glenn Miller",
+        "title": "In the Mood",
+        "year": 1939
+      },
+      {
+        "artist": "Duke Ellington",
+        "title": "Take the 'A' Train",
+        "year": 1941
       }
     ],
     "2_middle": [
       {
-        "artist": "Blondie",
-        "title": "Heart of Glass",
-        "year": 1979
+        "artist": "Louis Armstrong",
+        "title": "Go Down Moses (Let My People Go)",
+        "year": 1958
+      },
+      {
+        "artist": "Ray Charles",
+        "title": "Hit the Road Jack",
+        "year": 1961
       },
       {
         "artist": "Frank Sinatra",
-        "title": "Theme from New York, New York",
-        "year": 1980
+        "title": "Fly Me to the Moon",
+        "year": 1964
+      },
+      {
+        "artist": "Aretha Franklin",
+        "title": "Respect",
+        "year": 1967
+      },
+      {
+        "artist": "Ramones",
+        "title": "Blitzkrieg Bop",
+        "year": 1976
+      },
+      {
+        "artist": "Blondie",
+        "title": "Heart of Glass",
+        "year": 1979
       },
       {
         "artist": "Grandmaster Flash and the Furious Five",
@@ -301,86 +596,161 @@
     ],
     "3_modern": [
       {
+        "artist": "Run-DMC & Aerosmith",
+        "title": "Walk This Way",
+        "year": 1986
+      },
+      {
+        "artist": "Beastie Boys",
+        "title": "(You Gotta) Fight for Your Right (To Party!)",
+        "year": 1986
+      },
+      {
+        "artist": "Madonna",
+        "title": "Vogue",
+        "year": 1990
+      },
+      {
+        "artist": "Fugees",
+        "title": "Killing Me Softly",
+        "year": 1996
+      },
+      {
         "artist": "The Strokes",
         "title": "Last Nite",
         "year": 2001
       },
       {
+        "artist": "50 Cent",
+        "title": "In da Club",
+        "year": 2003
+      },
+      {
         "artist": "Jay-Z & Alicia Keys",
         "title": "Empire State of Mind",
         "year": 2009
-      },
-      {
-        "artist": "Cardi B",
-        "title": "Bodak Yellow",
-        "year": 2017
       }
     ]
   },
   "Los Angeles": {
     "1_early": [
       {
-        "artist": "The Beach Boys",
-        "title": "California Girls",
-        "year": 1965
+        "artist": "Judy Garland",
+        "title": "Over the Rainbow",
+        "year": 1939
       },
       {
-        "artist": "The Mamas & the Papas",
-        "title": "California Dreamin'",
-        "year": 1965
+        "artist": "Bing Crosby",
+        "title": "White Christmas",
+        "year": 1942
+      },
+      {
+        "artist": "Woody Guthrie",
+        "title": "This Land Is Your Land",
+        "year": 1944
+      },
+      {
+        "artist": "Hank Williams",
+        "title": "Your Cheatin' Heart",
+        "year": 1953
+      },
+      {
+        "artist": "Bill Haley & His Comets",
+        "title": "Rock Around the Clock",
+        "year": 1954
+      }
+    ],
+    "2_middle": [
+      {
+        "artist": "Elvis Presley",
+        "title": "Hound Dog",
+        "year": 1956
+      },
+      {
+        "artist": "Chuck Berry",
+        "title": "Johnny B. Goode",
+        "year": 1958
+      },
+      {
+        "artist": "Henry Mancini",
+        "title": "The Pink Panther Theme",
+        "year": 1963
+      },
+      {
+        "artist": "The Beach Boys",
+        "title": "Good Vibrations",
+        "year": 1966
       },
       {
         "artist": "The Doors",
         "title": "Light My Fire",
         "year": 1967
-      }
-    ],
-    "2_middle": [
+      },
       {
         "artist": "Eagles",
         "title": "Hotel California",
         "year": 1976
       },
       {
-        "artist": "Randy Newman",
-        "title": "I Love L.A.",
+        "artist": "Michael Jackson",
+        "title": "Billie Jean",
         "year": 1983
-      },
-      {
-        "artist": "Guns N' Roses",
-        "title": "Sweet Child o' Mine",
-        "year": 1987
       }
     ],
     "3_modern": [
       {
+        "artist": "Nirvana",
+        "title": "Smells Like Teen Spirit",
+        "year": 1991
+      },
+      {
+        "artist": "Rage Against the Machine",
+        "title": "Killing in the Name",
+        "year": 1992
+      },
+      {
+        "artist": "Dr. Dre",
+        "title": "Nuthin' but a 'G' Thang",
+        "year": 1992
+      },
+      {
+        "artist": "2Pac",
+        "title": "California Love",
+        "year": 1995
+      },
+      {
         "artist": "Red Hot Chili Peppers",
-        "title": "Dani California",
-        "year": 2006
+        "title": "Californication",
+        "year": 1999
+      },
+      {
+        "artist": "Linkin Park",
+        "title": "In the End",
+        "year": 2001
       },
       {
         "artist": "Kendrick Lamar",
         "title": "HUMBLE.",
         "year": 2017
-      },
-      {
-        "artist": "Billie Eilish",
-        "title": "bad guy",
-        "year": 2019
       }
     ]
   },
   "Tokyo": {
     "1_early": [
       {
-        "artist": "Shizuko Kasagi",
-        "title": "Tokyo Boogie-Woogie",
-        "year": 1947
+        "artist": "Koto",
+        "title": "Sakura Sakura",
+        "year": 1950
       },
       {
-        "artist": "Frank Nagai",
-        "title": "Yurakucho de Aimasho",
-        "year": 1957
+        "artist": "Hibari Misora",
+        "title": "Ringo Oiwake",
+        "year": 1952
+      },
+      {
+        "artist": "Akira Ifukube",
+        "title": "Godzilla Main Theme",
+        "year": 1954
       },
       {
         "artist": "Kyu Sakamoto",
@@ -390,9 +760,9 @@
     ],
     "2_middle": [
       {
-        "artist": "Miki Matsubara",
-        "title": "Mayonaka no Door (Stay with Me)",
-        "year": 1979
+        "artist": "Sayuri Ishikawa",
+        "title": "Tsugaru Kaikyo Fuyugeshiki",
+        "year": 1977
       },
       {
         "artist": "Yellow Magic Orchestra",
@@ -400,36 +770,93 @@
         "year": 1980
       },
       {
+        "artist": "Ryuichi Sakamoto",
+        "title": "Merry Christmas Mr. Lawrence",
+        "year": 1983
+      },
+      {
+        "artist": "Saburo Kitajima",
+        "title": "Matsuri",
+        "year": 1984
+      },
+      {
         "artist": "Mariya Takeuchi",
         "title": "Plastic Love",
         "year": 1984
+      },
+      {
+        "artist": "Azumi Inoue",
+        "title": "Tonari no Totoro",
+        "year": 1988
+      },
+      {
+        "artist": "Hibari Misora",
+        "title": "Kawa no Nagare no Yo ni",
+        "year": 1989
       }
     ],
     "3_modern": [
+      {
+        "artist": "Yoko Takahashi",
+        "title": "Zankoku na Tenshi no Teze",
+        "year": 1995
+      },
+      {
+        "artist": "Youmi Kimura",
+        "title": "Itsumo Nando Demo",
+        "year": 2001
+      },
+      {
+        "artist": "Yoshida Brothers",
+        "title": "Rising",
+        "year": 2003
+      },
       {
         "artist": "Perfume",
         "title": "Polyrhythm",
         "year": 2007
       },
       {
+        "artist": "Kyary Pamyu Pamyu",
+        "title": "PonPonPon",
+        "year": 2011
+      },
+      {
+        "artist": "Babymetal",
+        "title": "Gimme Chocolate!!",
+        "year": 2014
+      },
+      {
         "artist": "Kenshi Yonezu",
         "title": "Lemon",
         "year": 2018
-      },
-      {
-        "artist": "YOASOBI",
-        "title": "Yoru ni Kakeru",
-        "year": 2019
       }
     ]
   },
   "Tel Aviv": {
     "1_early": [
       {
+        "artist": "Yaffa Yarkoni",
+        "title": "Hayu Leilot",
+        "year": 1948
+      },
+      {
+        "artist": "Shoshana Damari",
+        "title": "Kalaniyot",
+        "year": 1951
+      },
+      {
         "artist": "HaDudaim",
         "title": "Erev Shel Shoshanim",
         "year": 1957
       },
+      {
+        "artist": "Ran & Nama",
+        "title": "Hava Nagila",
+        "year": 1959
+      }
+    ],
+    "2_middle": [
       {
         "artist": "Shuli Natan",
         "title": "Yerushalayim Shel Zahav",
@@ -439,18 +866,26 @@
         "artist": "Lehakat HaNahal",
         "title": "Shir LaShalom",
         "year": 1969
-      }
-    ],
-    "2_middle": [
+      },
       {
         "artist": "Arik Einstein",
-        "title": "Atur Mitzchech",
-        "year": 1977
+        "title": "Ani ve'Ata",
+        "year": 1971
+      },
+      {
+        "artist": "Kaveret",
+        "title": "Yo Ya",
+        "year": 1974
       },
       {
         "artist": "Gali Atari & Milk and Honey",
         "title": "Hallelujah",
         "year": 1979
+      },
+      {
+        "artist": "Zohar Argov",
+        "title": "HaPerach BeGani",
+        "year": 1982
       },
       {
         "artist": "Ofra Haza",
@@ -460,14 +895,34 @@
     ],
     "3_modern": [
       {
+        "artist": "Aviv Geffen",
+        "title": "Achshav Meunan",
+        "year": 1993
+      },
+      {
+        "artist": "Berry Sakharof",
+        "title": "Bo",
+        "year": 1996
+      },
+      {
+        "artist": "Hadag Nahash",
+        "title": "Shirat HaSticker",
+        "year": 2004
+      },
+      {
+        "artist": "Idan Raichel Project",
+        "title": "Mima'amakim",
+        "year": 2005
+      },
+      {
+        "artist": "Infected Mushroom",
+        "title": "Becoming Insane",
+        "year": 2007
+      },
+      {
         "artist": "Omer Adam",
         "title": "Tel Aviv",
         "year": 2014
-      },
-      {
-        "artist": "Static & Ben El",
-        "title": "Tudo Bom",
-        "year": 2017
       },
       {
         "artist": "Netta",
@@ -484,22 +939,59 @@
         "year": 1935
       },
       {
+        "artist": "Carlos Gardel",
+        "title": "Volver",
+        "year": 1935
+      },
+      {
+        "artist": "Atahualpa Yupanqui",
+        "title": "Los ejes de mi carreta",
+        "year": 1944
+      },
+      {
+        "artist": "Aníbal Troilo",
+        "title": "Sur",
+        "year": 1948
+      },
+      {
         "artist": "Juan D'Arienzo",
         "title": "La Cumparsita",
         "year": 1951
-      },
-      {
-        "artist": "Astor Piazzolla",
-        "title": "Adiós Nonino",
-        "year": 1959
       }
     ],
     "2_middle": [
       {
         "artist": "Astor Piazzolla",
+        "title": "Adiós Nonino",
+        "year": 1959
+      },
+      {
+        "artist": "Los Gatos",
+        "title": "La balsa",
+        "year": 1967
+      },
+      {
+        "artist": "Mercedes Sosa",
+        "title": "Alfonsina y el mar",
+        "year": 1969
+      },
+      {
+        "artist": "Sui Generis",
+        "title": "Canción para mi muerte",
+        "year": 1972
+      },
+      {
+        "artist": "Astor Piazzolla",
         "title": "Libertango",
         "year": 1974
       },
+      {
+        "artist": "Soda Stereo",
+        "title": "Persiana americana",
+        "year": 1986
+      }
+    ],
+    "3_modern": [
       {
         "artist": "Soda Stereo",
         "title": "De música ligera",
@@ -509,28 +1001,36 @@
         "artist": "Los Fabulosos Cadillacs",
         "title": "Matador",
         "year": 1993
-      }
-    ],
-    "3_modern": [
+      },
       {
-        "artist": "Miranda!",
-        "title": "Don",
-        "year": 2004
+        "artist": "Bersuit Vergarabat",
+        "title": "Se viene",
+        "year": 2000
+      },
+      {
+        "artist": "Gotan Project",
+        "title": "Santa María (del Buen Ayre)",
+        "year": 2001
+      },
+      {
+        "artist": "Bajofondo",
+        "title": "Pa' bailar",
+        "year": 2007
       },
       {
         "artist": "Bizarrap & Nathy Peluso",
         "title": "Bzrp Music Sessions, Vol. 36",
         "year": 2020
-      },
-      {
-        "artist": "Tini & María Becerra",
-        "title": "Miénteme",
-        "year": 2022
       }
     ]
   },
   "Havana": {
     "1_early": [
+      {
+        "artist": "Don Azpiazu",
+        "title": "El manisero",
+        "year": 1930
+      },
       {
         "artist": "Joseíto Fernández",
         "title": "Guantanamera",
@@ -542,12 +1042,32 @@
         "year": 1949
       },
       {
+        "artist": "Celia Cruz & La Sonora Matancera",
+        "title": "Burundanga",
+        "year": 1953
+      },
+      {
         "artist": "Benny Moré",
         "title": "Bonito y sabroso",
         "year": 1953
+      },
+      {
+        "artist": "Orquesta Aragón",
+        "title": "El bodeguero",
+        "year": 1955
       }
     ],
     "2_middle": [
+      {
+        "artist": "Carlos Puebla",
+        "title": "Hasta siempre, Comandante",
+        "year": 1965
+      },
+      {
+        "artist": "Pablo Milanés",
+        "title": "Yolanda",
+        "year": 1970
+      },
       {
         "artist": "Silvio Rodríguez",
         "title": "Ojalá",
@@ -557,18 +1077,23 @@
         "artist": "Los Van Van",
         "title": "Sandunguera",
         "year": 1982
-      },
-      {
-        "artist": "Buena Vista Social Club",
-        "title": "Chan Chan",
-        "year": 1997
       }
     ],
     "3_modern": [
       {
-        "artist": "Enrique Iglesias, Descemer Bueno & Gente de Zona",
-        "title": "Bailando",
-        "year": 2014
+        "artist": "Buena Vista Social Club",
+        "title": "Chan Chan",
+        "year": 1997
+      },
+      {
+        "artist": "Ibrahim Ferrer",
+        "title": "Dos gardenias",
+        "year": 1997
+      },
+      {
+        "artist": "Orishas",
+        "title": "537 C.U.B.A.",
+        "year": 2000
       },
       {
         "artist": "Gente de Zona & Marc Anthony",
@@ -576,14 +1101,29 @@
         "year": 2015
       },
       {
-        "artist": "Camila Cabello",
-        "title": "Havana",
+        "artist": "Cimafunk",
+        "title": "Me voy",
         "year": 2017
       }
     ]
   },
   "Delhi": {
     "1_early": [
+      {
+        "artist": "K.L. Saigal",
+        "title": "Jab Dil Hi Toot Gaya",
+        "year": 1946
+      },
+      {
+        "artist": "Lata Mangeshkar",
+        "title": "Aayega Aanewala",
+        "year": 1949
+      },
+      {
+        "artist": "Geeta Dutt",
+        "title": "Babuji Dheere Chalna",
+        "year": 1954
+      },
       {
         "artist": "Mukesh",
         "title": "Mera Joota Hai Japani",
@@ -596,19 +1136,34 @@
       },
       {
         "artist": "Lata Mangeshkar",
-        "title": "Ae Mere Watan Ke Logon",
-        "year": 1963
+        "title": "Pyar Kiya To Darna Kya",
+        "year": 1960
       }
     ],
     "2_middle": [
       {
-        "artist": "Asha Bhosle & R.D. Burman",
+        "artist": "Lata Mangeshkar",
+        "title": "Ae Mere Watan Ke Logon",
+        "year": 1963
+      },
+      {
+        "artist": "Kishore Kumar",
+        "title": "Mere Sapno Ki Rani",
+        "year": 1969
+      },
+      {
+        "artist": "Asha Bhosle",
         "title": "Dum Maro Dum",
         "year": 1971
       },
       {
         "artist": "Kishore Kumar & Manna Dey",
         "title": "Yeh Dosti",
+        "year": 1975
+      },
+      {
+        "artist": "R.D. Burman",
+        "title": "Mehbooba Mehbooba",
         "year": 1975
       },
       {
@@ -619,24 +1174,66 @@
     ],
     "3_modern": [
       {
-        "artist": "Mohit Chauhan & A.R. Rahman",
+        "artist": "Sukhwinder Singh & Sapna Awasthi",
+        "title": "Chaiyya Chaiyya",
+        "year": 1998
+      },
+      {
+        "artist": "Daler Mehndi",
+        "title": "Tunak Tunak Tun",
+        "year": 1998
+      },
+      {
+        "artist": "Panjabi MC",
+        "title": "Mundian To Bach Ke",
+        "year": 1998
+      },
+      {
+        "artist": "A.R. Rahman",
+        "title": "Jai Ho",
+        "year": 2008
+      },
+      {
+        "artist": "Mohit Chauhan",
         "title": "Masakali",
         "year": 2009
       },
       {
-        "artist": "Arijit Singh",
-        "title": "Tum Hi Ho",
+        "artist": "Aditi Paul & Osman Mir",
+        "title": "Nagada Sang Dhol",
         "year": 2013
       },
       {
-        "artist": "Badshah, Neha Kakkar & Indeep Bakshi",
-        "title": "Kala Chashma",
-        "year": 2016
+        "artist": "Rahul Sipligunj & Kaala Bhairava",
+        "title": "Naatu Naatu",
+        "year": 2022
       }
     ]
   },
   "Kraków": {
     "1_early": [
+      {
+        "artist": "Hanka Ordonówna",
+        "title": "Miłość ci wszystko wybaczy",
+        "year": 1933
+      },
+      {
+        "artist": "Mieczysław Fogg",
+        "title": "Ostatnia niedziela",
+        "year": 1936
+      },
+      {
+        "artist": "Molly Picon",
+        "title": "Yidl Mitn Fidl",
+        "year": 1936
+      },
+      {
+        "artist": "Eugeniusz Bodo",
+        "title": "Umówiłem się z nią na dziewiątą",
+        "year": 1937
+      }
+    ],
+    "2_middle": [
       {
         "artist": "Ewa Demarczyk",
         "title": "Karuzela z madonnami",
@@ -648,12 +1245,15 @@
         "year": 1967
       },
       {
+        "artist": "Krzysztof Komeda",
+        "title": "Rosemary's Baby (Lullaby)",
+        "year": 1968
+      },
+      {
         "artist": "Marek Grechuta & Anawa",
         "title": "Niepewność",
         "year": 1969
-      }
-    ],
-    "2_middle": [
+      },
       {
         "artist": "Perfect",
         "title": "Autobiografia",
@@ -672,19 +1272,39 @@
     ],
     "3_modern": [
       {
-        "artist": "Myslovitz & Marek Grechuta",
-        "title": "Kraków",
-        "year": 2003
+        "artist": "Hey",
+        "title": "Teksański",
+        "year": 1993
+      },
+      {
+        "artist": "Kazik",
+        "title": "12 groszy",
+        "year": 1997
+      },
+      {
+        "artist": "Myslovitz",
+        "title": "Długość dźwięku samotności",
+        "year": 1999
+      },
+      {
+        "artist": "Paktofonika",
+        "title": "Jestem Bogiem",
+        "year": 2000
+      },
+      {
+        "artist": "Brodka",
+        "title": "Granda",
+        "year": 2010
+      },
+      {
+        "artist": "Taco Hemingway",
+        "title": "Deszcz na betonie",
+        "year": 2016
       },
       {
         "artist": "Dawid Podsiadło",
         "title": "Małomiasteczkowy",
         "year": 2018
-      },
-      {
-        "artist": "sanah",
-        "title": "Szampan",
-        "year": 2020
       }
     ]
   }

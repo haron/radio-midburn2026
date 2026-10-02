@@ -185,7 +185,8 @@ def led_ranges(key: str) -> list[tuple[int, int]]:
 
 class Radio:
     def __init__(self, locs: list[str], epochs: list[str], lib: list[list[Station | None]], leds: Leds | None):
-        self.locs, self.epochs, self.lib, self.leds, self.loc, self.epoch = locs, epochs, lib, leds, 0, 0
+        self.locs, self.epochs, self.lib, self.leds = locs, epochs, lib, leds
+        self.loc, self.epoch = self.random_station(None)  # every start tunes in somewhere new
         self.fade, self.hold = float(os.environ["STATIC_FADE"]), float(os.environ["STATIC_HOLD"])
         if not (self.fade > 0 and self.hold > 0):  # hold > 0 keeps the station load inside the silence
             sys.exit(f"STATIC_FADE and STATIC_HOLD must be > 0, got {self.fade}/{self.hold}")
@@ -218,10 +219,13 @@ class Radio:
                 self.walking, self.walk_next = True, time.monotonic()
                 log.info("random walk on")
 
+    def random_station(self, exclude: tuple[int, int] | None) -> tuple[int, int]:
+        return random.choice([(li, ei) for li, row in enumerate(self.lib) for ei, st in enumerate(row)
+                              if st and (li, ei) != exclude])
+
     def walk_step(self, now: float):
         """Under the lock: jump to a random other station, through WALK_STATIC seconds of static."""
-        self.loc, self.epoch = random.choice([(li, ei) for li, row in enumerate(self.lib) for ei, st in enumerate(row)
-                                              if st and (li, ei) != (self.loc, self.epoch)])
+        self.loc, self.epoch = self.random_station((self.loc, self.epoch))
         self.tune_until = now + self.fade + random.uniform(*WALK_STATIC)
         self.walk_next = self.tune_until + random.uniform(*WALK_PLAY)
         log.info("random walk -> %s", self.name())

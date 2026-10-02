@@ -101,7 +101,7 @@ Design decisions: `AGENTS.md`.
 
 ## Songs
 
-`songs.json`: location → epoch (`1_early`, `2_middle`, `3_modern`) → 3 songs.
+`songs.json`: location → epoch (`1_early`, `2_middle`, `3_modern`) → 3–7 songs.
 `uv run download.py` fetches the missing ones into `music/` (first YouTube
-search hit, needs ffmpeg).
+search hit, needs ffmpeg) and removes the ones no longer listed.
 [archive](https://drive.google.com/file/d/1AcYtEuLTQwYhTQlg3ZpNMd7gsZxThM4N/view?usp=drive_link)

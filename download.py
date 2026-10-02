@@ -2,9 +2,11 @@
 # requires-python = ">=3.12"
 # dependencies = ["yt-dlp"]
 # ///
-"""Download songs.json into music/<location>/<epoch>/NN_<artist> - <title>.mp3 (first YouTube search hit). Needs ffmpeg."""
+"""Download songs.json into music/<location>/<epoch>/NN_<artist> - <title>.mp3 (first YouTube search hit), then
+remove mp3s that are no longer in songs.json. Needs ffmpeg."""
 import json
 import re
+import unicodedata
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
@@ -36,3 +38,7 @@ jobs = [(ROOT / "music" / loc / ep / re.sub(r'[/\\:*?"<>|]', "_", f"{i:02}_{s['a
 with ThreadPoolExecutor(max_workers=4) as pool:
     for f in [pool.submit(download, *j) for j in jobs]:
         f.result()
+keep = {unicodedata.normalize("NFC", str(path)) for path, _ in jobs}  # macOS may store names decomposed (NFD)
+for stale in sorted(p for p in (ROOT / "music").glob("*/*/*.mp3") if unicodedata.normalize("NFC", str(p)) not in keep):
+    stale.unlink()
+    print("removed", stale.relative_to(ROOT))
