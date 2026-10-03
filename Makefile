@@ -1,5 +1,12 @@
 SHELL := /usr/bin/env -S bash -O globstar # makes work globs like **/*.py
 .DEFAULT_GOAL := deploy
+.DELETE_ON_ERROR: # a failed recipe (e.g. `scale.py > radio.svg`) leaves no half-written target
+
+# always runs; the prerequisites get rebuilt first if they are generated (radio.svg, SONGS.md)
+linter: $(wildcard *.py *.md) radio.svg
+	uvx ruff check .
+	markdownlint-cli2 '*.md'
+	xmllint --noout radio.svg
 
 normalize:
 	mp3gain -r -k **/*.mp3
@@ -45,7 +52,7 @@ clean:
 provision:
 	./provision.sh pinky.tailab2d8.ts.net
 
-upload: static.flac SONGS.md radio.png
+upload: static.flac SONGS.md radio.png linter
 	dsstore-delete
 	rsync -F .rsync-filter --delete -av . pinky.tailab2d8.ts.net:/opt/radio
 

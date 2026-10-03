@@ -1,14 +1,3 @@
-# Cities
-London, Paris, Berlin, Rome, Kraków, Moscow, New York, Los Angeles, Tokyo, Tel Aviv, Buenos Aires, Havana, Deli
-
-# Music download
-
-[Install UV](https://docs.astral.sh/uv/getting-started/installation/). Then:
-
-    uvx --with curl_cffi yt-dlp --cookies-from-browser chrome --js-runtimes node --remote-components ejs:github --no-warnings https://youtu.be/-bWo0ky8xAs
-
-Change `chrome` to your browser of choice.
-
 # Radio
 
 A two-knob radio. One knob picks the location, the other picks the epoch, and
@@ -17,6 +6,21 @@ later and it has moved on.
 
 Enclosure model: `Radio.stl`. Source:
 <https://cad.onshape.com/documents/3f97c19d22cdfbb1ff89ef73/w/63b62facf99d46d81c1500a9/e/cb74c49569cd1aa5f598bcb6>
+
+## Cities
+
+London, Paris, Berlin, Rome, Kraków, Moscow, New York, Los Angeles, Tokyo, Tel
+Aviv, Buenos Aires, Havana, Deli
+
+## Music download
+
+[Install UV](https://docs.astral.sh/uv/getting-started/installation/). Then:
+
+``` sh
+uvx --with curl_cffi yt-dlp --cookies-from-browser chrome --js-runtimes node --remote-components ejs:github --no-warnings https://youtu.be/-bWo0ky8xAs
+```
+
+Change `chrome` to your browser of choice.
 
 ## Setup
 
@@ -29,19 +33,21 @@ cp .env.example .env
 
 ## Music
 
-    music/
-      01_Paris/
-        1_30s/*.mp3
-        2_60s/*.mp3
-        3_90s/*.mp3
-      02_London/
-        ...
-    static.mp3
+``` text
+music/
+  01_Paris/
+    1_30s/*.mp3
+    2_60s/*.mp3
+    3_90s/*.mp3
+  02_London/
+    ...
+static.mp3
+```
 
 - Locations and epochs are ordered by folder name, so use numeric prefixes.
 - The epoch knob spans every epoch folder with MP3s in any location; a location
-  missing one plays static there. Folders without MP3s are ignored.
-  Startup fails otherwise.
+  missing one plays static there. Folders without MP3s are ignored. Startup
+  fails otherwise.
 - `make normalize` evens out loudness (needs `mp3gain`).
 
 ## Run
@@ -50,8 +56,8 @@ cp .env.example .env
 make run
 ```
 
-- Keyboard (in a terminal): ←/→ or A/D switch location, ↑/↓ or W/S switch epoch, T starts the random walk.
-  The knobs stop at the first and last position.
+- Keyboard (in a terminal): ←/→ or A/D switch location, ↑/↓ or W/S switch epoch,
+  T starts the random walk. The knobs stop at the first and last position.
 - On the Pi, the KY-040 encoders work as well. Wire CLK/DT to the BCM pins in
   `.env`, `+` to 3.3V, and GND to GND.
 - The same code and config run on Mac and Pi. The audio output is detected
@@ -66,13 +72,25 @@ ESP32 running WLED and plugged into the Pi (or Mac) over USB. No WiFi is
 involved.
 
 - WLED setup: Config → Sync Interfaces → Serial baud `115200`; LED Preferences →
-  length covers the highest index in `.env`; WiFi Setup → AP opens `Never`, so
-  it doesn’t broadcast a hotspot at the event.
-- Find the port with `ls /dev/cu.*` (Mac) or `ls /dev/ttyUSB* /dev/ttyACM*` (Pi)
-  and put it in `WLED_PORT`.
+  type `WS281x` (RGB, not RGBW: a wrong type shifts LEDs along the strip),
+  length covers the highest index in `.env`, brightness limiter on with 500 mA
+  (powered from the Pi’s USB), “Turn LEDs on after power up” off and boot preset
+  `0`; WiFi Setup → AP opens `Never`, so it doesn’t broadcast a hotspot at the
+  event.
+- Find the port with `ls /dev/cu.*` (Mac) or `ls /dev/serial/by-id/` (Pi) and
+  put it in `WLED_PORT`. The by-id path survives replugging.
+- The Pi needs a proper 5.1V 2.5A supply: on undervoltage
+  (`cat /sys/class/hwmon/hwmon1/in0_lcrit_alarm` is `1`) the ESP32 reboots in a
+  loop and the port keeps disappearing.
 - On the Pi the user needs the port’s group (`dialout`):
   `sudo usermod -aG dialout $USER`, then log in again. Startup fails if the port
   is missing, not writable, or WLED doesn’t answer.
+
+## Dial
+
+`make radio.pdf` builds the printed dial (60×20 cm plus 3 mm bleed) from
+`scale.py`; `make radio.png` is a preview. Build on a Mac: it needs Helvetica
+Neue.
 
 ## Settings (`.env`)
 
@@ -98,7 +116,6 @@ involved.
 - mpd’s own log: `/tmp/radio-mpd.log`.
 
 Design decisions: `AGENTS.md`.
-
 
 ## Songs
 
