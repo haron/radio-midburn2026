@@ -444,6 +444,11 @@
         "year": 1943
       },
       {
+        "artist": "Иван Шмелёв",
+        "title": "Вот солдаты идут",
+        "year": 1946
+      },
+      {
         "artist": "Alexandrov Ensemble",
         "title": "Kalinka",
         "year": 1946
@@ -684,6 +689,11 @@
       {
         "artist": "The Doors",
         "title": "Light My Fire",
+        "year": 1967
+      },
+      {
+        "artist": "The Doors",
+        "title": "People Are Strange",
         "year": 1967
       },
       {

@@ -7,6 +7,7 @@ linter: $(wildcard *.py *.md) radio.svg
 	uvx ruff check .
 	markdownlint-cli2 '*.md'
 	xmllint --noout radio.svg
+	jq empty **/*.json .*.json
 
 normalize:
 	mp3gain -r -k **/*.mp3
@@ -72,3 +73,5 @@ restart:
 stop:
 	ssh pinky.tailab2d8.ts.net systemctl stop radio
 
+download: songs.json linter
+	uv run download.py

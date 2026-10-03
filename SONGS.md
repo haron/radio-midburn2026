@@ -109,6 +109,7 @@
   - Lidiya Ruslanova — Katyusha (1938)
   - Alexandrov Ensemble — Svyashchennaya voyna (1941)
   - Mark Bernes — Tyomnaya noch (1943)
+  - Иван Шмелёв — Вот солдаты идут (1946)
   - Alexandrov Ensemble — Kalinka (1946)
 - Middle
   - Vladimir Troshin — Podmoskovnye vechera (1956)
@@ -167,6 +168,7 @@
   - Henry Mancini — The Pink Panther Theme (1963)
   - The Beach Boys — Good Vibrations (1966)
   - The Doors — Light My Fire (1967)
+  - The Doors — People Are Strange (1967)
   - Eagles — Hotel California (1976)
   - Michael Jackson — Billie Jean (1983)
 - Modern
