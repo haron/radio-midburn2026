@@ -43,6 +43,9 @@ remote: upload
 logs:
 	ssh pinky.tailab2d8.ts.net journalctl -n100 -f -u radio
 
+restart:
+	ssh pinky.tailab2d8.ts.net systemctl restart radio
+
 stop:
 	ssh pinky.tailab2d8.ts.net systemctl stop radio
 

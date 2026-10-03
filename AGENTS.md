@@ -52,6 +52,9 @@ are in `.env` (see `.env.example`).
   knob moves. DTR/RTS are set low before the port opens, or the ESP32's
   auto-reset reboots it. Serial writes happen in `run()`, not `turn()`, to keep
   gpiozero callbacks off the wire.
+  A native-USB ESP32 (C3/S3) drops JSON over its 256-byte RX buffer, so
+  adjacent LED ranges go out merged and the ranges should be contiguous.
+  During static the selected LEDs flicker, with a frame every 60ms.
 - **Fail fast:** settings are read with `os.environ[...]`, and there are no
   fallbacks.
 - **Python <3.13:** `lgpio` has prebuilt aarch64 wheels (liblgpio linked in)

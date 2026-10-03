@@ -29,6 +29,7 @@ MUSIC, STATIC = ROOT / "music", ROOT / "static.flac"  # seamless loop built by `
 SOCK, CONF = "/tmp/radio-mpd.sock", Path("/tmp/radio-mpd.conf")
 TICK = 0.02
 WALK_PLAY, WALK_STATIC = (5, 10), (2, 5)  # random walk: seconds on a station, then of static
+FLICKER, FLICKER_MIN = 0.06, 0.15  # selected LEDs during static: seconds per frame, lowest brightness
 PI_MODEL = Path("/proc/device-tree/model")
 ON_PI = PI_MODEL.exists() and "Raspberry Pi" in PI_MODEL.read_text()
 KEYS = {"\x1b[D": ("location", -1), "a": ("location", -1), "\x1b[C": ("location", 1), "d": ("location", 1),
@@ -151,6 +152,12 @@ class Leds:
         if (len(self.locs), len(self.epochs)) != (locations, epochs):
             sys.exit(f"LED_LOCATIONS has {len(self.locs)} ranges for {locations} locations, "
                      f"LED_EPOCHS has {len(self.epochs)} for {epochs} epochs")
+        self.spans = []  # adjacent ranges merged: native-USB WLED (ESP32-C3/S3) drops JSON over its 256-byte RX buffer
+        for a, b in sorted(self.locs + self.epochs):
+            if self.spans and self.spans[-1][1] == a:
+                self.spans[-1] = (self.spans[-1][0], b)
+            else:
+                self.spans.append((a, b))
         self.on, self.off = (os.environ[k] for k in ("LED_ON", "LED_OFF"))
         if not all(re.fullmatch(r"[0-9A-Fa-f]{6}", c) for c in (self.on, self.off)):
             sys.exit(f"LED_ON/LED_OFF must be RRGGBB hex, got {self.on}/{self.off}")
@@ -171,16 +178,21 @@ class Leds:
             sys.exit(f"no WLED reply on {port}: check Config > Sync Interfaces > Serial baud 115200")
         log.info("leds on: WLED at %s, locations %s, epochs %s", port, self.locs, self.epochs)
 
-    def show(self, loc: int, epoch: int):
+    def show(self, loc: int, epoch: int, flicker: bool):
         (la, lb), (ea, eb) = self.locs[loc], self.epochs[epoch]
-        dim = [x for a, b in self.locs + self.epochs for x in (a, b + 1, self.off)]
-        seg = {"id": 0, "fx": 0, "i": dim + [la, lb + 1, self.on, ea, eb + 1, self.on]}
+        on = self.on
+        if flicker:
+            k = random.uniform(FLICKER_MIN, 1)
+            on = "".join(f"{round(int(on[i:i + 2], 16) * k):02X}" for i in (0, 2, 4))
+        dim = [x for a, b in self.spans for x in (a, b, self.off)]
+        seg = {"id": 0, "fx": 0, "i": dim + [la, lb, on, ea, eb, on]}
         self.ser.write(json.dumps({"on": True, "seg": [seg]}).encode() + b"\n")
 
 
 def led_ranges(key: str) -> list[tuple[int, int]]:
-    """'0-5,6-11' -> [(0, 5), (6, 11)], inclusive."""
-    return [tuple(map(int, r.split("-"))) for r in os.environ[key].split(",")]
+    """KEY='0,6', KEY_LEN='6' -> [(0, 6), (6, 12)], end-exclusive like WLED's "i"."""
+    n = int(os.environ[f"{key}_LEN"])
+    return [(a, a + n) for a in map(int, os.environ[key].split(","))]
 
 
 class Radio:
@@ -264,7 +276,7 @@ class Radio:
         self.vol[name] = nv
 
     def run(self):
-        loaded, phase, lit = None, None, None
+        loaded, phase, lit, flick_at = None, None, None, 0.0
         while True:
             now = time.monotonic()
             if not self.walking and now > self.last_activity + self.walk_idle:
@@ -273,11 +285,12 @@ class Radio:
                 if self.walking and now >= self.walk_next:
                     self.walk_step(now)
                 st, tune_until, pos = self.lib[self.loc][self.epoch], self.tune_until, (self.loc, self.epoch)
-            if self.leds and pos != lit:  # the scale follows the knob right away, not after the static
-                self.leds.show(*pos)
-                lit = pos
             # no station at this location and epoch: static only
             tuning = st is None or now < tune_until
+            # the scale follows the knob right away, not after the static, and flickers while it lasts
+            if self.leds and ((pos, tuning) != lit or tuning and now >= flick_at):
+                self.leds.show(*pos, tuning)
+                lit, flick_at = (pos, tuning), now + FLICKER
             if not tuning and st is not loaded:  # music is silent by now: fade < fade + hold
                 self.load(st)
                 loaded = st

@@ -85,7 +85,8 @@ involved.
 | `STATIC_HOLD` | seconds of pure static after the last turn, must be \> 0; the new station starts `STATIC_FADE + STATIC_HOLD` after it |
 | `ENC_LOC_A/B`, `ENC_EPOCH_A/B` | encoder CLK/DT pins (Pi only) |
 | `WLED_PORT` | serial port of the WLED controller, empty turns the scale lights off |
-| `LED_LOCATIONS`, `LED_EPOCHS` | inclusive LED ranges, one per location and one per epoch, e.g. `0-5,6-11` |
+| `LED_LOCATIONS`, `LED_EPOCHS` | first LED of each range, one per location and one per epoch, e.g. `0,5,10` |
+| `LED_LOCATIONS_LEN`, `LED_EPOCHS_LEN` | LEDs per location / per epoch |
 | `LED_ON`, `LED_OFF` | `RRGGBB` colors of the selected position and the rest |
 
 ## Logs

@@ -1,7 +1,6 @@
 - /.venv
 - /.git
 - /*.bak
-- /*.flac
 - /*.stl
 - /*.svg
 - /.rsync-filter
