@@ -22,7 +22,7 @@ are in `.env` (see `.env.example`).
   resumes “live”. Each turn restarts the 2s static hold, so the new station
   loads only once the knob stops.
 - **Random walk:** after `WALK_IDLE` seconds without activity, or on T, the
-  radio hops between random stations (7–15s on each, 1.5–5s of static). It runs
+  radio hops between random stations (10–20s on each, 2–7s of static). It runs
   in `run()`, so serial and MPD stay on one thread. Any knob or key returns to
   normal mode, continuing from the station the walk stopped on. Startup also
   tunes in to a random station.
@@ -80,7 +80,7 @@ are in `.env` (see `.env.example`).
   `PREVENT_SLEEP` is for the Mac. WiFi powersave is already off in Armbian’s
   NetworkManager config, and the ESP32’s USB port isn’t autosuspended.
 - **Health check:** `make healthcheck` reads the firmware flags with `vcgencmd`
-  (`libraspberrypi-bin`), since Armbian’s mainline kernel has no
-  `get_throttled` in sysfs. The 3B+ hits its 60°C soft limit near idle even
-  with a heatsink, so `provision.sh` sets `temp_soft_limit=70` (the maximum),
-  and the script treats the soft limit as a warning only.
+  (`libraspberrypi-bin`), since Armbian’s mainline kernel has no `get_throttled`
+  in sysfs. The 3B+ hits its 60°C soft limit near idle even with a heatsink, so
+  `provision.sh` sets `temp_soft_limit=70` (the maximum), and the script treats
+  the soft limit as a warning only.
