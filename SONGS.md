@@ -68,13 +68,13 @@
   - Nena — 99 Luftballons (1983)
   - Scorpions — Wind of Change (1990)
 - Modern
-  - Die Fantastischen Vier — Die da!?! (1992)
   - Die Ärzte — Schrei nach Liebe (1993)
   - Paul van Dyk — For an Angel (1994)
   - Rammstein — Du hast (1997)
   - Seeed — Dickes B (2001)
   - Wir sind Helden — Guten Tag (2003)
   - Peter Fox — Schwarz zu blau (2008)
+  - Paul Kalkbrenner — Sky and Sand (2008)
 
 ## Rome
 

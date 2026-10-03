@@ -277,11 +277,6 @@
     ],
     "3_modern": [
       {
-        "artist": "Die Fantastischen Vier",
-        "title": "Die da!?!",
-        "year": 1992
-      },
-      {
         "artist": "Die Ärzte",
         "title": "Schrei nach Liebe",
         "year": 1993
@@ -309,6 +304,11 @@
       {
         "artist": "Peter Fox",
         "title": "Schwarz zu blau",
+        "year": 2008
+      },
+      {
+        "artist": "Paul Kalkbrenner",
+        "title": "Sky and Sand",
         "year": 2008
       }
     ]
