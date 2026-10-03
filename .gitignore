@@ -1,4 +1,5 @@
 *.mp3
+*.png
 music*
 .env
 .venv/

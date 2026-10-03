@@ -24,13 +24,21 @@ SONGS.md: songs.json
 		(.value[] | "  - \(.artist) — \(.title) (\(.year))")), "")' $< > $@
 	format-md -i $@
 
+# dial scale from the music folders; the PNG is a preview
+radio.svg: scale.py music
+	uv run scale.py > $@
+
+radio.png: radio.svg
+	rsvg-convert $< -o $@
+
 clean:
 	ssh pinky.tailab2d8.ts.net rm -rf /opt/radio
 
 provision:
 	./provision.sh pinky.tailab2d8.ts.net
 
-upload: static.flac SONGS.md
+upload: static.flac SONGS.md radio.png
+	dsstore-delete
 	rsync -F .rsync-filter --delete -av . pinky.tailab2d8.ts.net:/opt/radio
 
 deploy: upload

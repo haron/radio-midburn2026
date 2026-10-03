@@ -3,6 +3,7 @@
 - /*.bak
 - /*.stl
 - /*.svg
+- /*.png
 - /.rsync-filter
 - /songs.json
 - /.ruff_cache
