@@ -1,0 +1,10 @@
+# Copy to wifi.yaml (not committed). Netplan merges it with the Pi's own files by SSID:
+# new networks are added, same-named ones updated, the rest stay.
+network:
+  wifis:
+    wlan0:
+      access-points:
+        "camp-wifi":
+          password: "secret"
+        "phone-hotspot":
+          password: "secret"

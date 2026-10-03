@@ -7,3 +7,4 @@ music*
 .venv/
 __pycache__/
 static.flac
+wifi.yaml

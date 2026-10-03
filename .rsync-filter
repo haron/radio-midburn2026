@@ -9,3 +9,4 @@
 - /songs.json
 - /.ruff_cache
 - __pycache__
+- /wifi.yaml

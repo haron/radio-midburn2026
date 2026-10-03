@@ -73,6 +73,11 @@ are in `.env` (see `.env.example`).
   `provision.sh` and runs with `Restart=always`. mpd shares its cgroup, so a
   stop kills mpd too. `make deploy` syncs, reloads and restarts it, and
   `make remote` stops it to run in the foreground.
+- **WiFi networks:** `provision.sh` copies the local `wifi.yaml` to
+  `/etc/netplan/40-radio-wifi.yaml`. Netplan merges it with Armbian’s
+  `30-wifis-dhcp.yaml` by SSID, so existing networks are never deleted, only
+  added or updated. `netplan apply` runs last, since it restarts wpa_supplicant
+  and may stall the ssh.
 - **Pi never sleeps or hangs:** `provision.sh` masks the sleep targets, so it
   doesn’t rely on Armbian’s `sleep.conf.d`. It also turns on systemd’s hardware
   watchdog (`RuntimeWatchdogSec=15s`, BCM2835) and `kernel.panic=10`, so a

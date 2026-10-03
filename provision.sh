@@ -5,7 +5,9 @@ IFS=$'\n\t'
 [[ -n ${DEBUG:-""} ]] && set -x
 
 for HOST; do
-    ssh $HOST <<EOT
+    # our WiFi networks; netplan merges them with Armbian's 30-wifis-dhcp.yaml by SSID
+    ssh "$HOST" 'umask 077; cat > /etc/netplan/40-radio-wifi.yaml' < "$(dirname "$0")/wifi.yaml"
+    ssh "$HOST" <<EOT
         apt install -y mpd ffmpeg vim dstat libraspberrypi-bin
         systemctl disable --now mpd mpd.socket
         timedatectl set-timezone Asia/Jerusalem
@@ -25,5 +27,7 @@ for HOST; do
         alsactl store
         uv --directory /opt/radio sync
         systemctl enable --now /opt/radio/radio.service
+        # last: restarts wpa_supplicant, so the ssh may stall for a few seconds
+        netplan generate && netplan apply
 EOT
 done

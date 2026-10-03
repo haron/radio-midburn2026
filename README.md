@@ -30,6 +30,12 @@ sudo systemctl disable --now mpd mpd.socket # Pi: штатный mpd держи�
 cp .env.example .env
 ```
 
+## WiFi
+
+`cp wifi.yaml.example wifi.yaml`, впиши сети, `make provision`. Уже настроенные
+на Pi сети остаются, сети с тем же SSID обновляются. `wifi.yaml` не коммитится и
+не копируется в `/opt/radio`.
+
 ## Музыка
 
 ``` text
