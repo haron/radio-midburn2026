@@ -8,6 +8,12 @@ for HOST; do
     ssh $HOST <<EOT
         apt install -y mpd ffmpeg vim dstat
         systemctl disable --now mpd mpd.socket
+        systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+        mkdir -p /etc/systemd/system.conf.d
+        printf '[Manager]\nRuntimeWatchdogSec=15s\n' > /etc/systemd/system.conf.d/watchdog.conf
+        echo kernel.panic=10 > /etc/sysctl.d/90-panic-reboot.conf
+        sysctl -p /etc/sysctl.d/90-panic-reboot.conf
+        systemctl daemon-reexec
         [[ -f /usr/bin/tailscale ]] \
             || { curl -fsSL https://tailscale.com/install.sh | sh; tailscale up; }
         [[ -f /usr/local/bin/uv ]] \
