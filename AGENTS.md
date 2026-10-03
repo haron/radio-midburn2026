@@ -11,11 +11,12 @@ are in `.env` (see `.env.example`).
   happens while the static covers it. Static plays nonstop at volume 0 between
   turns, since unpausing reopens the ALSA device (audible lag), and ALSA
   `buffer_time` is 100ms, as the 500ms default delays every volume change.
-- **Static loop:** `static.flac` is built from `static.mp3` by
-  `make static.flac`. The source clip has ~90ms of silence at its edges, which
-  stuttered on every `repeat single` wrap, so the build trims the edges and
-  crossfades the tail into the head. It’s FLAC because MP3 re-adds encoder
-  padding.
+- **Static loop:** MPD plays `static.flac` on `repeat single`, built from
+  `static.mp3` by `make static.flac` (gitignored). The MP3 can’t loop as is: its
+  ~1s silent edges and encoder padding stutter on every wrap. The build trims
+  the edges, crossfades the tail into the head and adds 9dB. Trim points and
+  gain are hardcoded for this clip, so re-measure them (`silencedetect`,
+  `astats`) when replacing it.
 - **Live stations:** a station’s position comes from the wall clock,
   `(time.time() + crc32(name)) % total`. No per-station state, so switching back
   resumes “live”. Each turn restarts the 2s static hold, so the new station

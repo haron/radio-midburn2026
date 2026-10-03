@@ -48,6 +48,8 @@ static.mp3
 - The epoch knob spans every epoch folder with MP3s in any location; a location
   missing one plays static there. Folders without MP3s are ignored. Startup
   fails otherwise.
+- `static.mp3` is turned into a seamless `static.flac` loop; a new clip needs
+  the trim points in the `Makefile` adjusted.
 - `make normalize` evens out loudness (needs `mp3gain`).
 
 ## Run
