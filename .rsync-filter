@@ -4,6 +4,7 @@
 - /*.stl
 - /*.svg
 - /*.png
+- /*.pdf
 - /.rsync-filter
 - /songs.json
 - /.ruff_cache

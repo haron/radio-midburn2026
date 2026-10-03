@@ -35,6 +35,10 @@ radio-curves.svg: radio.svg
 radio.png: radio-curves.svg
 	rsvg-convert $< -o $@
 
+# for the print shop: vector, 60x20 cm trim plus 3 mm bleed (the SVG's black background already reaches past the edge)
+radio.pdf: radio-curves.svg
+	rsvg-convert -f pdf -w 60cm -h 20cm --page-width 606mm --page-height 206mm --left 3mm --top 3mm $< -o $@
+
 clean:
 	ssh pinky.tailab2d8.ts.net rm -rf /opt/radio
 

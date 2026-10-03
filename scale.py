@@ -18,12 +18,8 @@ def svg(locs: list[str], epochs: list[str]) -> str:
     step = (X1 - X0) / (len(locs) - 1)
     out = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">',
            f'<rect width="{W}" height="{H}" fill="#000"/>', '<g stroke="#fff" fill="none">',
-           f'<line x1="{SEP + 30}" y1="{LINE}" x2="{W - 40}" y2="{LINE}" stroke-width="14"/>',
+           f'<line x1="{X0 - 5.5}" y1="{LINE}" x2="{X1 + 5.5}" y2="{LINE}" stroke-width="14"/>',  # flush with the end ticks
            f'<rect x="24" y="{LINE - 190}" width="{SEP - 24}" height="380" rx="24" stroke-width="11"/>']
-    for i in range(len(locs) - 1):  # 3 minor ticks between cities
-        for k in (1, 2, 3):
-            x = X0 + step * (i + k / 4)
-            out.append(f'<line x1="{x:.1f}" y1="{LINE - 26}" x2="{x:.1f}" y2="{LINE + 26}" stroke-width="7"/>')
     for i in range(len(locs)):
         x, dy = X0 + step * i, -80 if i % 2 == 0 else 80
         out.append(f'<line x1="{x:.1f}" y1="{LINE}" x2="{x:.1f}" y2="{LINE + dy}" stroke-width="11"/>')

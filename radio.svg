@@ -1,44 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 600" width="1800" height="600">
 <rect width="1800" height="600" fill="#000"/>
 <g stroke="#fff" fill="none">
-<line x1="350" y1="300" x2="1760" y2="300" stroke-width="14"/>
+<line x1="414.5" y1="300" x2="1725.5" y2="300" stroke-width="14"/>
 <rect x="24" y="110" width="296" height="380" rx="24" stroke-width="11"/>
-<line x1="447.1" y1="274" x2="447.1" y2="326" stroke-width="7"/>
-<line x1="474.2" y1="274" x2="474.2" y2="326" stroke-width="7"/>
-<line x1="501.2" y1="274" x2="501.2" y2="326" stroke-width="7"/>
-<line x1="555.4" y1="274" x2="555.4" y2="326" stroke-width="7"/>
-<line x1="582.5" y1="274" x2="582.5" y2="326" stroke-width="7"/>
-<line x1="609.6" y1="274" x2="609.6" y2="326" stroke-width="7"/>
-<line x1="663.8" y1="274" x2="663.8" y2="326" stroke-width="7"/>
-<line x1="690.8" y1="274" x2="690.8" y2="326" stroke-width="7"/>
-<line x1="717.9" y1="274" x2="717.9" y2="326" stroke-width="7"/>
-<line x1="772.1" y1="274" x2="772.1" y2="326" stroke-width="7"/>
-<line x1="799.2" y1="274" x2="799.2" y2="326" stroke-width="7"/>
-<line x1="826.2" y1="274" x2="826.2" y2="326" stroke-width="7"/>
-<line x1="880.4" y1="274" x2="880.4" y2="326" stroke-width="7"/>
-<line x1="907.5" y1="274" x2="907.5" y2="326" stroke-width="7"/>
-<line x1="934.6" y1="274" x2="934.6" y2="326" stroke-width="7"/>
-<line x1="988.8" y1="274" x2="988.8" y2="326" stroke-width="7"/>
-<line x1="1015.8" y1="274" x2="1015.8" y2="326" stroke-width="7"/>
-<line x1="1042.9" y1="274" x2="1042.9" y2="326" stroke-width="7"/>
-<line x1="1097.1" y1="274" x2="1097.1" y2="326" stroke-width="7"/>
-<line x1="1124.2" y1="274" x2="1124.2" y2="326" stroke-width="7"/>
-<line x1="1151.2" y1="274" x2="1151.2" y2="326" stroke-width="7"/>
-<line x1="1205.4" y1="274" x2="1205.4" y2="326" stroke-width="7"/>
-<line x1="1232.5" y1="274" x2="1232.5" y2="326" stroke-width="7"/>
-<line x1="1259.6" y1="274" x2="1259.6" y2="326" stroke-width="7"/>
-<line x1="1313.8" y1="274" x2="1313.8" y2="326" stroke-width="7"/>
-<line x1="1340.8" y1="274" x2="1340.8" y2="326" stroke-width="7"/>
-<line x1="1367.9" y1="274" x2="1367.9" y2="326" stroke-width="7"/>
-<line x1="1422.1" y1="274" x2="1422.1" y2="326" stroke-width="7"/>
-<line x1="1449.2" y1="274" x2="1449.2" y2="326" stroke-width="7"/>
-<line x1="1476.2" y1="274" x2="1476.2" y2="326" stroke-width="7"/>
-<line x1="1530.4" y1="274" x2="1530.4" y2="326" stroke-width="7"/>
-<line x1="1557.5" y1="274" x2="1557.5" y2="326" stroke-width="7"/>
-<line x1="1584.6" y1="274" x2="1584.6" y2="326" stroke-width="7"/>
-<line x1="1638.8" y1="274" x2="1638.8" y2="326" stroke-width="7"/>
-<line x1="1665.8" y1="274" x2="1665.8" y2="326" stroke-width="7"/>
-<line x1="1692.9" y1="274" x2="1692.9" y2="326" stroke-width="7"/>
 <line x1="420.0" y1="300" x2="420.0" y2="220" stroke-width="11"/>
 <line x1="528.3" y1="300" x2="528.3" y2="380" stroke-width="11"/>
 <line x1="636.7" y1="300" x2="636.7" y2="220" stroke-width="11"/>
