@@ -22,8 +22,8 @@ are in `.env` (see `.env.example`).
   resumes “live”. Each turn restarts the 2s static hold, so the new station
   loads only once the knob stops.
 - **Random walk:** after `WALK_IDLE` seconds without activity, or on T, the
-  radio hops between random stations (5–10s on each, 2–5s of static). It runs in
-  `run()`, so serial and MPD stay on one thread. Any knob or key returns to
+  radio hops between random stations (7–15s on each, 1.5–5s of static). It runs
+  in `run()`, so serial and MPD stay on one thread. Any knob or key returns to
   normal mode, continuing from the station the walk stopped on. Startup also
   tunes in to a random station.
 - **Library:** `music/<location>/<epoch>/*.mp3`, all sorted by name (use

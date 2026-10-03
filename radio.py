@@ -205,7 +205,8 @@ class Radio:
         self.walk_idle = float(os.environ["WALK_IDLE"])
         now = time.monotonic()
         self.tune_until = now + self.fade + self.hold  # power-on tunes in through static
-        self.last_activity, self.walking, self.walk_next = now, False, 0.0
+        # power-on starts the random walk: the first station plays as a walk step, then hops on
+        self.last_activity, self.walking, self.walk_next = now, True, self.tune_until + random.uniform(*WALK_PLAY)
         self.lock = threading.Lock()
         self.music, self.static = connect(), connect("static")
         for c in (self.music, self.static):
@@ -216,6 +217,7 @@ class Radio:
         self.static.add(f"file://{STATIC}"), self.static.repeat(1), self.static.single(1)
         self.static.play()  # never paused: resuming reopens the ALSA device, which delays the static
         self.vol = {"music": 0.0, "static": 0.0}
+        log.info("random walk on -> %s", self.name())
 
     def activity(self):
         """Any knob or key: back to normal mode."""
