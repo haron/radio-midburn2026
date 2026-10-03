@@ -88,6 +88,16 @@ involved.
   `sudo usermod -aG dialout $USER`, then log in again. Startup fails if the port
   is missing, not writable, or WLED doesn’t answer.
 
+## Cooling
+
+A 5V 2-pin fan (30 or 40 mm) on the Pi’s GPIO header: red to pin 4 (5V),
+black to pin 6 (GND). It always runs. Mount it on a case wall blowing onto the
+heatsink, with an exit hole on the opposite side, and cover the intake with mesh
+against dust.
+
+`make healthcheck` shows the temperature, throttling and undervoltage, now and
+since boot.
+
 ## Dial
 
 `make radio.pdf` builds the printed dial (60×20 cm plus 3 mm bleed) from

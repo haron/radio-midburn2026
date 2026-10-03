@@ -75,3 +75,6 @@ stop:
 
 download: songs.json linter
 	uv run download.py
+
+healthcheck:
+	ssh pinky.tailab2d8.ts.net bash -s < rpi-healthcheck.sh

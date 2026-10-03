@@ -79,3 +79,8 @@ are in `.env` (see `.env.example`).
   frozen or panicked kernel reboots and the service comes back by itself.
   `PREVENT_SLEEP` is for the Mac. WiFi powersave is already off in Armbian’s
   NetworkManager config, and the ESP32’s USB port isn’t autosuspended.
+- **Health check:** `make healthcheck` reads the firmware flags with `vcgencmd`
+  (`libraspberrypi-bin`), since Armbian’s mainline kernel has no
+  `get_throttled` in sysfs. The 3B+ hits its 60°C soft limit near idle even
+  with a heatsink, so `provision.sh` sets `temp_soft_limit=70` (the maximum),
+  and the script treats the soft limit as a warning only.
