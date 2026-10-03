@@ -28,7 +28,11 @@ SONGS.md: songs.json
 radio.svg: scale.py music
 	uv run scale.py > $@
 
-radio.png: radio.svg
+# text as curves for cutting/printing; the PNG preview is rendered from it, so it shows exactly what gets cut
+radio-curves.svg: radio.svg
+	rsvg-convert -f svg $< -o $@
+
+radio.png: radio-curves.svg
 	rsvg-convert $< -o $@
 
 clean:
