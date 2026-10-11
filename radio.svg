@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 600" width="1800" height="600">
+<rect width="1800" height="600" fill="#000"/>
+<g stroke="#fff" fill="none">
+<line x1="495" y1="300" x2="1725" y2="300" stroke-width="18"/>
+<rect x="24" y="110" width="376" height="380" stroke-width="6"/>
+<line x1="520.0" y1="300" x2="520.0" y2="220" stroke-width="3"/>
+<line x1="618.3" y1="300" x2="618.3" y2="380" stroke-width="3"/>
+<line x1="716.7" y1="300" x2="716.7" y2="220" stroke-width="3"/>
+<line x1="815.0" y1="300" x2="815.0" y2="380" stroke-width="3"/>
+<line x1="913.3" y1="300" x2="913.3" y2="220" stroke-width="3"/>
+<line x1="1011.7" y1="300" x2="1011.7" y2="380" stroke-width="3"/>
+<line x1="1110.0" y1="300" x2="1110.0" y2="220" stroke-width="3"/>
+<line x1="1208.3" y1="300" x2="1208.3" y2="380" stroke-width="3"/>
+<line x1="1306.7" y1="300" x2="1306.7" y2="220" stroke-width="3"/>
+<line x1="1405.0" y1="300" x2="1405.0" y2="380" stroke-width="3"/>
+<line x1="1503.3" y1="300" x2="1503.3" y2="220" stroke-width="3"/>
+<line x1="1601.7" y1="300" x2="1601.7" y2="380" stroke-width="3"/>
+<line x1="1700.0" y1="300" x2="1700.0" y2="220" stroke-width="3"/>
+<circle cx="74" cy="180.0" r="15" fill="#fff" stroke="none"/>
+<circle cx="74" cy="300.0" r="15" fill="#fff" stroke="none"/>
+<circle cx="74" cy="420.0" r="15" fill="#fff" stroke="none"/>
+</g><g fill="#fff" font-family="Helvetica Neue" font-weight="bold" font-size="38">
+<text x="520.0" y="200" text-anchor="middle"><tspan x="520.0" dy="0">Berlin</tspan></text>
+<text x="618.3" y="440" text-anchor="middle"><tspan x="618.3" dy="0">Buenos</tspan><tspan x="618.3" dy="40">Aires</tspan></text>
+<text x="716.7" y="200" text-anchor="middle"><tspan x="716.7" dy="0">Delhi</tspan></text>
+<text x="815.0" y="440" text-anchor="middle"><tspan x="815.0" dy="0">Havana</tspan></text>
+<text x="913.3" y="200" text-anchor="middle"><tspan x="913.3" dy="0">Krakow</tspan></text>
+<text x="1011.7" y="440" text-anchor="middle"><tspan x="1011.7" dy="0">London</tspan></text>
+<text x="1110.0" y="160" text-anchor="middle"><tspan x="1110.0" dy="0">Los</tspan><tspan x="1110.0" dy="40">Angeles</tspan></text>
+<text x="1208.3" y="440" text-anchor="middle"><tspan x="1208.3" dy="0">Moscow</tspan></text>
+<text x="1306.7" y="200" text-anchor="middle"><tspan x="1306.7" dy="0">New York</tspan></text>
+<text x="1405.0" y="440" text-anchor="middle"><tspan x="1405.0" dy="0">Paris</tspan></text>
+<text x="1503.3" y="200" text-anchor="middle"><tspan x="1503.3" dy="0">Rome</tspan></text>
+<text x="1601.7" y="440" text-anchor="middle"><tspan x="1601.7" dy="0">Tel Aviv</tspan></text>
+<text x="1700.0" y="200" text-anchor="middle"><tspan x="1700.0" dy="0">Tokyo</tspan></text>
+<text x="104" y="195.0">Gramophone</text>
+<text x="104" y="315.0">Vinyl</text>
+<text x="104" y="435.0">Digital</text>
+</g></svg>

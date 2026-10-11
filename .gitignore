@@ -1,7 +1,5 @@
 *.mp3
 *.png
-*.pdf
-*.svg
 music*
 .env
 .venv/
