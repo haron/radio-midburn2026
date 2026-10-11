@@ -67,6 +67,26 @@
         "artist": "The Clash",
         "title": "London Calling",
         "year": 1979
+      },
+      {
+        "artist": "Stranglers",
+        "title": "Golden Brown",
+        "year": 1981
+      },
+      {
+        "artist": "Elton John",
+        "title": "Honky Cat",
+        "year": 1972
+      },
+      {
+        "artist": "Pink Floyd",
+        "title": "Money",
+        "year": 1973
+      },
+      {
+        "artist": "Frankie Goes To Hollywood",
+        "title": "Relax",
+        "year": 1984
       }
     ],
     "3_modern": [
@@ -104,6 +124,16 @@
         "artist": "Amy Winehouse",
         "title": "Rehab",
         "year": 2006
+      },
+      {
+        "artist": "Depeche Mode",
+        "title": "Personal Jesus",
+        "year": 1990
+      },
+      {
+        "artist": "Sting",
+        "title": "Desert Rose",
+        "year": 1999
       }
     ]
   },
@@ -207,6 +237,11 @@
         "artist": "Christine and the Queens",
         "title": "Christine",
         "year": 2014
+      },
+      {
+        "artist": "Stromae",
+        "title": "Alors on Dance",
+        "year": 2010
       }
     ]
   },
@@ -273,6 +308,11 @@
         "artist": "Scorpions",
         "title": "Wind of Change",
         "year": 1990
+      },
+      {
+        "artist": "Einstürzende Neubauten",
+        "title": "Haus der Lüge",
+        "year": 1989
       }
     ],
     "3_modern": [
@@ -560,6 +600,16 @@
         "artist": "Duke Ellington",
         "title": "Take the 'A' Train",
         "year": 1941
+      },
+      {
+        "artist": "Bull City Red",
+        "title": "Mississipi River",
+        "year": 1935
+      },
+      {
+        "artist": "Luke Jordan",
+        "title": "Church Bell Blues",
+        "year": 1927
       }
     ],
     "2_middle": [
@@ -742,6 +792,11 @@
         "artist": "Kendrick Lamar",
         "title": "HUMBLE.",
         "year": 2017
+      },
+      {
+        "artist": "System of a Down",
+        "title": "Vicinity of Obscenity",
+        "year": 2005
       }
     ]
   },

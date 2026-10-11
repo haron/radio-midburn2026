@@ -17,6 +17,10 @@
   - Queen — Bohemian Rhapsody (1975)
   - Sex Pistols — God Save the Queen (1977)
   - The Clash — London Calling (1979)
+  - Stranglers — Golden Brown (1981)
+  - Elton John — Honky Cat (1972)
+  - Pink Floyd — Money (1973)
+  - Frankie Goes To Hollywood — Relax (1984)
 - Modern
   - Blur — Parklife (1994)
   - Oasis — Wonderwall (1995)
@@ -25,6 +29,8 @@
   - Massive Attack — Teardrop (1998)
   - Arctic Monkeys — I Bet You Look Good on the Dancefloor (2005)
   - Amy Winehouse — Rehab (2006)
+  - Depeche Mode — Personal Jesus (1990)
+  - Sting — Desert Rose (1999)
 
 ## Paris
 
@@ -50,6 +56,7 @@
   - Manu Chao — Me gustas tú (2001)
   - Yann Tiersen — Comptine d’un autre été, l’après-midi (2001)
   - Christine and the Queens — Christine (2014)
+  - Stromae — Alors on Dance (2010)
 
 ## Berlin
 
@@ -67,6 +74,7 @@
   - Trio — Da Da Da (1982)
   - Nena — 99 Luftballons (1983)
   - Scorpions — Wind of Change (1990)
+  - Einstürzende Neubauten — Haus der Lüge (1989)
 - Modern
   - Die Ärzte — Schrei nach Liebe (1993)
   - Paul van Dyk — For an Angel (1994)
@@ -137,6 +145,8 @@
   - Billie Holiday — Strange Fruit (1939)
   - Glenn Miller — In the Mood (1939)
   - Duke Ellington — Take the ‘A’ Train (1941)
+  - Bull City Red — Mississipi River (1935)
+  - Luke Jordan — Church Bell Blues (1927)
 - Middle
   - Louis Armstrong — Go Down Moses (Let My People Go) (1958)
   - Ray Charles — Hit the Road Jack (1961)
@@ -179,6 +189,7 @@
   - Red Hot Chili Peppers — Californication (1999)
   - Linkin Park — In the End (2001)
   - Kendrick Lamar — HUMBLE. (2017)
+  - System of a Down — Vicinity of Obscenity (2005)
 
 ## Tokyo
 
