@@ -62,8 +62,9 @@ are in `.env` (see `.env.example`).
   names (the folders stay `1_early`…). Labels drop diacritics. Text is turned
   into curves by `rsvg-convert -f svg`, and the PNG and PDF are rendered from
   that file, so the preview is exactly what gets printed. The curves depend on
-  the local fonts, so build on a Mac. The PDF’s 3 mm bleed is filled by the
-  background rect, which cairo makes larger than the page.
+  the local fonts, so build on a Mac. The PDF puts the dial in a black field of
+  `MARGIN` mm (default 20) per side as a print reserve, plus 3 mm bleed.
+  `rsvg-convert -b black` paints the whole page, so the SVG stays 60×20 cm.
 - **Fail fast:** settings are read with `os.environ[...]`, and there are no
   fallbacks.
 - **Python \<3.13:** `lgpio` has prebuilt aarch64 wheels (liblgpio linked in)

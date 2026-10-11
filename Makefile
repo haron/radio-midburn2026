@@ -43,9 +43,11 @@ radio-curves.svg: radio.svg
 radio.png: radio-curves.svg
 	rsvg-convert $< -o $@
 
-# for the print shop: vector, 60x20 cm trim plus 3 mm bleed (the SVG's black background already reaches past the edge)
+# for the print shop: vector, 60x20 cm dial in a black field of MARGIN mm on each side, plus 3 mm bleed
+MARGIN ?= 20
 radio.pdf: radio-curves.svg
-	rsvg-convert -f pdf -w 60cm -h 20cm --page-width 606mm --page-height 206mm --left 3mm --top 3mm $< -o $@
+	rsvg-convert -f pdf -b black -w 60cm -h 20cm --page-width $$((606 + 2 * $(MARGIN)))mm --page-height $$((206 + 2 * $(MARGIN)))mm \
+		--left $$((3 + $(MARGIN)))mm --top $$((3 + $(MARGIN)))mm $< -o $@
 
 clean:
 	ssh pinky.tailab2d8.ts.net rm -rf /opt/radio
