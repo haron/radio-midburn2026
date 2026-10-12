@@ -32,8 +32,8 @@ SONGS.md: songs.json
 		(.value[] | "  - \(.artist) — \(.title) (\(.year))")), "")' $< > $@
 	format-md -i $@
 
-# dial scale from the music folders; the PNG is a preview
-radio.svg: scale.py music
+# dial scale from songs.json; the PNG is a preview
+radio.svg: scale.py songs.json
 	uv run scale.py > $@
 
 # text as curves for cutting/printing; the PNG preview is rendered from it, so it shows exactly what gets cut

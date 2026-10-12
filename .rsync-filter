@@ -6,7 +6,6 @@
 - /*.png
 - /*.pdf
 - /.rsync-filter
-- /songs.json
 - /.ruff_cache
 - __pycache__
 - /wifi.yaml

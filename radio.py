@@ -25,7 +25,7 @@ from mpd import MPDClient
 from mutagen.mp3 import MP3
 
 ROOT = Path(__file__).resolve().parent
-MUSIC, STATIC = ROOT / "music", ROOT / "static.flac"  # seamless loop built by `make static.flac`
+MUSIC, SONGS, STATIC = ROOT / "music", ROOT / "songs.json", ROOT / "static.flac"  # seamless loop built by `make static.flac`
 SOCK, CONF = "/tmp/radio-mpd.sock", Path("/tmp/radio-mpd.conf")
 TICK = 0.02
 WALK_PLAY, WALK_STATIC = (10, 20), (2, 7)  # random walk: seconds on a station, then of static
@@ -72,18 +72,23 @@ class Station:
             pos -= d
 
 
+def layout() -> tuple[list[str], list[str]]:
+    """Locations and epochs (union over all locations) in songs.json order; empty song lists don't count."""
+    songs = json.loads(SONGS.read_text())
+    locs = [loc for loc, eps in songs.items() if any(eps.values())]
+    return locs, list(dict.fromkeys(ep for eps in songs.values() for ep, ts in eps.items() if ts))
+
+
 def scan() -> tuple[list[str], list[str], list[list[Station | None]]]:
-    """Locations, epochs (union over all locations) and lib[loc][epoch]; None where a location lacks the epoch.
-    Only folders with mp3 files count."""
+    """layout() and lib[loc][epoch] from music/<loc>/<epoch>/*.mp3; None where there are no mp3 files."""
     if not STATIC.is_file():
         sys.exit(f"missing {STATIC}, run `make static.flac`")
-    dirs = {d: sorted(d.glob("*.mp3")) for d in MUSIC.glob("*/*") if d.is_dir()}
-    dirs = {d: ts for d, ts in dirs.items() if ts}
-    if not dirs:
-        sys.exit(f"no mp3 files in {MUSIC}/<location>/<epoch>/")
-    locs, epochs = (sorted({d.parts[i] for d in dirs}) for i in (-2, -1))
-    lib = [[Station(f"{loc}/{ep}", [(t, MP3(t).info.length) for t in dirs[d]]) if (d := MUSIC / loc / ep) in dirs
-            else None for ep in epochs] for loc in locs]
+    locs, epochs = layout()
+    dirs = {(loc, ep): sorted((MUSIC / loc / ep).glob("*.mp3")) for loc in locs for ep in epochs}
+    if not any(dirs.values()):
+        sys.exit(f"no mp3 files in {MUSIC}/<location>/<epoch>/, run `make download`")
+    lib = [[Station(f"{loc}/{ep}", [(t, MP3(t).info.length) for t in ts]) if (ts := dirs[loc, ep]) else None
+            for ep in epochs] for loc in locs]
     return locs, epochs, lib
 
 

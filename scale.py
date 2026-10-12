@@ -1,9 +1,9 @@
-"""Dial scale as SVG on stdout: epoch bands on the left, cities on the main line, both in knob (folder) order."""
+"""Dial scale as SVG on stdout: epoch bands on the left, cities on the main line, both in knob (songs.json) order."""
 import re
 import unicodedata
 from xml.sax.saxutils import escape
 
-from radio import scan
+from radio import layout
 
 W, H, LINE = 1800, 600, 300
 X0, X1 = 520, 1700  # first and last city tick; even steps, so each tick sits over its LEDs
@@ -44,5 +44,4 @@ def svg(locs: list[str], epochs: list[str]) -> str:
 
 
 if __name__ == "__main__":
-    locs, epochs, _ = scan()
-    print(svg(locs, epochs))
+    print(svg(*layout()))

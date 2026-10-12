@@ -26,11 +26,13 @@ are in `.env` (see `.env.example`).
   in `run()`, so serial and MPD stay on one thread. Any knob or key returns to
   normal mode, continuing from the station the walk stopped on. Startup also
   tunes in to a random station.
-- **Library:** `music/<location>/<epoch>/*.mp3`, all sorted by name (use
-  `01_Paris`-style prefixes). Only folders with MP3s count. The epoch knob spans
-  the union of all locations’ epoch folders, so the LED scale is the same for
-  every location. A missing location × epoch plays static only. The knobs don’t
-  wrap: a turn past the first or last position is ignored, with no static.
+- **Library:** `songs.json` sets the knob order of locations and epochs, so the
+  dial doesn’t depend on what’s downloaded. MP3s come from
+  `music/<location>/<epoch>/*.mp3`, sorted by name (`download.py` numbers them).
+  Empty song lists don’t count. The epoch knob spans the union of all locations’
+  epochs, so the LED scale is the same for every location. A location × epoch
+  without MP3s plays static only. The knobs don’t wrap: a turn past the first or
+  last position is ignored, with no static.
 - **MPD without a database:** unix socket only (`/tmp/radio-mpd.sock`), so
   tracks can be added as `file://` URIs. No music_directory, no `update`.
 - **Platform auto-detect:** radio.py writes `/tmp/radio-mpd.conf` on start.
@@ -56,13 +58,13 @@ are in `.env` (see `.env.example`).
   its 256-byte RX buffer, so adjacent LED ranges go out merged and the ranges
   should be contiguous. During static the selected LEDs flicker, with a frame
   every 60ms.
-- **Dial:** `scale.py` builds `radio.svg` from the `music/` folders, so the city
-  order matches the knob. Cities are evenly spaced, so each tick can sit over
-  its LED pair. Epoch labels come from `EPOCHS` in `scale.py`, not from folder
-  names (the folders stay `1_early`…). Labels drop diacritics. Text is turned
-  into curves by `rsvg-convert -f svg`, and the PNG and PDF are rendered from
-  that file, so the preview is exactly what gets printed. The curves depend on
-  the local fonts, so build on a Mac. The PDF puts the dial in a black field of
+- **Dial:** `scale.py` builds `radio.svg` from `songs.json` with `layout()`,
+  like the knob. Cities are evenly spaced, so each tick can sit over its LED
+  pair. Epoch labels come from `EPOCHS` in `scale.py`, not from folder names
+  (the folders stay `1_early`…). Labels drop diacritics. Text is turned into
+  curves by `rsvg-convert -f svg`, and the PNG and PDF are rendered from that
+  file, so the preview is exactly what gets printed. The curves depend on the
+  local fonts, so build on a Mac. The PDF puts the dial in a black field of
   `MARGIN` mm (default 20) per side as a print reserve, plus 3 mm bleed.
   `rsvg-convert -b black` paints the whole page, so the SVG stays 60×20 cm.
 - **Fail fast:** settings are read with `os.environ[...]`, and there are no
