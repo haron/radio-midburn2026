@@ -550,7 +550,117 @@
     ]
   },
   "Kyiv": {
-
+    "1_early": [
+      {
+        "artist": "Mykola Leontovych",
+        "title": "Shchedryk",
+        "year": 1916
+      },
+      {
+        "artist": "Klavdiya Shulzhenko",
+        "title": "Rozpriahaite, khloptsi, koni",
+        "year": 1936
+      },
+      {
+        "artist": "Bandurist Trio of Ukrainian Radio",
+        "title": "Hutsulka Ksenia",
+        "year": 1956
+      },
+      {
+        "artist": "Dmytro Hnatyuk",
+        "title": "Pisnia pro rushnyk",
+        "year": 1958
+      },
+      {
+        "artist": "Borys Hmyria",
+        "title": "Nich yaka misiachna",
+        "year": 1962
+      }
+    ],
+    "2_middle": [
+      {
+        "artist": "Dmytro Hnatyuk",
+        "title": "Dva kolory",
+        "year": 1964
+      },
+      {
+        "artist": "Sofia Rotaru & Vasyl Zinkevych",
+        "title": "Chervona ruta",
+        "year": 1971
+      },
+      {
+        "artist": "Vasyl Zinkevych & Smerichka",
+        "title": "Vodohrai",
+        "year": 1971
+      },
+      {
+        "artist": "Kvitka Cisyk",
+        "title": "Ya pidu v daleki hory",
+        "year": 1980
+      },
+      {
+        "artist": "Nazariy Yaremchuk",
+        "title": "Stozhary",
+        "year": 1981
+      },
+      {
+        "artist": "Nazariy Yaremchuk",
+        "title": "Hai, zelenyi hai",
+        "year": 1985
+      },
+      {
+        "artist": "Vopli Vidopliassova",
+        "title": "Tantsi",
+        "year": 1988
+      }
+    ],
+    "3_modern": [
+      {
+        "artist": "Pavlo Zibrov",
+        "title": "Khreshchatyk",
+        "year": 1994
+      },
+      {
+        "artist": "Iryna Bilyk",
+        "title": "Tak prosto",
+        "year": 1997
+      },
+      {
+        "artist": "Okean Elzy",
+        "title": "Tam, de nas nema",
+        "year": 1998
+      },
+      {
+        "artist": "Ruslana",
+        "title": "Dyki tantsi",
+        "year": 2004
+      },
+      {
+        "artist": "Skryabin",
+        "title": "Stari fotohrafii",
+        "year": 2005
+      },
+      {
+        "artist": "Boombox",
+        "title": "Vakhteram",
+        "year": 2006
+      },
+      {
+        "artist": "Okean Elzy",
+        "title": "Obiimy",
+        "year": 2007
+      },
+      {
+        "artist": "Kazka",
+        "title": "Plakala",
+        "year": 2018
+      },
+      {
+        "artist": "Go_A",
+        "title": "Shum",
+        "year": 2021
+      }
+    ]
   },
   "Moscow": {
     "1_early": [
