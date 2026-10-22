@@ -108,6 +108,32 @@
   - Mahmood — Soldi (2019)
   - Måneskin — Zitti e buoni (2021)
 
+## Kraków
+
+- Early
+  - Hanka Ordonówna — Miłość ci wszystko wybaczy (1933)
+  - Mieczysław Fogg — Ostatnia niedziela (1936)
+  - Molly Picon — Yidl Mitn Fidl (1936)
+  - Eugeniusz Bodo — Umówiłem się z nią na dziewiątą (1937)
+- Middle
+  - Ewa Demarczyk — Karuzela z madonnami (1962)
+  - Czesław Niemen — Dziwny jest ten świat (1967)
+  - Krzysztof Komeda — Rosemary’s Baby (Lullaby) (1968)
+  - Marek Grechuta & Anawa — Niepewność (1969)
+  - Perfect — Autobiografia (1981)
+  - Lady Pank — Mniej niż zero (1983)
+  - Maanam — Kocham cię, kochanie moje (1984)
+- Modern
+  - Hey — Teksański (1993)
+  - Kazik — 12 groszy (1997)
+  - Myslovitz — Długość dźwięku samotności (1999)
+  - Paktofonika — Jestem Bogiem (2000)
+  - Brodka — Granda (2010)
+  - Taco Hemingway — Deszcz na betonie (2016)
+  - Dawid Podsiadło — Małomiasteczkowy (2018)
+
+## Kyiv
+
 ## Moscow
 
 - Early
@@ -307,27 +333,3 @@
   - Mohit Chauhan — Masakali (2009)
   - Aditi Paul & Osman Mir — Nagada Sang Dhol (2013)
   - Rahul Sipligunj & Kaala Bhairava — Naatu Naatu (2022)
-
-## Kraków
-
-- Early
-  - Hanka Ordonówna — Miłość ci wszystko wybaczy (1933)
-  - Mieczysław Fogg — Ostatnia niedziela (1936)
-  - Molly Picon — Yidl Mitn Fidl (1936)
-  - Eugeniusz Bodo — Umówiłem się z nią na dziewiątą (1937)
-- Middle
-  - Ewa Demarczyk — Karuzela z madonnami (1962)
-  - Czesław Niemen — Dziwny jest ten świat (1967)
-  - Krzysztof Komeda — Rosemary’s Baby (Lullaby) (1968)
-  - Marek Grechuta & Anawa — Niepewność (1969)
-  - Perfect — Autobiografia (1981)
-  - Lady Pank — Mniej niż zero (1983)
-  - Maanam — Kocham cię, kochanie moje (1984)
-- Modern
-  - Hey — Teksański (1993)
-  - Kazik — 12 groszy (1997)
-  - Myslovitz — Długość dźwięku samotności (1999)
-  - Paktofonika — Jestem Bogiem (2000)
-  - Brodka — Granda (2010)
-  - Taco Hemingway — Deszcz na betonie (2016)
-  - Dawid Podsiadło — Małomiasteczkowy (2018)

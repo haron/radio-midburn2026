@@ -451,6 +451,107 @@
       }
     ]
   },
+  "Kraków": {
+    "1_early": [
+      {
+        "artist": "Hanka Ordonówna",
+        "title": "Miłość ci wszystko wybaczy",
+        "year": 1933
+      },
+      {
+        "artist": "Mieczysław Fogg",
+        "title": "Ostatnia niedziela",
+        "year": 1936
+      },
+      {
+        "artist": "Molly Picon",
+        "title": "Yidl Mitn Fidl",
+        "year": 1936
+      },
+      {
+        "artist": "Eugeniusz Bodo",
+        "title": "Umówiłem się z nią na dziewiątą",
+        "year": 1937
+      }
+    ],
+    "2_middle": [
+      {
+        "artist": "Ewa Demarczyk",
+        "title": "Karuzela z madonnami",
+        "year": 1962
+      },
+      {
+        "artist": "Czesław Niemen",
+        "title": "Dziwny jest ten świat",
+        "year": 1967
+      },
+      {
+        "artist": "Krzysztof Komeda",
+        "title": "Rosemary's Baby (Lullaby)",
+        "year": 1968
+      },
+      {
+        "artist": "Marek Grechuta & Anawa",
+        "title": "Niepewność",
+        "year": 1969
+      },
+      {
+        "artist": "Perfect",
+        "title": "Autobiografia",
+        "year": 1981
+      },
+      {
+        "artist": "Lady Pank",
+        "title": "Mniej niż zero",
+        "year": 1983
+      },
+      {
+        "artist": "Maanam",
+        "title": "Kocham cię, kochanie moje",
+        "year": 1984
+      }
+    ],
+    "3_modern": [
+      {
+        "artist": "Hey",
+        "title": "Teksański",
+        "year": 1993
+      },
+      {
+        "artist": "Kazik",
+        "title": "12 groszy",
+        "year": 1997
+      },
+      {
+        "artist": "Myslovitz",
+        "title": "Długość dźwięku samotności",
+        "year": 1999
+      },
+      {
+        "artist": "Paktofonika",
+        "title": "Jestem Bogiem",
+        "year": 2000
+      },
+      {
+        "artist": "Brodka",
+        "title": "Granda",
+        "year": 2010
+      },
+      {
+        "artist": "Taco Hemingway",
+        "title": "Deszcz na betonie",
+        "year": 2016
+      },
+      {
+        "artist": "Dawid Podsiadło",
+        "title": "Małomiasteczkowy",
+        "year": 2018
+      }
+    ]
+  },
+  "Kyiv": {
+
+  },
   "Moscow": {
     "1_early": [
       {
@@ -1272,104 +1373,6 @@
         "artist": "Rahul Sipligunj & Kaala Bhairava",
         "title": "Naatu Naatu",
         "year": 2022
-      }
-    ]
-  },
-  "Kraków": {
-    "1_early": [
-      {
-        "artist": "Hanka Ordonówna",
-        "title": "Miłość ci wszystko wybaczy",
-        "year": 1933
-      },
-      {
-        "artist": "Mieczysław Fogg",
-        "title": "Ostatnia niedziela",
-        "year": 1936
-      },
-      {
-        "artist": "Molly Picon",
-        "title": "Yidl Mitn Fidl",
-        "year": 1936
-      },
-      {
-        "artist": "Eugeniusz Bodo",
-        "title": "Umówiłem się z nią na dziewiątą",
-        "year": 1937
-      }
-    ],
-    "2_middle": [
-      {
-        "artist": "Ewa Demarczyk",
-        "title": "Karuzela z madonnami",
-        "year": 1962
-      },
-      {
-        "artist": "Czesław Niemen",
-        "title": "Dziwny jest ten świat",
-        "year": 1967
-      },
-      {
-        "artist": "Krzysztof Komeda",
-        "title": "Rosemary's Baby (Lullaby)",
-        "year": 1968
-      },
-      {
-        "artist": "Marek Grechuta & Anawa",
-        "title": "Niepewność",
-        "year": 1969
-      },
-      {
-        "artist": "Perfect",
-        "title": "Autobiografia",
-        "year": 1981
-      },
-      {
-        "artist": "Lady Pank",
-        "title": "Mniej niż zero",
-        "year": 1983
-      },
-      {
-        "artist": "Maanam",
-        "title": "Kocham cię, kochanie moje",
-        "year": 1984
-      }
-    ],
-    "3_modern": [
-      {
-        "artist": "Hey",
-        "title": "Teksański",
-        "year": 1993
-      },
-      {
-        "artist": "Kazik",
-        "title": "12 groszy",
-        "year": 1997
-      },
-      {
-        "artist": "Myslovitz",
-        "title": "Długość dźwięku samotności",
-        "year": 1999
-      },
-      {
-        "artist": "Paktofonika",
-        "title": "Jestem Bogiem",
-        "year": 2000
-      },
-      {
-        "artist": "Brodka",
-        "title": "Granda",
-        "year": 2010
-      },
-      {
-        "artist": "Taco Hemingway",
-        "title": "Deszcz na betonie",
-        "year": 2016
-      },
-      {
-        "artist": "Dawid Podsiadło",
-        "title": "Małomiasteczkowy",
-        "year": 2018
       }
     ]
   }

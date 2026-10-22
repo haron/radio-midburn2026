@@ -24,15 +24,15 @@
 <text x="618.3" y="440" text-anchor="middle"><tspan x="618.3" dy="0">Paris</tspan></text>
 <text x="716.7" y="200" text-anchor="middle"><tspan x="716.7" dy="0">Berlin</tspan></text>
 <text x="815.0" y="440" text-anchor="middle"><tspan x="815.0" dy="0">Rome</tspan></text>
-<text x="913.3" y="200" text-anchor="middle"><tspan x="913.3" dy="0">Moscow</tspan></text>
-<text x="1011.7" y="440" text-anchor="middle"><tspan x="1011.7" dy="0">New York</tspan></text>
-<text x="1110.0" y="160" text-anchor="middle"><tspan x="1110.0" dy="0">Los</tspan><tspan x="1110.0" dy="40">Angeles</tspan></text>
-<text x="1208.3" y="440" text-anchor="middle"><tspan x="1208.3" dy="0">Tokyo</tspan></text>
-<text x="1306.7" y="200" text-anchor="middle"><tspan x="1306.7" dy="0">Tel Aviv</tspan></text>
-<text x="1405.0" y="440" text-anchor="middle"><tspan x="1405.0" dy="0">Buenos</tspan><tspan x="1405.0" dy="40">Aires</tspan></text>
-<text x="1503.3" y="200" text-anchor="middle"><tspan x="1503.3" dy="0">Havana</tspan></text>
-<text x="1601.7" y="440" text-anchor="middle"><tspan x="1601.7" dy="0">Delhi</tspan></text>
-<text x="1700.0" y="200" text-anchor="middle"><tspan x="1700.0" dy="0">Krakow</tspan></text>
+<text x="913.3" y="200" text-anchor="middle"><tspan x="913.3" dy="0">Krakow</tspan></text>
+<text x="1011.7" y="440" text-anchor="middle"><tspan x="1011.7" dy="0">Moscow</tspan></text>
+<text x="1110.0" y="200" text-anchor="middle"><tspan x="1110.0" dy="0">New York</tspan></text>
+<text x="1208.3" y="440" text-anchor="middle"><tspan x="1208.3" dy="0">Los</tspan><tspan x="1208.3" dy="40">Angeles</tspan></text>
+<text x="1306.7" y="200" text-anchor="middle"><tspan x="1306.7" dy="0">Tokyo</tspan></text>
+<text x="1405.0" y="440" text-anchor="middle"><tspan x="1405.0" dy="0">Tel Aviv</tspan></text>
+<text x="1503.3" y="160" text-anchor="middle"><tspan x="1503.3" dy="0">Buenos</tspan><tspan x="1503.3" dy="40">Aires</tspan></text>
+<text x="1601.7" y="440" text-anchor="middle"><tspan x="1601.7" dy="0">Havana</tspan></text>
+<text x="1700.0" y="200" text-anchor="middle"><tspan x="1700.0" dy="0">Delhi</tspan></text>
 <text x="104" y="195.0">Gramophone</text>
 <text x="104" y="315.0">Vinyl</text>
 <text x="104" y="435.0">Digital</text>
