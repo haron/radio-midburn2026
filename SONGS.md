@@ -137,7 +137,6 @@
 - Early
   - Mykola Leontovych — Shchedryk (1916)
   - Klavdiya Shulzhenko — Rozpriahaite, khloptsi, koni (1936)
-  - Mykola Svystun & Yabtso-jazz — Pryide shche chas (1936)
   - Bandurist Trio of Ukrainian Radio — Hutsulka Ksenia (1956)
   - Dmytro Hnatyuk — Pisnia pro rushnyk (1958)
   - Borys Hmyria — Nich yaka misiachna (1962)
@@ -165,10 +164,9 @@
   - Tamara Tsereteli — Dorogoy dlinnoyu (1925)
   - Leonid Utesov — Bublichki (1930)
   - Lidiya Ruslanova — Katyusha (1938)
-  - Alexandrov Ensemble — Svyashchennaya voyna (1941)
   - Mark Bernes — Tyomnaya noch (1943)
   - Иван Шмелёв — Вот солдаты идут (1946)
-  - Alexandrov Ensemble — Kalinka (1946)
+  - Pyatnitsky Choir — Kalinka (1946)
 - Middle
   - Vladimir Troshin — Podmoskovnye vechera (1956)
   - Aida Vedishcheva — Pesenka o medvedyakh (1967)

@@ -563,12 +563,6 @@
         "query": "Клавдія Шульженко - Розпрягайте, хлопці, коні"
       },
       {
-        "artist": "Mykola Svystun & Yabtso-jazz",
-        "title": "Pryide shche chas",
-        "year": 1936,
-        "query": "Ябцьо-джаз - Прийде ще час"
-      },
-      {
         "artist": "Bandurist Trio of Ukrainian Radio",
         "title": "Hutsulka Ksenia",
         "year": 1956
@@ -684,11 +678,6 @@
         "year": 1938
       },
       {
-        "artist": "Alexandrov Ensemble",
-        "title": "Svyashchennaya voyna",
-        "year": 1941
-      },
-      {
         "artist": "Mark Bernes",
         "title": "Tyomnaya noch",
         "year": 1943
@@ -699,9 +688,10 @@
         "year": 1946
       },
       {
-        "artist": "Alexandrov Ensemble",
+        "artist": "Pyatnitsky Choir",
         "title": "Kalinka",
-        "year": 1946
+        "year": 1946,
+        "query": "Калинка - Хор им. Пятницкого"
       }
     ],
     "2_middle": [
