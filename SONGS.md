@@ -134,6 +134,30 @@
 
 ## Kyiv
 
+- Early
+  - Mykola Leontovych — Shchedryk (1916)
+  - Klavdiya Shulzhenko — Rozpriahaite, khloptsi, koni (1936)
+  - Mykola Svystun & Yabtso-jazz — Pryide shche chas (1936)
+  - Bandurist Trio of Ukrainian Radio — Hutsulka Ksenia (1956)
+  - Dmytro Hnatyuk — Pisnia pro rushnyk (1958)
+  - Borys Hmyria — Nich yaka misiachna (1962)
+  - Yuri Hulyaev — Yak tebe ne liubyty, Kyieve mii (1962)
+- Middle
+  - Dmytro Hnatyuk — Dva kolory (1964)
+  - Sofia Rotaru & Vasyl Zinkevych — Chervona ruta (1971)
+  - Vasyl Zinkevych & Smerichka — Vodohrai (1971)
+  - Kvitka Cisyk — Ya pidu v daleki hory (1980)
+  - Nazariy Yaremchuk — Stozhary (1981)
+  - Nazariy Yaremchuk — Hai, zelenyi hai (1985)
+- Modern
+  - Iryna Bilyk — Tak prosto (1997)
+  - Okean Elzy — Tam, de nas nema (1998)
+  - Ruslana — Dyki tantsi (2004)
+  - Skryabin — Stari fotohrafii (2005)
+  - Boombox — Vakhteram (2006)
+  - Kazka — Plakala (2018)
+  - Go_A — Shum (2021)
+
 ## Moscow
 
 - Early

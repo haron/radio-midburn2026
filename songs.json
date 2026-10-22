@@ -559,7 +559,14 @@
       {
         "artist": "Klavdiya Shulzhenko",
         "title": "Rozpriahaite, khloptsi, koni",
-        "year": 1936
+        "year": 1936,
+        "query": "Клавдія Шульженко - Розпрягайте, хлопці, коні"
+      },
+      {
+        "artist": "Mykola Svystun & Yabtso-jazz",
+        "title": "Pryide shche chas",
+        "year": 1936,
+        "query": "Ябцьо-джаз - Прийде ще час"
       },
       {
         "artist": "Bandurist Trio of Ukrainian Radio",
@@ -574,7 +581,14 @@
       {
         "artist": "Borys Hmyria",
         "title": "Nich yaka misiachna",
-        "year": 1962
+        "year": 1962,
+        "query": "Борис Гмиря - Ніч яка місячна"
+      },
+      {
+        "artist": "Yuri Hulyaev",
+        "title": "Yak tebe ne liubyty, Kyieve mii",
+        "year": 1962,
+        "query": "Юрій Гуляєв - Як тебе не любити, Києве мій"
       }
     ],
     "2_middle": [
@@ -607,19 +621,9 @@
         "artist": "Nazariy Yaremchuk",
         "title": "Hai, zelenyi hai",
         "year": 1985
-      },
-      {
-        "artist": "Vopli Vidopliassova",
-        "title": "Tantsi",
-        "year": 1988
       }
     ],
     "3_modern": [
-      {
-        "artist": "Pavlo Zibrov",
-        "title": "Khreshchatyk",
-        "year": 1994
-      },
       {
         "artist": "Iryna Bilyk",
         "title": "Tak prosto",
@@ -644,11 +648,6 @@
         "artist": "Boombox",
         "title": "Vakhteram",
         "year": 2006
-      },
-      {
-        "artist": "Okean Elzy",
-        "title": "Obiimy",
-        "year": 2007
       },
       {
         "artist": "Kazka",

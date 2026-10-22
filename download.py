@@ -2,8 +2,8 @@
 # requires-python = ">=3.12"
 # dependencies = ["yt-dlp"]
 # ///
-"""Download songs.json into music/<location>/<epoch>/NN_<artist> - <title>.mp3 (first YouTube search hit), then
-remove mp3s that are no longer in songs.json. Needs ffmpeg."""
+"""Download songs.json into music/<location>/<epoch>/NN_<artist> - <title>.mp3 (first YouTube search hit for
+"query", or for "<artist> - <title> official audio"), then remove mp3s that are no longer in songs.json. Needs ffmpeg."""
 import json
 import re
 import unicodedata
@@ -32,7 +32,7 @@ def download(path: Path, query: str):
 
 
 jobs = [(ROOT / "music" / loc / ep / re.sub(r'[/\\:*?"<>|]', "_", f"{i:02}_{s['artist']} - {s['title']}.mp3"),
-         f"{s['artist']} - {s['title']} official audio")
+         s.get("query") or f"{s['artist']} - {s['title']} official audio")
         for loc, eps in json.loads((ROOT / "songs.json").read_text()).items()
         for ep, songs in eps.items() for i, s in enumerate(songs, 1)]
 with ThreadPoolExecutor(max_workers=4) as pool:

@@ -33,6 +33,10 @@ are in `.env` (see `.env.example`).
   epochs, so the LED scale is the same for every location. A location × epoch
   without MP3s plays static only. The knobs don’t wrap: a turn past the first or
   last position is ignored, with no static.
+- **Downloads:** `download.py` takes the first YouTube hit, so check durations
+  afterwards. A song’s optional `query` overrides the search: transliterated
+  Ukrainian titles found the wrong tracks (a 46-minute concert), Cyrillic ones
+  didn’t.
 - **MPD without a database:** unix socket only (`/tmp/radio-mpd.sock`), so
   tracks can be added as `file://` URIs. No music_directory, no `update`.
 - **Platform auto-detect:** radio.py writes `/tmp/radio-mpd.conf` on start.
