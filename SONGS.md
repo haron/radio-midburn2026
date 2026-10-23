@@ -108,7 +108,7 @@
   - Mahmood — Soldi (2019)
   - Måneskin — Zitti e buoni (2021)
 
-## Kraków
+## Krakow
 
 - Early
   - Hanka Ordonówna — Miłość ci wszystko wybaczy (1933)
