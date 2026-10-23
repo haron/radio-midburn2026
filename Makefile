@@ -4,8 +4,8 @@ SHELL := /usr/bin/env -S bash -O globstar # makes work globs like **/*.py
 
 # always runs; the prerequisites get rebuilt first if they are generated (radio.svg, SONGS.md)
 linter: $(wildcard *.py *.md) radio.svg
-	uvx ruff check .
-	markdownlint-cli2 '*.md'
+	uvx ruff check -q .
+	markdownlint-cli2 '*.md' >/dev/null
 	xmllint --noout radio.svg
 	jq empty **/*.json .*.json
 

@@ -29,5 +29,6 @@ for HOST; do
         systemctl enable --now /opt/radio/radio.service
         # last: restarts wpa_supplicant, so the ssh may stall for a few seconds
         netplan generate && netplan apply
+        reboot
 EOT
 done

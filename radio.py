@@ -208,6 +208,9 @@ class Radio:
         if not (self.fade > 0 and self.hold > 0):  # hold > 0 keeps the station load inside the silence
             sys.exit(f"STATIC_FADE and STATIC_HOLD must be > 0, got {self.fade}/{self.hold}")
         self.walk_idle = float(os.environ["WALK_IDLE"])
+        self.volume = int(os.environ["VOLUME"])
+        if not 0 < self.volume <= 100:
+            sys.exit(f"VOLUME must be 1..100, got {self.volume}")
         now = time.monotonic()
         self.tune_until = now + self.fade + self.hold  # power-on tunes in through static
         # power-on starts the random walk: the first station plays as a walk step, then hops on
@@ -276,7 +279,8 @@ class Radio:
 
     def ramp(self, name: str, client: MPDClient, target: int):
         v = self.vol[name]
-        nv = min(target, v + 100 * TICK / self.fade) if target > v else max(target, v - 100 * TICK / self.fade)
+        step = self.volume * TICK / self.fade  # a full fade takes STATIC_FADE at any VOLUME
+        nv = min(target, v + step) if target > v else max(target, v - step)
         if nv == v:
             return
         client.setvol(round(nv))
@@ -301,10 +305,10 @@ class Radio:
             if not tuning and st is not loaded:  # music is silent by now: fade < fade + hold
                 self.load(st)
                 loaded = st
-            self.ramp("music", self.music, 0 if tuning else 100)
-            self.ramp("static", self.static, 100 if tuning else 0)
+            self.ramp("music", self.music, 0 if tuning else self.volume)
+            self.ramp("static", self.static, self.volume if tuning else 0)
             m = self.vol["music"]
-            new_phase = ("fading out" if m else "static") if tuning else (f"playing {st.name}" if m == 100 else "fading in")
+            new_phase = ("fading out" if m else "static") if tuning else (f"playing {st.name}" if m == self.volume else "fading in")
             if new_phase != phase:
                 log.info(new_phase)
                 phase = new_phase
@@ -337,14 +341,29 @@ def keyboard(radio: Radio):
 def encoders(radio: Radio) -> list:
     from gpiozero import RotaryEncoder
 
+    def detent(knob: str, n: int):
+        """N detents in one direction per station step; reversing starts the count over."""
+        count = 0
+
+        def rotated(delta: int):
+            nonlocal count
+            radio.activity()
+            count = count + delta if count * delta > 0 else delta
+            if abs(count) == n:
+                count = 0
+                radio.turn(knob, delta)
+        return rotated
+
     encs = []
     for knob, env in (("location", "ENC_LOC"), ("epoch", "ENC_EPOCH")):
         enc = RotaryEncoder(int(os.environ[f"{env}_A"]), int(os.environ[f"{env}_B"]))
-        enc.when_rotated_clockwise = lambda k=knob: radio.turn(k, 1)
-        enc.when_rotated_counter_clockwise = lambda k=knob: radio.turn(k, -1)
+        rotated = detent(knob, int(os.environ[f"{env}_DETENTS"]))
+        enc.when_rotated_clockwise = lambda r=rotated: r(1)
+        enc.when_rotated_counter_clockwise = lambda r=rotated: r(-1)
         encs.append(enc)
-    log.info("encoders on: location %s/%s, epoch %s/%s", os.environ["ENC_LOC_A"], os.environ["ENC_LOC_B"],
-             os.environ["ENC_EPOCH_A"], os.environ["ENC_EPOCH_B"])
+    log.info("encoders on: location %s/%s x%s, epoch %s/%s x%s", os.environ["ENC_LOC_A"], os.environ["ENC_LOC_B"],
+             os.environ["ENC_LOC_DETENTS"], os.environ["ENC_EPOCH_A"], os.environ["ENC_EPOCH_B"],
+             os.environ["ENC_EPOCH_DETENTS"])
     return encs
 
 

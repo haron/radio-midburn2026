@@ -35,6 +35,10 @@ are in `.env` (see `.env.example`).
   macOS matches an NFD `Kraków` anyway, Linux doesn’t, so the Pi saw no tracks.
   The knobs don’t wrap: a turn past the first or last position is ignored, with
   no static.
+- **Detents per station:** a KY-040 detent is only 18°, so `encoders()` steps
+  a station once per `ENC_*_DETENTS` detents in one direction. Reversing starts
+  the count over, so a jittery contact at a boundary can’t flip stations. Every
+  detent counts as activity and stops the walk. Keys still step one station.
 - **Downloads:** `download.py` takes the first YouTube hit, so check durations
   afterwards. A song’s optional `query` overrides the search: transliterated
   Ukrainian titles found the wrong tracks (a 46-minute concert), Cyrillic ones
