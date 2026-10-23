@@ -31,8 +31,10 @@ are in `.env` (see `.env.example`).
   `music/<location>/<epoch>/*.mp3`, sorted by name (`download.py` numbers them).
   Empty song lists don’t count. The epoch knob spans the union of all locations’
   epochs, so the LED scale is the same for every location. A location × epoch
-  without MP3s plays static only. The knobs don’t wrap: a turn past the first or
-  last position is ignored, with no static.
+  without MP3s plays static only. Folder names must be NFC like `songs.json`:
+  macOS matches an NFD `Kraków` anyway, Linux doesn’t, so the Pi saw no tracks.
+  The knobs don’t wrap: a turn past the first or last position is ignored, with
+  no static.
 - **Downloads:** `download.py` takes the first YouTube hit, so check durations
   afterwards. A song’s optional `query` overrides the search: transliterated
   Ukrainian titles found the wrong tracks (a 46-minute concert), Cyrillic ones
